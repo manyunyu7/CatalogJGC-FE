@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bestari Setia Abadi</title>
+    <title>Jakarta Garden City E-Catalog</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -41,11 +41,11 @@
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
-                        <p>2021 &copy; Bestari Setia Abadi</p>
+                        <p>2021 &copy; Jakarta Garden City</p>
                     </div>
                     <div class="float-end">
                         <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a
-                                href="#">Bestari Setia Abadi</a></p>
+                                href="#">Jakarta Garden City</a></p>
                     </div>
                 </div>
             </footer>

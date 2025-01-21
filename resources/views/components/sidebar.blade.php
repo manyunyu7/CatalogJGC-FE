@@ -4,7 +4,7 @@
             <div class="d-flex justify-content-between">
                 <div class="logo d-flex">
                     <h1 class="mr-3 d-none">Bestari Setia Abadi</h1>
-                    <a href="{{ url('/') }}"><img src="{{ asset('/bsb') }}/s_icon.png"
+                    <a href="{{ url('/') }}"><img src="{{ asset('/bsb') }}/logo-green.png"
                             alt="Logo" srcset="" class="img-fluid" style="height: 70px !important;"></a>
                 </div>
                 <div class="toggler">
@@ -65,53 +65,6 @@
                         </li>
                         <li class="submenu-item {{ Request::is('company-profile/whatsapp/manage') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/whatsapp/manage') }}">Manage Whatsapp</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li class="sidebar-item  has-sub  {{ Request::is('material/*') ? 'active' : '' }}">
-                    <a href="#" class='sidebar-link'>
-                        <i class="bi bi-box"></i>
-                        <span>Material / Bahan</span>
-                    </a>
-                    <ul class="submenu  {{ Request::is('material/*') ? 'active' : '' }} ">
-                        <li class="submenu-item   {{ Request::is('material/create') ? 'active' : '' }}">
-                            <a href="{{ url('/material/create') }}">Input Product</a>
-                        </li>
-                        <li class="submenu-item  {{ Request::is('material/manage') ? 'active' : '' }}">
-                            <a href="{{ url('/material/manage') }}">Manage Product</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-item  has-sub  {{ Request::is('inbound*') ? 'active' : '' }}">
-                    <a href="#" class='sidebar-link'>
-                        <i class="bi bi-arrow-down"></i>
-                        <span>Inbound Logistic</span>
-                    </a>
-                    <ul class="submenu  {{ Request::is('inbound/*') ? 'active' : '' }} ">
-                        <li class="submenu-item   {{ Request::is('inbound/create') ? 'active' : '' }}">
-                            <a href="{{ url('/inbound/create') }}">Create New Inbound</a>
-                        </li>
-                        <li class="submenu-item  {{ Request::is('/inbound/manage') ? 'active' : '' }}">
-                            <a href="{{ url('/inbound/manage') }}">See Existing Inbound Logistic</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-item  has-sub  {{ Request::is('/outbond/*') ? 'active' : '' }}">
-                    <a href="#" class='sidebar-link'>
-                        <!-- Outbound Logistic -->
-                        <i class="bi bi-arrow-up"></i>
-                        <span>Outbound Logistic</span>
-                    </a>
-                    <ul class="submenu  {{ Request::is('outbond/*') ? 'active' : '' }} ">
-                        <li class="submenu-item   {{ Request::is('outbond/create') ? 'active' : '' }}">
-                            <a href="{{ url('outbond/create') }}">Create New Outbound</a>
-                        </li>
-                        <li class="submenu-item  {{ Request::is('/outbond/manage') ? 'active' : '' }}">
-                            <a href="{{ url('/outbond/manage') }}">See Existing Outbound Logistic</a>
                         </li>
                     </ul>
                 </li>
