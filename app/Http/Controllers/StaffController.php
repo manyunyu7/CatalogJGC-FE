@@ -2,24 +2,55 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use App\Models\UserAddress;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 
 class StaffController extends Controller
 {
     public function viewAdminManage()
     {
-        $users = User::all();
-        return view('karyawan.manage')->with(compact('users'));
+        // Retrieve the token from session
+        $token = session('token');
+
+        // Ensure the token is available
+        if (!$token) {
+            return back()->with('error', 'User is not authenticated');
+        }
+
+
+        $response = Http::withToken($token)
+            ->get(env('URL_BE') . 'cms-user/manage');
+
+
+        if ($response->successful()) {
+            $users = collect($response->json()['result'])->map(function ($user) {
+                return (object) $user; // Convert each user array to an object
+            });
+
+            return view('karyawan.manage', compact('users'));
+        }
+
+        return back()->with('error', 'Failed to fetch users');
     }
+
 
     public function viewAdminEdit($id)
     {
-        $users = User::where('id', '=', $id)->first();
-        $address = UserAddress::where('id_user', '=', $users->id)->first();
-        return view('karyawan.edit')->with(compact('users', 'address'));
+
+        // Retrieve the token from session
+        $token = session('token');
+
+
+        // Get user and address data from the backend API
+        $userResponse = Http::withToken($token)->get(env('URL_BE') . "cms-user/edit/{$id}");
+
+
+        if ($userResponse->successful()) {
+            $users = (object) $userResponse->json()['result']['users']; // Cast to object
+            return view('karyawan.edit', compact('users'));
+        }
+
+        return back()->with('error', 'Failed to fetch user data');
     }
 
     public function viewAdminCreate()
@@ -27,93 +58,59 @@ class StaffController extends Controller
         return view('karyawan.create');
     }
 
-
-    function destroy($id)
+    public function store(Request $request)
     {
-        $user = User::findOrFail($id);
-        if ($user->delete()) {
-            if (Auth::user()->role == 1) {
-                return back()->with(["success" => "Berhasil Menghapus User $user->name"]);
-            }
-        } else {
-            return back()->with(["error" => "Gagal Menghapus User Baru"]);
+        // Retrieve the token from session
+        $token = session('token');
+
+        $response = Http::withToken($token)->post(env('URL_BE') . 'cms-user/store', [
+            'user_name' => $request->user_name,
+            'user_email' => $request->user_email,
+            'user_contact' => $request->user_contact,
+            'user_password' => $request->user_password,
+            'user_role' => $request->user_role,
+            'address' => $request->address,
+        ]);
+
+        if ($response->successful()) {
+            return back()->with('success', 'User created successfully');
         }
+
+        return back()->with('error', 'Failed to create user');
     }
 
-    function store(Request $request)
+    public function update(Request $request)
     {
-        $validateComponent = [
-            "user_name" => "required",
-            "user_email" => "required",
-            "user_password" => "required",
-            "user_role" => "required",
-        ];
+        $token = session('token');
 
+        $response = Http::withToken($token)->put(env('URL_BE') . '/cms-user/update', [
+            'id' => $request->id,
+            'user_name' => $request->user_name,
+            'user_email' => $request->user_email,
+            'user_contact' => $request->user_contact,
+            'user_password' => $request->user_password,
+            'user_role' => $request->user_role,
+            'address_id' => $request->address_id,
+            'address' => $request->address,
+        ]);
 
-        $this->validate($request, $validateComponent);
-
-        $user = new User();
-        $user->name = $request->user_name;
-        $user->email = $request->user_email;
-        $user->contact = $request->user_contact;
-        $user->password = bcrypt($request->user_password);
-        $user->role = ($request->user_role);
-
-
-
-
-        if ($user->save()) {
-
-            $address = new UserAddress();
-            $address->id_user = $user->id;
-            $address->address = $request->address;
-            $address->save();
-
-            if (Auth::user()->role == 1) {
-                return back()->with(["success" => "Berhasil Menambahkan User Baru"]);
-            }
-        } else {
-            return back()->with(["failed" => "Gagal Menambahkan User Baru"]);
+        if ($response->successful()) {
+            return back()->with('success', 'User updated successfully');
         }
+
+        return back()->with('error', 'Failed to update user');
     }
 
-
-    function update(Request $request)
+    public function destroy($id)
     {
-        $validateComponent = [
-            "user_name" => "required",
-            "user_email" => "required",
-            "user_role" => "required",
-        ];
+        $token = session('token');
+        $response = Http::withToken($token)->delete(env('URL_BE') . "cms-user/destroy/{$id}");
 
-        $this->validate($request, $validateComponent);
 
-        $user = User::findOrFail($request->id);
-        $user->name = $request->user_name;
-        $user->email = $request->user_email;
-        $user->contact = $request->user_contact;
-        $user->password = bcrypt($request->user_password);
-        $user->role = ($request->user_role);
-
-        if ($request->address_id == null) {
-            $address = new UserAddress();
-            $address->id_user = $user->id;
-            $address->address = $request->address;
-            $address->save();
-        } else {
-            $address = UserAddress::find($request->address_id);
-            $address->id_user = $user->id;
-            $address->address = $request->address;
-            $address->save();
+        if ($response->successful()) {
+            return back()->with('success', 'User deleted successfully');
         }
 
-
-        if ($user->save()) {
-            if (Auth::user()->role == 1) {
-                return back()->with(["success" => "Berhasil Mengupdate Data User"]);
-            }
-        } else {
-            return back()->with(["failed" => "Gagal Mengupdate Data User"]);
-        }
+        return back()->with('error', 'Failed to delete user');
     }
 }

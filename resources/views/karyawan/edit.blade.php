@@ -69,7 +69,7 @@
                                 <small class="form-text text-muted">Isi Jika Ingin Mereset Password User</small>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <input type="hidden" name="address_id" @if ($address != null)
                                 value="{{ $address->id }}
                                 @endif
@@ -77,7 +77,7 @@
                                 <label for="">Address</label>
                                 <textarea class="form-control" name="address" id=""
                                     rows="3">@if ($address != null){{ $address->address }}@endif</textarea>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group">
                                 <label for="">Role User</label>
