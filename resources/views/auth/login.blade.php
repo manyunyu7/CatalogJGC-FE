@@ -19,10 +19,10 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo">
-                        <a href="#"><img src="{{ asset('/bsb') }}/s_icon.png"
-                                alt="Logo"></a>
+                        {{-- <a href="#"><img src="{{ asset('/bsb') }}/s_icon.png"
+                                alt="Logo"></a> --}}
 
-                        <h1>Sistem Informasi Stock CV Bestari Setia Abadi</h1>
+                        <h1>E-Catalog JGC</h1>
                     </div>
                     <h1 class="auth-title">Log in.</h1>
                     <p class="auth-subtitle mb-5">Log in with your data that you entered during registration.</p>
@@ -60,7 +60,7 @@
                     </div> --}}
                     <br>
                     <br>
-                    <h4><a class="font-bold text-center mt-4" style="text-align: center" href="#">Crafted for BSA</a>.</h4>
+                    <h4><a class="font-bold text-center mt-4" style="text-align: center" href="#">Copyright Modernland 2025</a>.</h4>
 
                 </div>
             </div>
