@@ -52,11 +52,11 @@ Route::get('/', [App\Http\Controllers\MyMainProfileController::class, 'index'])-
 Route::post('/send-client-message', [App\Http\Controllers\MessageFromClientController::class, 'store']);
 
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::group(['middleware' => ['auth']], function () {
 
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin']);
     Route::get('/staff', [App\Http\Controllers\HomeController::class, 'index']);
