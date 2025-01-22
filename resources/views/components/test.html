@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories and Plans Cards/List</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+
+    <!-- Cards/List Container -->
+    <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Categories will be injected here -->
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-8 max-w-lg w-full">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">X</button>
+            <h2 id="modal-title" class="text-2xl font-semibold mb-4"></h2>
+            <img id="modal-image" class="w-full h-auto rounded-lg" />
+        </div>
+    </div>
+
+    <script>
+        const cardsContainer = document.getElementById('cards-container');
+        const modal = document.getElementById('modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        let allCategories = [];
+
+        // Function to fetch product details (including types and categories)
+        async function fetchProductDetails(productId) {
+            try {
+                const response = await fetch(`https://api-web.jakartagardencity.com/product/${productId}`);
+                const data = await response.json();
+                return data.data;
+            } catch (error) {
+                console.error('Error fetching product details:', error);
+                return null;
+            }
+        }
+
+        // Function to fetch all products (basic product data)
+        async function fetchProducts() {
+            let page = 1;
+            let hasNextPage = true;
+
+            while (hasNextPage) {
+                try {
+                    const response = await fetch(`https://api-web.jakartagardencity.com/product?page=${page}&pageSize=20`);
+                    const data = await response.json();
+                    const products = data.data.data;
+                    hasNextPage = data.data.has_next_page; // Check if there's another page
+                    page++;
+
+                    const productDetails = await Promise.all(
+                        products.map(product => fetchProductDetails(product.id))
+                    );
+
+                    extractCategories(productDetails); // Process categories
+                } catch (error) {
+                    console.error('Error fetching products:', error);
+                }
+            }
+            renderCards(allCategories); // Initial render in card view
+        }
+
+        // Extract unique categories from all product details
+        function extractCategories(productDetails) {
+            const categoriesSet = new Map(); // Use a Map to ensure uniqueness by category ID
+
+            productDetails.forEach(details => {
+                details?.types?.forEach(type => {
+                    type?.categories?.forEach(category => {
+                        if (!categoriesSet.has(category.id)) {
+                            categoriesSet.set(category.id, {
+                                detailName: details.name,
+                                typeName: type, // Optionally include type name
+                                ...category
+                            });
+                        }
+                    });
+                });
+            });
+
+            allCategories = Array.from(categoriesSet.values()); // Convert Map to array
+            console.log(allCategories);
+        }
+
+        // Render categories as cards with images
+        function renderCards(categories) {
+            cardsContainer.innerHTML = '';
+            cardsContainer.classList.remove('space-y-4');
+            cardsContainer.classList.add('grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-4');
+
+            if (categories.length === 0) {
+                cardsContainer.innerHTML = "<p class='col-span-full text-center text-xl text-red-500'>No categories available.</p>";
+                return;
+            }
+
+            categories.forEach(category => {
+                const card = document.createElement('div');
+                card.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md', 'hover:shadow-lg', 'cursor-pointer');
+
+                // Check if plans exist and extract image from the first plan
+                let imageUrl = '';
+                if (category.plans && category.plans.length > 0 && category.plans[0].image) {
+                    imageUrl = `https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F${category.plans[0].image.replace('/', '')}&w=1920&q=75`;
+                } else {
+                    imageUrl = 'https://via.placeholder.com/1920x1080?text=No+Image'; // Fallback placeholder
+                }
+
+                card.innerHTML = `
+                    <h2 class="text-xl font-semibold">${category.detailName}</h2>
+                    <h3 class="text-lg font-medium text-gray-600">${category.name_id}</h3>
+                `;
+
+                // <img src="${imageUrl}" alt="${category.name_id}" class="mt-4 rounded-lg w-full h-auto">
+                // Add event listener to show the modal on card click
+                card.addEventListener('click', () => {
+                    openModal(category);
+                });
+
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        // Open modal and show details
+        function openModal(category) {
+            const modalTitle = document.getElementById('modal-title');
+            const modalImage = document.getElementById('modal-image');
+
+            modalTitle.innerText = category.detailName; // Set the modal title
+            // Set the image URL inside the modal
+            let imageUrl = '';
+            if (category.plans && category.plans.length > 0 && category.plans[0].image) {
+                imageUrl = `https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F${category.plans[0].image.replace('/', '')}&w=1920&q=75`;
+            } else {
+                imageUrl = 'https://via.placeholder.com/1920x1080?text=No+Image'; // Fallback placeholder
+            }
+
+            modalImage.src = imageUrl; // Set the image source in the modal
+            modal.classList.remove('hidden'); // Show the modal
+        }
+
+        // Close the modal
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden'); // Hide the modal
+        });
+
+        // Fetch all products and their details on page load
+        fetchProducts();
+    </script>
+
+</body>
+
+</html>
