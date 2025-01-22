@@ -14,7 +14,7 @@ class AuthController extends Controller
     public function loginView(Request $request)
     {
 
-        $token = session('killaToken');
+        $token = $request->cookie('killaToken');
         // Make the request to the /user-info endpoint with the token in the Authorization header
         $response = Http::withHeaders([
             'Authorization' => 'Bearer ' . $token,
