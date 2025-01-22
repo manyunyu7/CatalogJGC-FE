@@ -32,7 +32,7 @@
                         <small class="text-muted">Please provide a detailed description (minimum 2 lines).</small>
                     </div>
 
-                    <!-- Action -->
+                    {{-- <!-- Action -->
                     <div class="form-group">
                         <label for="basicInput">Action</label>
                         <input type="text" name="action" class="form-control @error('action') is-invalid @enderror"
@@ -42,7 +42,7 @@
                             {{ $message }}
                         </div>
                         @enderror
-                    </div>
+                    </div> --}}
 
                     {{-- <!-- Action Link -->
                     <div class="form-group">
@@ -104,9 +104,9 @@
                         </div>
                         @enderror
                     </div>
-                    <img src="https://i.stack.imgur.com/y9DpT.jpg" style="border-radius: 20px; max-width: 500px" id="imgPreview" class="img-fluid" alt="Responsive image">
+                    <img src="{{asset("bsb/thumbnail_upload.jpg")}}" style="border-radius: 20px; max-width: 500px" id="imgPreview" class="img-fluid" alt="Responsive image">
 
-                    <!-- Icon -->
+                    {{-- <!-- Icon -->
                     <div class="form-group">
                         <label for="formIcon" class="form-label">Icon</label>
                         <input name="icon" class="form-control @error('icon') is-invalid @enderror" type="file" id="formIcon" accept="image/*">
@@ -115,8 +115,8 @@
                             {{ $message }}
                         </div>
                         @enderror
-                    </div>
-                    <img src="https://i.stack.imgur.com/y9DpT.jpg" style="border-radius: 20px; max-width: 300px" id="iconPreview" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div> --}}
+                    {{-- <img src="{{asset("bsb/thumbnail_upload.jpg")}}" style="border-radius: 20px; max-width: 300px" id="iconPreview" class="img-fluid img-thumbnail" alt="Responsive image"> --}}
                 </div>
 
                 <div class="col-12">

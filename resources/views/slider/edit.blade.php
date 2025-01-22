@@ -82,50 +82,45 @@
                             <div class="form-group">
                                 <label for="basicInput">Judul Utama</label>
                                 <input type="text" name="title" required class="form-control"
-                                       value="{{ old('title',$data->title) }}" required id="basicInput"
-                                       placeholder="Title">
+                                    value="{{ old('title', $data->title) }}" required id="basicInput" placeholder="Title">
                             </div>
 
                             <div class="form-group">
                                 <label for="basicInput">Deskripsi</label>
-                                <textarea style="height: 200px" name="description" class="form-control" id="basicInput" placeholder="Deskripsi">{{ old('description',$data->description) }}</textarea>
+                                <textarea style="height: 200px" name="description" class="form-control" id="basicInput" placeholder="Deskripsi">{{ old('description', $data->description) }}</textarea>
                                 <small class="text-muted">Please provide a detailed description (minimum 2 lines).</small>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="basicInput">Action</label>
-                                <input type="text" name="action"  class="form-control"
-                                       value="{{ old('action',$data->action) }}"
-                                       placeholder="Action">
+                                <input type="text" name="action" class="form-control"
+                                    value="{{ old('action', $data->action) }}" placeholder="Action">
                             </div>
 
                             <div class="form-group">
                                 <label for="basicInput">Link</label>
                                 <input type="text" name="action_link" class="form-control"
-                                       value="{{ old('action_link',$data->action_link) }}"
-                                       placeholder="Action Link">
-                            </div>
+                                    value="{{ old('action_link', $data->action_link) }}" placeholder="Action Link">
+                            </div> --}}
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="basicInput">Action 2</label>
-                                <input type="text" name="second_action"  class="form-control"
-                                       value="{{ old('second_action',$data->second_action) }}"
-                                       placeholder="Action">
+                                <input type="text" name="second_action" class="form-control"
+                                    value="{{ old('second_action', $data->second_action) }}" placeholder="Action">
                             </div>
 
                             <div class="form-group">
                                 <label for="basicInput">Link 2</label>
                                 <input type="text" name="second_action_link" class="form-control"
-                                       value="{{ old('second_action_link',$data->second_action_link) }}"
-                                       placeholder="Action Link">
-                            </div>
+                                    value="{{ old('second_action_link', $data->second_action_link) }}"
+                                    placeholder="Action Link">
+                            </div> --}}
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="basicInput">Urutan</label>
                                 <input type="number" name="order" class="form-control"
-                                       value="{{ old('order',$data->order) }}"
-                                       placeholder="Urutan">
-                            </div>
+                                    value="{{ old('order', $data->order) }}" placeholder="Urutan">
+                            </div> --}}
 
                         </div>
 
@@ -136,29 +131,20 @@
                                 <input name="image" class="form-control" type="file" id="formFile" accept="image/*">
                             </div>
 
-                            <img src='{{asset("$data->image")}}' style="border-radius: 20px;max-width: 300px" id="imgPreview" class="img-fluid" alt="Responsive image">
+                            <img src='{{ env('URL_BE_ASSET') . $data->image }}' style="border-radius: 20px;max-width: 300px"
+                                id="imgPreview" class="img-fluid" alt="Responsive image">
 
-                            <div class="form-group">
-                                <label for="formFile" class="form-label">Icon</label>
-                                <input name="icon" class="form-control" type="file" id="formIcon" accept="image/*">
-                            </div>
-
-                            <img src="{{ asset($data->icon) }}"
-                                 style="border-radius: 20px; max-width: 300px"
-                                 id="iconPreview"
-                                 class="img-fluid img-thumbnail"
-                                 alt="Responsive image"
-                                 onerror="this.src='https://i.stack.imgur.com/y9DpT.jpg'; this.onerror=null;">                </div>
-                        </div>
-
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Save Data</button>
                         </div>
                     </div>
 
-                </form>
-
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Save Data</button>
+                    </div>
             </div>
+
+            </form>
+
+        </div>
         </div>
 
     </section>

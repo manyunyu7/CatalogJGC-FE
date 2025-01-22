@@ -96,76 +96,96 @@ class MyProfileSliderController extends Controller
 
     public function update(Request $request)
     {
+
+        // Retrieve the token from session
         $token = $request->cookie('killaToken');
 
-        // $object = MySlider::findOrFail($request->id);
-        // $object->title = $request->title;
-        // $object->description = $request->description;
-        // $object->action = $request->action;
-        // $object->action_link = $request->action_link;
-        // $object->second_action = $request->second_action;
-        // $object->second_action_link = $request->second_action_link;
-        // $object->order = $request->order;
+        // Ensure the token is available
+        if (!$token) {
+            return back()->with('error', 'User is not authenticated')->withInput();
+        }
 
-        // if ($request->hasFile('image')) {
+        // Validate the incoming request
+        $validatedData = $request->validate([
+            'title' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
+            'image' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
+        ]);
 
-        //     // remove photo first
-        //     $file_path = public_path() . $object->photo;
-        //     if (file_exists($file_path)) {
-        //         try {
-        //             unlink($file_path);
-        //         } catch (\Exception $e) {
-        //             // Do Nothing on Exception
-        //         }
-        //     }
+        // Prepare the data for the API
+        $data = $request->only([
+            'title',
+            'id',
+            'description',
+            'action',
+            'action_link',
+            'second_action',
+            'second_action_link',
+            'order',
+        ]);
 
-        //     $file = $request->file('image');
-        //     $extension = $file->getClientOriginalExtension(); // you can also use file name
-        //     $fileName = time() . '.' . $extension;
+        // Prepare the multipart data for Guzzle
+        $multipartData = [];
 
-        //     $savePath = "/web_files/slider_image/";
-        //     $savePathDB = "$savePath$fileName";
-        //     $path = public_path() . "$savePath";
-        //     $file->move($path, $fileName);
+        // Add form fields
+        foreach ($data as $key => $value) {
+            $multipartData[] = [
+                'name' => $key,
+                'contents' => $value,
+            ];
+        }
 
-        //     $photoPath = $savePathDB;
-        //     $object->image = $photoPath;
-        // }
+        // Add files if present
+        $files = ['image', 'icon']; // List of possible files
+        foreach ($files as $file) {
+            if ($request->hasFile($file)) {
+                $multipartData[] = [
+                    'name' => $file,
+                    'contents' => fopen($request->file($file)->getRealPath(), 'r'),
+                    'filename' => $request->file($file)->getClientOriginalName(),
+                ];
+            }
+        }
 
-        // if ($request->hasFile('icon')) {
+        // API endpoint for updating data
+        $apiUrl = env('URL_BE') . 'slider/update'; // Adjust your API URL accordingly
 
-        //     // remove photo first
-        //     $file_path = public_path() . $object->icon;
-        //     if (file_exists($file_path)) {
-        //         try {
-        //             unlink($file_path);
-        //         } catch (\Exception $e) {
-        //             // Do Nothing on Exception
-        //         }
-        //     }
+        // Create the Guzzle client
+        $client = new Client();
 
-        //     $file = $request->file('icon');
-        //     $extension = $file->getClientOriginalExtension(); // you can also use file name
-        //     $fileName = time() . '.' . $extension;
+        try {
+            // Make the POST request with Guzzle
+            $response = $client->post($apiUrl, [
+                'headers' => [
+                    'Authorization' => "Bearer $token",
+                ],
+                'multipart' => $multipartData, // Correctly formatted multipart data
+            ]);
 
-        //     $savePath = "/web_files/slider_icon/";
-        //     $savePathDB = "$savePath$fileName";
-        //     $path = public_path() . "$savePath";
-        //     $file->move($path, $fileName);
+            // Decode the response
+            $responseData = json_decode($response->getBody(), true);
 
-        //     $photoPath = $savePathDB;
-        //     $object->icon = $photoPath;
-        // }
-        // if ($object->save()) {
-        //     return back()->with(["success" => "Data saved successfully"]);
-        // } else {
-        //     return back()->with(["error" => "Saving process failed"]);
-        // }
+            // Handle API failure
+            if (!$responseData['meta']['success']) {
+                return back()->with('error', $responseData['meta']['message'] ?? 'Failed to update slider data.')
+                    ->withInput(); // Keep old input data
+            }
+
+            // If successful, return the data and show a success message
+            return back()->with('success', 'Slider updated successfully')
+                ->withInput($data); // Pre-fill the form with the user input
+
+        } catch (RequestException $e) {
+            // Handle the error if the request fails
+            return back()->with('error', 'Error during API request: ' . $e->getMessage())
+                ->withInput(); // Keep old input data
+        }
     }
 
 
     public function store(Request $request)
     {
+
         // Retrieve the token from session
         $token = $request->cookie('killaToken');
 
