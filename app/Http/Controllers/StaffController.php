@@ -7,10 +7,12 @@ use Illuminate\Support\Facades\Http;
 
 class StaffController extends Controller
 {
-    public function viewAdminManage()
+    public function viewAdminManage(Request $request)
     {
         // Retrieve the token from session
-        $token = session('token');
+        $token = $request->cookie('killaToken');
+
+
 
         // Ensure the token is available
         if (!$token) {
@@ -34,11 +36,11 @@ class StaffController extends Controller
     }
 
 
-    public function viewAdminEdit($id)
+    public function viewAdminEdit(Request $request,$id)
     {
 
         // Retrieve the token from session
-        $token = session('token');
+        $token = $request->cookie('killaToken');
 
 
         // Get user and address data from the backend API
@@ -53,7 +55,7 @@ class StaffController extends Controller
         return back()->with('error', 'Failed to fetch user data');
     }
 
-    public function viewAdminCreate()
+    public function viewAdminCreate(Request $request)
     {
         return view('karyawan.create');
     }
@@ -61,7 +63,7 @@ class StaffController extends Controller
     public function store(Request $request)
     {
         // Retrieve the token from session
-        $token = session('token');
+        $token = $request->cookie('killaToken');
 
         $response = Http::withToken($token)->post(env('URL_BE') . 'cms-user/store', [
             'user_name' => $request->user_name,
@@ -81,7 +83,7 @@ class StaffController extends Controller
 
     public function update(Request $request)
     {
-        $token = session('token');
+        $token = $request->cookie('killaToken');
 
         $response = Http::withToken($token)->put(env('URL_BE') . '/cms-user/update', [
             'id' => $request->id,
@@ -103,7 +105,7 @@ class StaffController extends Controller
 
     public function destroy($id)
     {
-        $token = session('token');
+        $token = $request->cookie('killaToken');
         $response = Http::withToken($token)->delete(env('URL_BE') . "cms-user/destroy/{$id}");
 
 

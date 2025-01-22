@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\LaravelEstriController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -36,7 +37,9 @@ Route::get("/user-info", [AuthController::class, 'getUserInfo']);
 
 Route::post("/login-action",[AuthController::class, 'login'])->name('login-action');
 
-Auth::routes();
+Route::view("/login", 'auth/login')->name('login');
+
+Route::get("/login",[AuthController::class,'loginView']);
 
 Route::get("/brand/{slug}", [App\Http\Controllers\MyBrandConentController::class, 'getProductByBrand']);
 Route::get("/category/{slug}", [App\Http\Controllers\MyBrandConentController::class, 'getProductByBrand']);
@@ -98,7 +101,8 @@ Route::group(['middleware' => ['auth']], function () {
             Route::get("/", [App\Http\Controllers\BasicInfoController::class, 'index']);
             Route::post('store', [App\Http\Controllers\BasicInfoController::class, 'store']);
         });
-        Route::prefix('slider')->group(function () {
+
+        Route::middleware("killa")->prefix('slider')->group(function () {
             Route::get('/', [App\Http\Controllers\MyProfileSliderController::class, 'manageSlider']);
             Route::post('store', [App\Http\Controllers\MyProfileSliderController::class, 'store']);
             Route::get('{id}/delete', [App\Http\Controllers\MyProfileSliderController::class, 'destroy']);
@@ -176,19 +180,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/ingredients/{id}/delete', [App\Http\Controllers\MenuMaterialController::class, 'destroy']);
 
 
-    Route::prefix('inbound')->group(function () {
-        Route::get('/create', [App\Http\Controllers\InboundController::class, 'viewCreate']);
-        Route::get('/{id}/cancel', 'InboundController@cancel');
-        Route::post('/store', 'InboundController@store');
-        Route::get('/{id}/edit', 'InboundController@viewEdit');
-        Route::post('/update', 'InboundController@update');
-        Route::get('/{id}/delete', 'InboundController@destroy');
-        Route::get('/report', 'InboundController@viewManage');
-        Route::get('/manage', 'InboundController@viewManage');
-        Route::get('/input-daily', 'InboundController@viewInputDaily');
-        Route::get('/daily-input', 'InboundController@viewInputDaily');
-        Route::post('/daily-input/store', 'InboundController@storeDaily');
-    });
+
 
 
     Route::get('/admin/user/create', [App\Http\Controllers\StaffController::class, 'viewAdminCreate']);

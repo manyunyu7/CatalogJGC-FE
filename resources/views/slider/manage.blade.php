@@ -65,10 +65,10 @@
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>
-                                                        <img  height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src='{{asset("$item->image")}}' alt="">
+                                                        <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->image }}" alt="slider image">
                                                     </td>
                                                     <td>
-                                                        <img  height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src='{{asset("$item->icon")}}' alt="">
+                                                        <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->icon }}" alt="">
                                                     </td>
                                                     <td>{{ $item->order }}</td>
                                                     <td>{{ $item->title }}</td>

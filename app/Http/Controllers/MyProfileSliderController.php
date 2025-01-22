@@ -3,165 +3,293 @@
 namespace App\Http\Controllers;
 
 use App\Models\MySlider;
+use Exception;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class MyProfileSliderController extends Controller
 {
-    public function manageSlider(){
-        $datas = MySlider::orderBy('order')->get();
-
-        $compact = compact('datas');
-        return view('slider.manage')->with($compact);
-    }
-
-    public function viewEdit($id)
+    public function manageSlider(Request $request)
     {
-        $data = MySlider::where('id', '=', $id)->first();
-        return view('slider.edit')->with(compact('data'));
+
+        // Retrieve the token from cookie
+        $token = $request->cookie('killaToken');
+
+
+        // Ensure the token is available
+        if ($token == "" || $token == null) {
+            return back()->with('error', 'User is not authenticated');
+        }
+
+        // API endpoint
+        $apiUrl = env('URL_BE') . 'slider/manage';
+
+        // Make the API request with the token
+        $response = Http::withToken($token)->get($apiUrl);
+
+        // Check if the API request was successful
+        if ($response->failed()) {
+            return back()->with('error', 'Failed to fetch sliders. Please try again later.');
+        }
+
+        // Parse the response data
+        $responseData = $response->json();
+
+        // Ensure the API response indicates success
+        if (!isset($responseData['meta']['success']) || !$responseData['meta']['success']) {
+            return back()->with('error', $responseData['meta']['message'] ?? 'Failed to fetch sliders.');
+        }
+
+        // Extract the slider data from the response and convert to object
+        $datas = collect($responseData['result'] ?? [])->map(function ($item) {
+            return (object) $item;
+        });
+
+        // Pass the data to the view
+        return view('slider.manage', compact('datas'));
     }
 
+    public function viewEdit(Request $request, $id)
+    {
+        // Retrieve the token from session
+        // Retrieve the token from cookie
+        $token = $request->cookie('killaToken');
+
+        // Ensure the token is available
+        if (!$token) {
+            return back()->with('error', 'User is not authenticated');
+        }
+
+        // API endpoint for fetching slider data
+        $apiUrl = env('URL_BE') . "slider/edit/{$id}";
+
+        // Make the API request with the token
+        $response = Http::withToken($token)->get($apiUrl);
+
+        // Check if the API request was successful
+        if ($response->failed()) {
+            return back()->with('error', 'Failed to fetch slider data. Please try again later.');
+        }
+
+        // Parse the response data
+        $responseData = $response->json();
+
+        // Ensure the API response indicates success
+        if (!isset($responseData['meta']['success']) || !$responseData['meta']['success']) {
+            return back()->with('error', $responseData['meta']['message'] ?? 'Failed to fetch slider data.');
+        }
+
+        // Extract the slider data from the response and convert to an object
+        $data = isset($responseData['result']) ? (object) $responseData['result'] : null;
+
+        // Check if data is available
+        if (!$data) {
+            return back()->with('error', 'Slider data not found.');
+        }
+
+        // Pass the data to the view
+        return view('slider.edit', compact('data'));
+    }
 
 
     public function update(Request $request)
     {
-        $object = MySlider::findOrFail($request->id);
-        $object->title = $request->title;
-        $object->description = $request->description;
-        $object->action = $request->action;
-        $object->action_link = $request->action_link;
-        $object->second_action = $request->second_action;
-        $object->second_action_link = $request->second_action_link;
-        $object->order = $request->order;
+        $token = $request->cookie('killaToken');
 
-        if ($request->hasFile('image')) {
+        // $object = MySlider::findOrFail($request->id);
+        // $object->title = $request->title;
+        // $object->description = $request->description;
+        // $object->action = $request->action;
+        // $object->action_link = $request->action_link;
+        // $object->second_action = $request->second_action;
+        // $object->second_action_link = $request->second_action_link;
+        // $object->order = $request->order;
 
-            // remove photo first
-            $file_path = public_path() . $object->photo;
-            if (file_exists($file_path)) {
-                try {
-                    unlink($file_path);
-                } catch (\Exception $e) {
-                    // Do Nothing on Exception
-                }
-            }
+        // if ($request->hasFile('image')) {
 
-            $file = $request->file('image');
-            $extension = $file->getClientOriginalExtension(); // you can also use file name
-            $fileName = time() . '.' . $extension;
+        //     // remove photo first
+        //     $file_path = public_path() . $object->photo;
+        //     if (file_exists($file_path)) {
+        //         try {
+        //             unlink($file_path);
+        //         } catch (\Exception $e) {
+        //             // Do Nothing on Exception
+        //         }
+        //     }
 
-            $savePath = "/web_files/slider_image/";
-            $savePathDB = "$savePath$fileName";
-            $path = public_path() . "$savePath";
-            $file->move($path, $fileName);
+        //     $file = $request->file('image');
+        //     $extension = $file->getClientOriginalExtension(); // you can also use file name
+        //     $fileName = time() . '.' . $extension;
 
-            $photoPath = $savePathDB;
-            $object->image = $photoPath;
-        }
+        //     $savePath = "/web_files/slider_image/";
+        //     $savePathDB = "$savePath$fileName";
+        //     $path = public_path() . "$savePath";
+        //     $file->move($path, $fileName);
 
-        if ($request->hasFile('icon')) {
+        //     $photoPath = $savePathDB;
+        //     $object->image = $photoPath;
+        // }
 
-            // remove photo first
-            $file_path = public_path() . $object->icon;
-            if (file_exists($file_path)) {
-                try {
-                    unlink($file_path);
-                } catch (\Exception $e) {
-                    // Do Nothing on Exception
-                }
-            }
+        // if ($request->hasFile('icon')) {
 
-            $file = $request->file('icon');
-            $extension = $file->getClientOriginalExtension(); // you can also use file name
-            $fileName = time() . '.' . $extension;
+        //     // remove photo first
+        //     $file_path = public_path() . $object->icon;
+        //     if (file_exists($file_path)) {
+        //         try {
+        //             unlink($file_path);
+        //         } catch (\Exception $e) {
+        //             // Do Nothing on Exception
+        //         }
+        //     }
 
-            $savePath = "/web_files/slider_icon/";
-            $savePathDB = "$savePath$fileName";
-            $path = public_path() . "$savePath";
-            $file->move($path, $fileName);
+        //     $file = $request->file('icon');
+        //     $extension = $file->getClientOriginalExtension(); // you can also use file name
+        //     $fileName = time() . '.' . $extension;
 
-            $photoPath = $savePathDB;
-            $object->icon = $photoPath;
-        }
-        if ($object->save()) {
-            return back()->with(["success" => "Data saved successfully"]);
-        } else {
-            return back()->with(["error" => "Saving process failed"]);
-        }
+        //     $savePath = "/web_files/slider_icon/";
+        //     $savePathDB = "$savePath$fileName";
+        //     $path = public_path() . "$savePath";
+        //     $file->move($path, $fileName);
+
+        //     $photoPath = $savePathDB;
+        //     $object->icon = $photoPath;
+        // }
+        // if ($object->save()) {
+        //     return back()->with(["success" => "Data saved successfully"]);
+        // } else {
+        //     return back()->with(["error" => "Saving process failed"]);
+        // }
     }
 
 
     public function store(Request $request)
     {
-        $object = new MySlider();
-        $object->title = $request->title;
-        $object->description = $request->description;
-        $object->action = $request->action;
-        $object->action_link = $request->action_link;
-        $object->second_action = $request->second_action;
-        $object->second_action_link = $request->second_action_link;
-        $object->order = $request->order;
+        // Retrieve the token from session
+        $token = $request->cookie('killaToken');
+
+        // Ensure the token is available
+        if (!$token) {
+            return back()->with('error', 'User is not authenticated')->withInput();
+        }
+
+        // Validate the incoming request
+        $validatedData = $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'action' => 'nullable|string|max:255',
+            // 'action_link' => 'nullable|url|max:255',
+            // 'second_action' => 'nullable|string|max:255',
+            // 'second_action_link' => 'nullable|url|max:255',
+            'order' => 'required|integer|min:1',
+            'image' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
+            'icon' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
+        ]);
+
+        // Prepare the data for the API
+        $data = $request->only([
+            'title',
+            'description',
+            'action',
+            'action_link',
+            'second_action',
+            'second_action_link',
+            'order',
+        ]);
+
+        // Prepare the multipart data for Guzzle
+        $multipartData = [];
+
+        // Add form fields
+        foreach ($data as $key => $value) {
+            $multipartData[] = [
+                'name' => $key,
+                'contents' => $value,
+            ];
+        }
+
+        // Add files if present
         if ($request->hasFile('image')) {
-
-            $file = $request->file('image');
-            $extension = $file->getClientOriginalExtension(); // you can also use file name
-            $fileName = time() . '.' . $extension;
-
-            $savePath = "/web_files/slider_image/";
-            $savePathDB = "$savePath$fileName";
-            $path = public_path() . "$savePath";
-            $file->move($path, $fileName);
-
-            $photoPath = $savePathDB;
-            $object->image = $photoPath;
+            $multipartData[] = [
+                'name' => 'image',
+                'contents' => fopen($request->file('image')->getRealPath(), 'r'),
+                'filename' => $request->file('image')->getClientOriginalName(),
+            ];
         }
 
         if ($request->hasFile('icon')) {
-            $file = $request->file('icon');
-            $extension = $file->getClientOriginalExtension(); // you can also use file name
-            $fileName = time() . '.' . $extension;
-
-            $savePath = "/web_files/slider_icon/";
-            $savePathDB = "$savePath$fileName";
-            $path = public_path() . "$savePath";
-            $file->move($path, $fileName);
-
-            $photoPath = $savePathDB;
-            $object->icon = $photoPath;
+            $multipartData[] = [
+                'name' => 'icon',
+                'contents' => fopen($request->file('icon')->getRealPath(), 'r'),
+                'filename' => $request->file('icon')->getClientOriginalName(),
+            ];
         }
 
-        if ($object->save()) {
-            return back()->with(["success" => "Data saved successfully"]);
-        } else {
-            return back()->with(["error" => "Saving process failed"]);
+        // API endpoint
+        $apiUrl = env('URL_BE') . 'slider/store';
+
+        // Create the Guzzle client
+        $client = new Client();
+
+        try {
+            // Make the POST request with Guzzle
+            $response = $client->post($apiUrl, [
+                'headers' => [
+                    'Authorization' => "Bearer $token",
+                ],
+                'multipart' => $multipartData, // Correctly formatted multipart data
+            ]);
+
+            // Decode the response
+            $responseData = json_decode($response->getBody(), true);
+
+            // Handle API failure
+            if (!$responseData['meta']['success']) {
+                return back()->with('error', $responseData['meta']['message'] ?? 'Failed to save slider data.')
+                    ->withInput(); // Keep old input data
+            }
+
+            // If successful, return the data and show a success message
+            return back()->with('success', 'Slider created successfully')
+                ->withInput($data); // Pre-fill the form with the user input
+
+        } catch (RequestException $e) {
+            // Handle the error if the request fails
+            return back()->with('error', 'Error during API request: ' . $e->getMessage())
+                ->withInput(); // Keep old input data
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+
+    public function destroy(Request $request, $id)
     {
-        $data = MySlider::findOrFail($id);
-        $file_path = public_path() . $data->image;
+        // Retrieve the token from the session or cookie
+        $token = $request->cookie('killaToken');
 
+        // Instantiate Guzzle client
+        $client = new Client();
 
-        if($data->image!=null || $data->image!=""){
-            if (file_exists($file_path)) {
-                try {
-                    unlink($file_path);
-                } catch (Exception $e) {
-                    // Do Nothing on Exception
-                }
+        // Set the API URL (using your environment variable)
+        $apiUrl = env('URL_BE') . 'slider/destroy/'.$id;
+
+        try {
+            // Send DELETE request with the Bearer token for authorization
+            $response = $client->delete($apiUrl, [
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $token,
+                ]
+            ]);
+
+            // Check if the response is successful
+            if ($response->getStatusCode() == 200) {
+                return back()->with(["success" => "Data deleted successfully "]);
+            } else {
+                return back()->with(["error" => "Delete process failed with status: " . $response->getStatusCode()]);
             }
-        }
-
-        if ($data->delete()) {
-            return back()->with(["success" => "Data deleted successfully"]);
-        } else {
-            return back()->with(["error" => "Delete process failed"]);
+        } catch (\Exception $e) {
+            // Handle exceptions such as network errors or connection issues
+            return back()->with(["error" => "An error occurred: " . $e->getMessage()]);
         }
     }
 }

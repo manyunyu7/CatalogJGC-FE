@@ -8,84 +8,125 @@
             @csrf
             <div class="row">
                 <div class="col-md-6">
+                    <!-- Title -->
                     <div class="form-group">
                         <label for="basicInput">Judul Utama</label>
-                        <input type="text" name="title" required class="form-control"
-                               value="{{ old('title') }}" required id="basicInput"
-                               placeholder="Title">
+                        <input type="text" name="title" required class="form-control @error('title') is-invalid @enderror"
+                               value="{{ old('title') }}" id="basicInput" placeholder="Title">
+                        @error('title')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
 
+                    <!-- Description -->
                     <div class="form-group">
                         <label for="basicInput">Deskripsi</label>
-                        <textarea style="height: 200px" name="description" class="form-control" id="basicInput" placeholder="Deskripsi">{{ old('description') }}</textarea>
+                        <textarea style="height: 200px" name="description" class="form-control @error('description') is-invalid @enderror" id="basicInput" placeholder="Deskripsi">{{ old('description') }}</textarea>
+                        @error('description')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                         <small class="text-muted">Please provide a detailed description (minimum 2 lines).</small>
                     </div>
 
+                    <!-- Action -->
                     <div class="form-group">
                         <label for="basicInput">Action</label>
-                        <input type="text" name="action"  class="form-control"
-                               value="{{ old('action') }}"
-                               placeholder="Action">
+                        <input type="text" name="action" class="form-control @error('action') is-invalid @enderror"
+                               value="{{ old('action') }}" placeholder="Action">
+                        @error('action')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
 
+                    {{-- <!-- Action Link -->
                     <div class="form-group">
                         <label for="basicInput">Link</label>
-                        <input type="text" name="action_link" class="form-control"
-                               value="{{ old('action_link') }}"
-                               placeholder="Action Link">
-                    </div>
+                        <input type="text" name="action_link" class="form-control @error('action_link') is-invalid @enderror"
+                               value="{{ old('action_link') }}" placeholder="Action Link">
+                        @error('action_link')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div> --}}
 
-
+                    {{-- <!-- Second Action -->
                     <div class="form-group">
                         <label for="basicInput">Action 2</label>
-                        <input type="text" name="second_action"  class="form-control"
-                               value="{{ old('second_action') }}"
-                               placeholder="Action">
+                        <input type="text" name="second_action" class="form-control @error('second_action') is-invalid @enderror"
+                               value="{{ old('second_action') }}" placeholder="Action">
+                        @error('second_action')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
 
+                    <!-- Second Action Link -->
                     <div class="form-group">
                         <label for="basicInput">Link 2</label>
-                        <input type="text" name="second_action_link" class="form-control"
-                               value="{{ old('second_action_link') }}"
-                               placeholder="Action Link">
-                    </div>
+                        <input type="text" name="second_action_link" class="form-control @error('second_action_link') is-invalid @enderror"
+                               value="{{ old('second_action_link') }}" placeholder="Action Link">
+                        @error('second_action_link')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div> --}}
 
+                    <!-- Order -->
                     <div class="form-group">
                         <label for="basicInput">Urutan</label>
-                        <input type="number" name="order" class="form-control"
-                               value="{{ old('order') }}"
-                               placeholder="Urutan">
+                        <input type="number" name="order" class="form-control @error('order') is-invalid @enderror"
+                               value="{{ old('order') }}" placeholder="Urutan">
+                        @error('order')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
-
-
                 </div>
 
                 <div class="col-md-6">
-
+                    <!-- Background Image -->
                     <div class="form-group">
-                        <label for="formIcon" class="form-label">Background</label>
-                        <input name="image" class="form-control" type="file" id="formFile" accept="image/*">
+                        <label for="formFile" class="form-label">Background</label>
+                        <input name="image" class="form-control @error('image') is-invalid @enderror" type="file" id="formFile" accept="image/*">
+                        @error('image')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
                     <img src="https://i.stack.imgur.com/y9DpT.jpg" style="border-radius: 20px; max-width: 500px" id="imgPreview" class="img-fluid" alt="Responsive image">
 
-
+                    <!-- Icon -->
                     <div class="form-group">
-                        <label for="formFile" class="form-label">Icon</label>
-                        <input name="icon" class="form-control" type="file" id="formIcon" accept="image/*">
+                        <label for="formIcon" class="form-label">Icon</label>
+                        <input name="icon" class="form-control @error('icon') is-invalid @enderror" type="file" id="formIcon" accept="image/*">
+                        @error('icon')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
                     </div>
-
-                    <img src="https://i.stack.imgur.com/y9DpT.jpg" style="border-radius: 20px; max-width: 300px" id="iconPreview" class="img-fluid img-thumbnail"  alt="Responsive image">
+                    <img src="https://i.stack.imgur.com/y9DpT.jpg" style="border-radius: 20px; max-width: 300px" id="iconPreview" class="img-fluid img-thumbnail" alt="Responsive image">
                 </div>
 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Add Data</button>
                 </div>
             </div>
-
         </form>
-
     </div>
 </div>
+
 
 @push('script')
     <script>
