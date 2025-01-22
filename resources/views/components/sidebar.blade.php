@@ -54,7 +54,7 @@
                         <li class="submenu-item   {{ Request::is('company-profile/slider') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/slider') }}">Slider</a>
                         </li>
-                        <li class="submenu-item {{ Request::is('company-profile/client') ? 'active' : '' }}">
+                        {{-- <li class="submenu-item {{ Request::is('company-profile/client') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/client') }}">List Klien</a>
                         </li>
                         <li class="submenu-item {{ Request::is('company-profile/brand') ? 'active' : '' }}">
@@ -65,7 +65,7 @@
                         </li>
                         <li class="submenu-item {{ Request::is('company-profile/whatsapp/manage') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/whatsapp/manage') }}">Manage Whatsapp</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 
