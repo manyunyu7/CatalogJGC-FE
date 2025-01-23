@@ -103,7 +103,7 @@ class StaffController extends Controller
         return back()->with('error', 'Failed to update user');
     }
 
-    public function destroy($id)
+    public function destroy(Request $request,$id)
     {
         $token = $request->cookie('killaToken');
         $response = Http::withToken($token)->delete(env('URL_BE') . "cms-user/destroy/{$id}");
