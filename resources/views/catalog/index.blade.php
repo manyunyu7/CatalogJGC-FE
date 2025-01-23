@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
 
 
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     <link rel="stylesheet" href="{{ asset('catalog/catalog.css') }}" />
     <title>E-Catalog JGC</title>
 </head>

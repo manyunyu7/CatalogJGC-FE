@@ -28,6 +28,7 @@ Route::post("/login-action",[AuthController::class, 'login'])->name('login-actio
 
 Route::view("/login", 'auth/login')->name('login');
 Route::view("/detail", 'catalog/detail');
+Route::view("/detailjg", 'catalog/detailjg');
 
 Route::get("/login",[AuthController::class,'loginView']);
 

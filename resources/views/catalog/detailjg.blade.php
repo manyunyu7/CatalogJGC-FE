@@ -1,0 +1,1543 @@
+<html lang="en" class="__variable_6b8127 text-tertiary-950" style="">
+
+<head>
+    <link rel="stylesheet" href="/_next/static/css/d9624a49594cc664.css" data-precedence="next">
+    <link rel="stylesheet" href="/_next/static/css/bb0d09ee6f118cd7.css" data-precedence="next">
+    <link rel="stylesheet" href="{{ asset('catalog/catalog.css') }}" />
+
+    <link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-09681df025376fbd.js">
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-WVRLJWPSSK&amp;cx=c&amp;_slc=1"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-VW9HCWSLDB&amp;cx=c&amp;_slc=1"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/destination?id=AW-11087126952&amp;l=dataLayer&amp;cx=c&amp;gtm=45Xe51m0v810448747za200"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/destination?id=AW-778922051&amp;l=dataLayer&amp;cx=c&amp;gtm=45Xe51m0v810448747za200"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/destination?id=AW-821169959&amp;l=dataLayer&amp;cx=c&amp;gtm=45Xe51m0v810448747za200"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-7J0WMM94CX&amp;l=dataLayer&amp;cx=c&amp;gtm=45Xe51m0v810448747za200"></script>
+    <script src="/_next/static/chunks/fd9d1056-6f6fb33c427c814f.js" async=""></script>
+    <script src="/_next/static/chunks/23-bab5e34bc49a5eb2.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-e93b1c93e3baf80a.js" async=""></script>
+    <script src="/_next/static/chunks/app/not-found-995a239115df0583.js" async=""></script>
+    <script src="/_next/static/chunks/173-bc8f6f0d4394add7.js" async=""></script>
+    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=GTM-N2XQGKT" as="script">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" nomodule=""></script>
+    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+    <link rel="preload" href="/_next/static/media/2b3f1035ed87a788-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2">
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/821169959/?random=1737630233426&amp;cv=11&amp;fst=1737630233426&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0z8810448747za201zb810448747&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script>
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/778922051/?random=1737630233440&amp;cv=11&amp;fst=1737630233440&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0z8810448747za201zb810448747&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=NUBpCKOYlY8BEMPQtfMC&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script>
+    <script attributionsrc="" type="text/javascript" async=""
+        src="https://www.googleadservices.com/pagead/conversion/11087126952/?random=1737630233464&amp;cv=11&amp;fst=1737630233464&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je51m0v9101798594z8810448747za201&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=2veZCK7l8ecZEKjD4KYp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;rfmt=3&amp;fmt=4"></script>
+    <script attributionsrc="" type="text/javascript" async=""
+        src="https://www.googleadservices.com/pagead/conversion/11087126952/?random=1737630233466&amp;cv=11&amp;fst=1737630233466&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je51m0v9101798594z8810448747za201&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=IkIfCIvE5ecZEKjD4KYp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;rfmt=3&amp;fmt=4"></script>
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11087126952/?random=1737630233492&amp;cv=11&amp;fst=1737630233492&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0v9101798594z8810448747za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608~102504186&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+    <link rel="preload" href="/misc/rectangle.svg" as="image" fetchpriority="high">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Mahakam The Signature | Jakarta Garden City</title>
+    <meta name="description"
+        content="<blockquote><p style=&quot;text-align: justify&quot;>This residence offers numerous advantages and is expected to be well-received by modern individuals seeking a home in Jakarta. Key benefits include its strategic location within Jakarta Garden City, a rapidly growing 370-hectare township that boasts a wide range of commercial and lifestyle amenities, allowing residents to fulfill their daily needs without having to leave the area.<br><br>Mahakam The Signature consists of several phases, namely the Mahakam cluster phase 2 and currently we are developing Mahakam phase 3. Its location is highly strategic, being just a short distance from IKEA, AEON Mall, Global Mandiri School, and the upcoming Mayapada Hospital, East Jakarta. It is also conveniently located 5 minutes from the Cakung Timur Toll Gate and 10 minutes from Kelapa Gading (Mall of Indonesia). Access to the cluster is via the main gate from Cakung Timur Toll Gate and Jalan Raya Bekasi.</p></blockquote>">
+    <meta property="og:title" content="Mahakam The Signature | Jakarta Garden City">
+    <meta property="og:description"
+        content="<blockquote><p style=&quot;text-align: justify&quot;>This residence offers numerous advantages and is expected to be well-received by modern individuals seeking a home in Jakarta. Key benefits include its strategic location within Jakarta Garden City, a rapidly growing 370-hectare township that boasts a wide range of commercial and lifestyle amenities, allowing residents to fulfill their daily needs without having to leave the area.<br><br>Mahakam The Signature consists of several phases, namely the Mahakam cluster phase 2 and currently we are developing Mahakam phase 3. Its location is highly strategic, being just a short distance from IKEA, AEON Mall, Global Mandiri School, and the upcoming Mayapada Hospital, East Jakarta. It is also conveniently located 5 minutes from the Cakung Timur Toll Gate and 10 minutes from Kelapa Gading (Mall of Indonesia). Access to the cluster is via the main gate from Cakung Timur Toll Gate and Jalan Raya Bekasi.</p></blockquote>">
+    <meta property="og:image" content="https://api-web.jakartagardencity.com/8prR526w7M1725520064958.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:alt" content="Mahakam The Signature">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mahakam The Signature | Jakarta Garden City">
+    <meta name="twitter:description"
+        content="<blockquote><p style=&quot;text-align: justify&quot;>This residence offers numerous advantages and is expected to be well-received by modern individuals seeking a home in Jakarta. Key benefits include its strategic location within Jakarta Garden City, a rapidly growing 370-hectare township that boasts a wide range of commercial and lifestyle amenities, allowing residents to fulfill their daily needs without having to leave the area.<br><br>Mahakam The Signature consists of several phases, namely the Mahakam cluster phase 2 and currently we are developing Mahakam phase 3. Its location is highly strategic, being just a short distance from IKEA, AEON Mall, Global Mandiri School, and the upcoming Mayapada Hospital, East Jakarta. It is also conveniently located 5 minutes from the Cakung Timur Toll Gate and 10 minutes from Kelapa Gading (Mall of Indonesia). Access to the cluster is via the main gate from Cakung Timur Toll Gate and Jalan Raya Bekasi.</p></blockquote>">
+    <meta name="twitter:image" content="https://api-web.jakartagardencity.com/8prR526w7M1725520064958.png">
+    <meta name="twitter:image:width" content="800">
+    <meta name="twitter:image:height" content="600">
+    <meta name="twitter:image:alt" content="Mahakam The Signature">
+    <meta name="next-size-adjust">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <link rel="preload" as="image" fetchpriority="high"
+        imagesrcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=3840&amp;q=75 3840w"
+        imagesizes="full">
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11087126952/?random=1737630237986&amp;cv=11&amp;fst=1737630237986&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0v9101798594za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608~102504186&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen%2Fproperties%2Fresidential%2FMahakam%2520The%2520Signature&amp;ref=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Mahakam%20The%20Signature%20%7C%20Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dpage_view&amp;rfmt=3&amp;fmt=4"></script>
+</head>
+
+<body style="overflow: auto;">
+    <div class="fixed z-50">
+        <div class="flex lg:hidden flex-col-reverse">
+            <div class="z-10 transition-all duration-300 ease-in-out
+            bg-white text-tertiary-950 border-b border-zinc-100
+            shadow-lg
+            false
+          ">
+                <div class="flex items-center justify-between w-screen h-[68px]"><button type="button"
+                        class="flex items-center m-4"><span class="i-mdi-menu w-[24px] h-[24px]"></span></button>
+                    <div class="relative w-[94px] h-full"><img alt="logo" loading="lazy" width="94" height="60"
+                            decoding="async" data-nimg="1" class="object-contain
+                    absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                    opacity-0
+
+                  " style="color:transparent"
+                            srcset="/_next/image?url=%2Ficons%2Flogo-white.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Ficons%2Flogo-white.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Ficons%2Flogo-white.png&amp;w=256&amp;q=75"><img alt="logo"
+                            loading="lazy" width="94" height="60" decoding="async" data-nimg="1" class="object-contain
+                    absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                    opacity-0
+                    opacity-100
+                    opacity-0
+                  " style="color:transparent"
+                            srcset="/_next/image?url=%2Ficons%2Flogo-green.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Ficons%2Flogo-green.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Ficons%2Flogo-green.png&amp;w=256&amp;q=75"></div><button
+                        type="button" class="flex items-center m-4"><span
+                            class="i-mdi-search w-[24px] h-[24px]"></span></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hidden lg:block bg-primary-base-700 w-screen">
+                <div class="container mx-auto flex items-center justify-between text-white h-[42px] text-xs">
+                    <div class="flex items-center gap-7"><a
+                            href="https://www.facebook.com/JakartaGardenCityOfficialPage/?locale=id_ID"
+                            title="Social Media" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center p-1"><span class="i-mdi-facebook w-[18px] h-[18px]"></span></a><a
+                            href="https://www.instagram.com/jakartagardencity/?hl=en" title="Social Media"
+                            target="_blank" rel="noopener noreferrer" class="flex items-center p-1"><span
+                                class="i-mdi-instagram w-[18px] h-[18px]"></span></a><a
+                            href="https://www.youtube.com/@jktgardencity/" title="Social Media" target="_blank"
+                            rel="noopener noreferrer" class="flex items-center p-1"><span
+                                class="i-mdi-youtube w-[18px] h-[18px]"></span></a><a
+                            href="https://www.tiktok.com/@official_jgc" title="Social Media" target="_blank"
+                            rel="noopener noreferrer" class="flex items-center p-1"><span
+                                class="i-ic-baseline-tiktok w-[18px] h-[18px]"></span></a>
+                        <div class="flex items-center justify-between gap-3"><span
+                                class="i-mdi-call w-[18px] h-[18px]"></span><a href="tel:622146838888"
+                                class="underline">(+6221) 4683 8888</a></div>
+                    </div>
+                    <div class="flex items-center"><button type="button" class="flex items-center gap-4 px-6">
+                            <div class="">Search</div><span class="i-mdi-search w-[18px] h-[18px]"></span>
+                        </button>
+                        <div class="relative">
+                            <div class="flex items-center gap-4 px-6">
+                                <div class="uppercase">en</div><span
+                                    class="i-mdi-chevron-down w-[18px] h-[18px]"></span>
+                            </div>
+                            <div class="absolute bg-white shadow-lg
+        hidden
+        ">
+                                <div
+                                    class="px-6 py-2 text-sm text-primary-base-700 hover:text-white hover:bg-primary-base-700 cursor-pointer ">
+                                    <div class="uppercase">id</div>
+                                </div>
+                                <div
+                                    class="px-6 py-2 text-sm text-primary-base-700 hover:text-white hover:bg-primary-base-700 cursor-pointer ">
+                                    <div class="uppercase">en</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="
+            transition-all duration-300 ease-in-out border-b
+            bg-white text-tertiary-950
+            false
+            border-transparent shadow-lg
+          ">
+                <div
+                    class="container mx-auto hidden lg:flex items-center justify-between h-[74px] text-xs leading-relaxed font-bold">
+                    <a class="relative w-[90px] h-full cursor-pointer" href="/en"><img alt="logo" loading="lazy"
+                            width="90" height="60" decoding="async" data-nimg="1" class="
+                  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                  object-contain
+                  transition-opacity duration-300 ease-in-out
+                  opacity-0
+                " style="color:transparent"
+                            srcset="/_next/image?url=%2Ficons%2Flogo-white.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Ficons%2Flogo-white.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Ficons%2Flogo-white.png&amp;w=256&amp;q=75"><img alt="logo"
+                            loading="lazy" width="90" height="60" decoding="async" data-nimg="1" class="
+                  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                  object-contain
+                  transition-opacity duration-300 ease-in-out
+                  opacity-100
+                " style="color:transparent"
+                            srcset="/_next/image?url=%2Ficons%2Flogo-green.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Ficons%2Flogo-green.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Ficons%2Flogo-green.png&amp;w=256&amp;q=75"></a>
+                    <div class="flex gap-4 h-full"><a class="flex items-center px-9 cursor-pointer" href="/en">
+                            <div class="
+                    transition-color duration-300 ease-in-out
+                    border-b border-transparent
+                  false
+                  false
+                  ">Home</div>
+                        </a><a class="flex items-center px-9 cursor-pointer" href="/en/about-us">
+                            <div class="border-b text-nowrap
+                  border-transparent">About Us</div>
+                        </a>
+                        <div class="relative flex items-center px-9 cursor-default">
+                            <div class="flex items-center border-b
+                    text-primary-base-700 border-primary-base-700
+                  ">Properties<span class="i-mdi-chevron-down w-4 h-4 ml-2 transition-transform ease-in-out "></span>
+                            </div>
+                            <div class="
+        hidden
+        bottom-0 translate-y-full
+        z-50
+        absolute -translate-x-1/2  left-1/2
+        transition-all duration-300 ease-in-out
+      ">
+                                <div
+                                    class="flex bg-white w-[450px] h-[280px] border border-zinc-100 rounded-2xl shadow-lg">
+                                    <div class="flex flex-col border-r border-zinc-100"><a
+                                            class="text-xs text-zinc-950 border-b border-zinc-100 p-4 w-[150px] cursor-pointer hover:bg-zinc-50 bg-zinc-50 rounded-tl-2xl"
+                                            href="/en/properties/residential/Mahakam The Signature">Residential</a><a
+                                            class="text-xs text-zinc-950 border-b border-zinc-100 p-4 w-[150px] cursor-pointer hover:bg-zinc-50 false false"
+                                            href="/en/properties/apartment/Cleon Park Apartment">Apartment</a><a
+                                            class="text-xs text-zinc-950 border-b border-zinc-100 p-4 w-[150px] cursor-pointer hover:bg-zinc-50 false false"
+                                            href="/en/properties/commercial/Jakarta Business District (JBD)">Commercial</a>
+                                    </div>
+                                    <div class="pl-4 pt-4 w-full h-full">
+                                        <div class="flex flex-col gap-3 w-full h-full">
+                                            <div class="text-xs text-zinc-700 px-3">Residential</div>
+                                            <div class="flex flex-col gap-3 pr-3 pb-4 w-full h-full overflow-auto"><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Mahakam The Signature"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Mahakam The Signature
+                                                    </div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Vastu"><img alt="" loading="lazy"
+                                                        width="28" height="28" decoding="async" data-nimg="1"
+                                                        class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Vastu</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/The Essence"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">The Essence</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Mahakam"><img alt="" loading="lazy"
+                                                        width="28" height="28" decoding="async" data-nimg="1"
+                                                        class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Mahakam</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/La Seine"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">La Seine</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Shinano"><img alt="" loading="lazy"
+                                                        width="28" height="28" decoding="async" data-nimg="1"
+                                                        class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Shinano</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Thames"><img alt="" loading="lazy"
+                                                        width="28" height="28" decoding="async" data-nimg="1"
+                                                        class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Thames</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Mississippi"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Mississippi</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/D'Banyan"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">D'Banyan</div>
+                                                </a><a
+                                                    class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                                    href="/en/properties/residential/Palm Spring"><img alt=""
+                                                        loading="lazy" width="28" height="28" decoding="async"
+                                                        data-nimg="1" class="rounded-lg w-7 h-7 object-contain"
+                                                        srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=64&amp;q=75 2x"
+                                                        src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=64&amp;q=75"
+                                                        style="color: transparent;">
+                                                    <div class="text-xs text-zinc-950 font-bold">Palm Spring</div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="relative flex items-center px-9 cursor-pointer" href="/en/facilities">
+                            <div>
+                                <div class="flex items-center border-b
+                    border-transparent
+                    ">Facilities<span class="i-mdi-chevron-down w-4 h-4 ml-2 transition-transform ease-in-out "></span>
+                                </div>
+                                <div class="
+        hidden
+        bottom-0 translate-y-full
+        z-50
+        absolute -translate-x-1/2  left-1/2
+        transition-all duration-300 ease-in-out
+      ">
+                                    <div
+                                        class="flex flex-col gap-3 p-4 bg-white w-[300px] border border-zinc-100 rounded-2xl shadow-lg overflow-auto">
+                                        <a class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Worship Place">
+                                            <div class="text-xs text-zinc-950 font-bold">Worship Place</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Health Care">
+                                            <div class="text-xs text-zinc-950 font-bold">Health Care</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Education">
+                                            <div class="text-xs text-zinc-950 font-bold">Education</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Culinary">
+                                            <div class="text-xs text-zinc-950 font-bold">Culinary</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Sport Center">
+                                            <div class="text-xs text-zinc-950 font-bold">Sport Center</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Lifestyle">
+                                            <div class="text-xs text-zinc-950 font-bold">Lifestyle</div>
+                                        </a><a
+                                            class="flex items-center gap-3 p-3 hover:bg-secondary-50 w-full rounded-xl cursor-pointer"
+                                            href="/en/facilities/Estate Services">
+                                            <div class="text-xs text-zinc-950 font-bold">Estate Services</div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </a><a class="flex items-center px-9 cursor-pointer" href="/en/news">
+                            <div class="border-b text-nowrap
+                  border-transparent">News</div>
+                        </a><a class="flex items-center px-9 cursor-pointer" href="/en/promo">
+                            <div class="border-b text-nowrap
+                  border-transparent">Promo</div>
+                        </a>
+                    </div><a href="/en/contact-us"><button type="button"
+                            class="bg-primary-base-700 text-white text-nowrap font-bold px-6 py-3 rounded-full hover:bg-primary-900 transition-colors duration-300 ease-in-out">Contact
+                            Us</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="
+          transition-opacity duration-300 ease-in-out fixed z-50 inset-0 bg-black/50
+          opacity-0 pointer-events-none">
+            <div class="p-4 lg:pt-7 mt-[56px] lg:mt-[116px] lg:w-2/3 lg:mx-auto"><label class="flex items-center gap-3 w-full h-full
+            p-4 bg-white border-[1.5px] border-primary-base-700 rounded-2xl shadow-md
+        "><span class="i-mdi-search w-6 h-6 p-3 text-zinc-500"></span><input id="input-search" type="search"
+                        class="w-full text-zinc-700 bg-transparent outline-none lg:text-lg" placeholder="Search"
+                        autofocus="" value=""><span
+                        class="hidden i-mdi-close-circle-outline w-5 h-5 p-2 text-zinc-500"></span></label>
+                <div class="flex flex-wrap items-center gap-1 lg:gap-2 mt-2"><a
+                        href="/en/properties/residential/Mahakam The Signature">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            Residential</div>
+                    </a><a href="/en/properties/apartment/Cleon Park Apartment">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            Apartment</div>
+                    </a><a href="/en/properties/commercial/Jakarta Business District (JBD)">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            Commercial</div>
+                    </a><a href="/en/facilities">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            Facilities</div>
+                    </a><a href="/en/news">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            News</div>
+                    </a><a href="/en/promo">
+                        <div
+                            class="flex items-center justify-center px-4 py-2 w-fit text-xs lg:text-sm text-primary-base-700 bg-white border border-primary-base-700 rounded-full">
+                            Promo</div>
+                    </a></div>
+                <div class="hidden lg:flex items-center gap-3 p-4 mt-2 bg-white bg-opacity-80 rounded-xl">
+                    <div class="text-sm bg-white border-[0.75px] border-zinc-200 px-2 py-1 rounded-md">Enter</div>
+                    <div class="text-zinc-700 text-sm">To perform a search</div>
+                </div>
+            </div>
+        </div>
+    </div><!--$--><!--$--><!--/$--><!--/$-->
+    <div class="pt-[68px] lg:pt-[116px]">
+        <div class="lg:p-4 !pb-0 flex flex-col lg:gap-4">
+            <div class="bg-secondary-50 pt-4 lg:rounded-2xl">
+                <div class="flex items-center lg:justify-center overflow-auto h-[52px] lg:h-[60px]">
+                    <div class="text-center text-sm lg:text-lg font-bold px-5 lg:px-10 py-4 w-full lg:w-fit lg:min-w-[180px] rounded-t-3xl cursor-pointer
+              text-white bg-primary-base-700
+            ">Residential</div>
+                    <div class="text-center text-sm lg:text-lg font-bold px-5 lg:px-10 py-4 w-full lg:w-fit lg:min-w-[180px] rounded-t-3xl cursor-pointer
+              false
+            ">Apartment</div>
+                    <div class="text-center text-sm lg:text-lg font-bold px-5 lg:px-10 py-4 w-full lg:w-fit lg:min-w-[180px] rounded-t-3xl cursor-pointer
+              false
+            ">Commercial</div>
+                </div>
+                <div class="flex items-center lg:justify-center gap-6 lg:gap-15 px-4 bg-primary-base-700 lg:rounded-2xl w-full h-[90px] overflow-x-auto overflow-y-hidden"
+                    style="scrollbar-width: none;"><button type="button" class="hidden lg:flex items-center justify-center bg-white p-3 rounded-full
+              cursor-not-allowed opacity-25
+              " disabled=""><span class="i-mdi-arrow-left text-primary-base-700 text-xl"></span></button>
+                    <div class="flex items-center   gap-6 lg:gap-15 w-fit h-full overflow-x-auto overflow-y-hidden"
+                        style="scrollbar-width: none;">
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fl3ubHOKrOF1725520064865.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-100
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FIXptoEq0Lr1725451732692.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FObSdbxXKlo1725502761991.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FMFgl2HvGC51725509608825.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FR4EvfURENj1725525593370.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F5SZHsdiE9w1725505026328.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS0ZNCCzNbi1725525603215.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOVhJ3tjZfj1725525611642.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9jGS4JfEAb1725525553274.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                        <div class="flex-none relative cursor-pointer"><img alt="logo" loading="lazy" width="0"
+                                height="0" decoding="async" data-nimg="1"
+                                class="w-[70px] h-[70px] object-contain rounded-full" sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FW9pjTk0n5d1725525541458.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"><img alt="rectangle" fetchpriority="high" width="24"
+                                height="18" decoding="async" data-nimg="1" class="absolute -bottom-3 left-1/2 -translate-x-1/2
+                  opacity-0
+                " src="/misc/rectangle.svg" style="color: transparent;"></div>
+                    </div><button type="button" class="hidden lg:flex items-center justify-center bg-white p-3 rounded-full
+              false
+            "><span class="i-mdi-arrow-right text-primary-base-700 text-xl"></span></button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-9 lg:gap-11 p-4 lg:p-0 pb-15 lg:pb-11">
+                <div class="flex flex-col gap-3 lg:gap-4">
+                    <div class="relative"><img alt="property" fetchpriority="high" width="0" height="0" decoding="async"
+                            data-nimg="1" class="w-full h-[328px] lg:h-[546px] object-cover rounded-2xl cursor-pointer"
+                            sizes="full"
+                            srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75 3840w"
+                            src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75"
+                            style="color: transparent;"><button type="button"
+                            class="absolute top-4 right-4 text-white text-2xl lg:text-4xl"><span
+                                class="i-ic-fullscreen"></span></button>
+                        <div class="hidden lg:block"><button type="button"
+                                class="absolute top-1/2 left-4 transform -translate-y-1/2 flex items-center justify-center bg-[#27272a] bg-opacity-90 rounded-full w-12 h-12"><span
+                                    class="i-mdi-arrow-left text-lg text-white"></span></button><button type="button"
+                                class="absolute top-1/2 right-4 transform -translate-y-1/2 flex items-center justify-center bg-[#27272a] bg-opacity-90 rounded-full w-12 h-12"><span
+                                    class="i-mdi-arrow-right text-lg text-white"></span></button></div>
+                    </div>
+                    <div class="relative">
+                        <div class="flex gap-3 lg:gap-4 overflow-auto" style="scrollbar-width: none;">
+                            <div class="relative flex-none">
+                                <div class="
+                      block
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FiQcgXOXrCr1729497898106.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2Fa6RZmQjkzh1729497919944.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FXOS9gyDwUX1729497919782.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FeHDgjj5swq1729497919170.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FYCAo0Noznp1729497919920.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBab2ToWBEX1729497919412.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FsWJ3iqWC6t1729497919922.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                            <div class="relative flex-none">
+                                <div class="
+                      hidden
+                      absolute w-full h-full bg-primary-base-700 bg-opacity-50 rounded-xl"></div><img alt="property"
+                                    fetchpriority="high" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[66px] lg:w-[220px] h-[66px] lg:h-[100px] object-cover rounded-xl"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FP9hQxHaNFm1729497919925.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;">
+                            </div>
+                        </div>
+                        <div class="hidden lg:block"><button type="button"
+                                class="absolute left-0 top-1/2 transform -translate-y-1/2 hidden items-center justify-center bg-[#27272a] bg-opacity-90 rounded-r-lg w-11 h-11"><span
+                                    class="i-mdi-chevron-left text-2xl text-white"></span></button><button type="button"
+                                class="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center justify-center bg-[#27272a] bg-opacity-90 rounded-l-lg w-11 h-11"><span
+                                    class="i-mdi-chevron-right text-2xl text-white"></span></button></div>
+                    </div>
+                </div>
+                <div class="absolute transition-all duration-300 ease-in-out z-50
+      opacity-0 pointer-events-none
+    ">
+                    <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                        <div class="absolute inset-0">
+                            <div class="relative h-full w-full">
+                                <div class="absolute top-4 left-4 text-white"></div><button type="button"
+                                    class="absolute top-4 right-4 text-white text-3xl"><span
+                                        class="i-ic-close"></span></button>
+                                <div
+                                    class="absolute bottom-0 flex items-center justify-center gap-10 bg-black bg-opacity-30 w-full py-2 z-10">
+                                    <button type="button" class="flex items-center text-white text-3xl"><span
+                                            class="i-ic-chevron-left"></span></button>
+                                    <div class="flex items-center justify-center text-white font-semibold w-15">1 / 9
+                                    </div><button type="button" class="flex items-center text-white text-3xl"><span
+                                            class="i-ic-chevron-right"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative w-screen lg:max-w-[900px] min-h-56 lg:min-h-135 max-h-screen px-4"><img
+                                alt="Media 0" loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                class="w-screen lg:max-w-[900px] min-h-56 lg:min-h-135 max-h-screen object-contain"
+                                sizes="full"
+                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75 3840w"
+                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F497tMe0AxP1729497898213.png&amp;w=3840&amp;q=75"
+                                style="color: transparent;"></div>
+                    </div>
+                </div>
+                <div class="lg:container lg:mx-auto lg:px-0 flex flex-col lg:flex-row lg:justify-between gap-6">
+                    <div class="flex flex-col lg:flex-row gap-6"><img alt="logo" loading="lazy" width="0" height="0"
+                            decoding="async" data-nimg="1"
+                            class="hidden lg:block w-[100px] lg:w-[165px] h-[100px] lg:h-[165px] object-contain rounded-2xl border border-zinc-100"
+                            sizes="full"
+                            srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=3840&amp;q=75 3840w"
+                            src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=3840&amp;q=75"
+                            style="color: transparent;">
+                        <div class="flex flex-col justify-center gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-4">
+                                <div class="text-2xl lg:text-4xl font-bold">Mahakam The Signature</div><a
+                                    href="https://maps.app.goo.gl/FogRjJcNRJYpL1EY9" target="_blank"
+                                    rel="noreferrer noopener"
+                                    class="text-sm lg:text-base text-primary-base-700 underline">Jakarta</a>
+                            </div>
+                            <div class="flex gap-4 lg:items-center">
+                                <div class="hidden lg:block text-sm lg:text-xs">Promo:</div>
+                                <div class="flex flex-wrap gap-3">
+                                    <div class="flex items-center"><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-left.svg" style="color: transparent;">
+                                        <div
+                                            class="text-xs text-white tracking-wide font-bold bg-gradient-to-r from-[#D4AE2E] to-[#C07F00] px-1 py-2">
+                                            AJB Cost Subsidy 1%</div><img alt="promo" loading="lazy" width="0"
+                                            height="0" decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-right.svg" style="color: transparent;">
+                                    </div>
+                                    <div class="flex items-center"><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-left.svg" style="color: transparent;">
+                                        <div
+                                            class="text-xs text-white tracking-wide font-bold bg-gradient-to-r from-[#D4AE2E] to-[#C07F00] px-1 py-2">
+                                            KPR Cost Subsidy 3%</div><img alt="promo" loading="lazy" width="0"
+                                            height="0" decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-right.svg" style="color: transparent;">
+                                    </div>
+                                    <div class="flex items-center"><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-left.svg" style="color: transparent;">
+                                        <div
+                                            class="text-xs text-white tracking-wide font-bold bg-gradient-to-r from-[#D4AE2E] to-[#C07F00] px-1 py-2">
+                                            Discount 1%</div><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-right.svg" style="color: transparent;">
+                                    </div>
+                                    <div class="flex items-center"><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-left.svg" style="color: transparent;">
+                                        <div
+                                            class="text-xs text-white tracking-wide font-bold bg-gradient-to-r from-[#D4AE2E] to-[#C07F00] px-1 py-2">
+                                            DP Subsidy 10%</div><img alt="promo" loading="lazy" width="0" height="0"
+                                            decoding="async" data-nimg="1" class="w-[10.66px] h-[32px]"
+                                            src="/misc/promo-chip-right.svg" style="color: transparent;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-fit
+      lg:w-fit
+      false
+      false
+      text-primary-base-700 border border-zinc-100 shadow hover:bg-zinc-100
+      rounded-full transition-colors duration-300 ease-in-out"><img alt="pdf" loading="lazy" width="24" height="24"
+                                decoding="async" data-nimg="1" class="h-5 lg:h-6 mr-2" src="/icons/pdf.svg"
+                                style="color: transparent;">View Brochure</button></div>
+                    <div class="
+        opacity-0 pointer-events-none
+        transition-opacity duration-300 ease-in-out
+        fixed inset-0 bg-black bg-opacity-50 w-screen h-dvh lg:h-screen z-50">
+                        <div class="flex items-center justify-center px-4 py-16 w-full h-full">
+                            <div class="relative bg-white rounded-2xl
+            false
+            lg:max-w-[448px]
+            shadow-md w-full max-w-xs h-full lg:h-fit overflow-y-auto"><button type="button"
+                                    class="absolute top-4 right-4 z-10"><span class="i-mdi-close
+                transition-colors duration-300 ease-in-out text-2xl
+              text-zinc-300 hover:text-zinc-500"></span></button>
+                                <form class="flex flex-col justify-center gap-9 lg:gap-6 p-6 lg:px-10 lg:py-16 h-full">
+                                    <div class="text-xl lg:text-2xl font-bold">Please fill out the form below</div>
+                                    <div class="flex flex-col gap-6 lg:gap-4">
+                                        <div class="relative w-full transition-all duration-300 ease-in-out"><label
+                                                class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="text" placeholder="Name" class="text-sm w-full outline-none" type="text" value=""
+                                                    name="name"></label></div>
+                                        <div class="relative w-full transition-all duration-300 ease-in-out"><label
+                                                class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="tel" placeholder="WhatsApp Number" class="text-sm w-full outline-none" type="tel"
+                                                    value="" name="phone"></label></div>
+                                        <div class="relative w-full transition-all duration-300 ease-in-out"><label
+                                                class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="email" placeholder="Email" class="text-sm w-full outline-none" type="email" value=""
+                                                    name="email"></label></div>
+                                    </div><button type="submit" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      text-white bg-primary-base-700 hover:bg-primary-900
+      false
+      false
+      rounded-full transition-colors duration-300 ease-in-out">View Brochure</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="
+        opacity-0 pointer-events-none
+        transition-opacity duration-300 ease-in-out
+        fixed inset-0 bg-black bg-opacity-50 w-screen h-dvh lg:h-screen z-50">
+                        <div class="flex items-center justify-center px-4 py-16 w-full h-full">
+                            <div class="relative bg-white rounded-2xl
+            false
+            lg:max-w-[448px]
+            shadow-md w-full max-w-xs h-full lg:h-fit overflow-y-auto"><button type="button"
+                                    class="absolute top-4 right-4 z-10"><span class="i-mdi-close
+                transition-colors duration-300 ease-in-out text-2xl
+              text-zinc-300 hover:text-zinc-500"></span></button>
+                                <div class="flex flex-col items-center justify-center gap-4 lg:gap-9 p-8 h-full">
+                                    <div
+                                        class="i-material-symbols-check-circle-rounded text-primary-base-700 w-15 lg:w-24 h-15 lg:h-24">
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-xl lg:text-2xl text-center font-bold">Thank you!</div>
+                                        <div class="text-sm lg:text-base text-center text-zinc-700">We will contact you
+                                            soon.</div>
+                                    </div><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      false
+      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50
+      false
+      rounded-full transition-colors duration-300 ease-in-out">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:container lg:mx-auto lg:px-0 flex flex-col gap-6 lg:gap-15">
+                    <div class="lg:flex lg:gap-[100px]">
+                        <div class="flex flex-col gap-6 lg:gap-11 lg:w-3/4">
+                            <div class="flex flex-col gap-6 lg:gap-11">
+                                <div class="flex flex-col gap-4 lg:gap-6">
+                                    <div class="text-xl lg:text-2xl font-bold">About</div><input id="aboutDropdown"
+                                        class="hidden" type="checkbox">
+                                    <div class="text-sm lg:text-lg text-zinc-700 h-full leading-relaxed line-clamp-3">
+                                        <blockquote>
+                                            <p style="text-align: justify">This residence offers numerous advantages and
+                                                is expected to be well-received by modern individuals seeking a home in
+                                                Jakarta. Key benefits include its strategic location within Jakarta
+                                                Garden City, a rapidly growing 370-hectare township that boasts a wide
+                                                range of commercial and lifestyle amenities, allowing residents to
+                                                fulfill their daily needs without having to leave the
+                                                area.<br><br>Mahakam The Signature consists of several phases, namely
+                                                the Mahakam cluster phase 2 and currently we are developing Mahakam
+                                                phase 3. Its location is highly strategic, being just a short distance
+                                                from IKEA, AEON Mall, Global Mandiri School, and the upcoming Mayapada
+                                                Hospital, East Jakarta. It is also conveniently located 5 minutes from
+                                                the Cakung Timur Toll Gate and 10 minutes from Kelapa Gading (Mall of
+                                                Indonesia). Access to the cluster is via the main gate from Cakung Timur
+                                                Toll Gate and Jalan Raya Bekasi.</p>
+                                        </blockquote>
+                                    </div><label for="aboutDropdown"
+                                        class="flex items-center text-sm lg:text-xs font-bold text-primary-base-700 cursor-pointer">
+                                        <div>Read More</div><span
+                                            class="i-mdi-chevron-down ml-2 text-xl transform transition-transform duration-300 ease-in-out"></span>
+                                    </label>
+                                </div>
+                                <div class="flex flex-col gap-4 lg:gap-6">
+                                    <div class="text-xl lg:text-2xl font-bold">Concept Design</div><input
+                                        id="conceptDropdown" class="hidden" type="checkbox">
+                                    <div class="text-sm lg:text-lg text-zinc-700 h-full leading-relaxed line-clamp-3">
+                                        <p style="text-align: justify">Mahakam The Signature has a unique design and
+                                            adopts 6 concepts that are currently needed by most people, namely
+                                            contemporary and prioritizing the concept of housing during the pandemic
+                                            that has not yet ended. What are the 6 concepts?<br><br>First, Welcome
+                                            Sanitation. Every house in Mahakam The Signature has a sanitation feature in
+                                            the form of a minimalist hand washing area with a modern look. Health and
+                                            family comfort come from a clean and sterile home. The easiest first step is
+                                            to get used to washing your hands before entering the house.<br><br>Second,
+                                            Hygienic Room On Next Door. There is a special bathroom located at the
+                                            entrance before going to another room to clean the body before meeting the
+                                            family after doing activities outside the home.<br><br>Third, Cross
+                                            Ventilation Design. The open plan design and layout that implements cross
+                                            ventilation, makes the air circulation in the room very good and not humid.
+                                            In addition to being good for health, the use of this design can save on
+                                            electricity and air conditioning (AC).<br><br>Fourth, Open &amp; Vast Room
+                                            Space. A large open space so that families and neighbors can gather and chat
+                                            in one room.<br><br>Fifth, Expand Your House Just Like Your Dream. The
+                                            standard layout plan is more than enough to meet the various needs of
+                                            residents. In the future, to realize their dream home, residents will decide
+                                            for themselves. For this reason, a building structure has been prepared for
+                                            the residential development plan.<br><br>Sixth, Work Anywhere With Different
+                                            Atmosphere. Several rooms with different atmospheres are available for work
+                                            from home needs.<br><br>In addition to the six concepts, Mahakam The
+                                            Signature also offers a cluster housing concept with an open garden and
+                                            children's playground that can be used by all residents.</p>
+                                    </div><label for="conceptDropdown"
+                                        class="flex items-center text-sm lg:text-xs font-bold text-primary-base-700 cursor-pointer">
+                                        <div>Read More</div><span
+                                            class="i-mdi-chevron-down ml-2 text-xl transform transition-transform duration-300 ease-in-out"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-6">
+                                <div class="flex flex-col gap-4">
+                                    <div class="text-xl lg:text-2xl font-bold">Floor Plan</div>
+                                    <div class="relative h-full">
+                                        <div class="z-10">
+                                            <div class="flex px-4 overflow-auto">
+                                                <div class="flex items-center justify-center text-center text-sm font-bold px-6 py-3 border border-b-2 min-w-[100px] cursor-pointer
+                        text-primary-base-700 border border-b-[3px] border-b-white border-zinc-200 rounded-t-2xl
+                      ">MTS 3</div>
+                                                <div class="flex items-center justify-center text-center text-sm font-bold px-6 py-3 border border-b-2 min-w-[100px] cursor-pointer
+                        border-transparent
+                      ">MTS 2</div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute bottom-[1px] border-0 border-t border-zinc-200 w-full -z-10">
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3 lg:gap-4 h-full overflow-x-auto">
+                                        <div class="flex flex-none items-center justify-center text-center text-sm px-4 py-3 border min-w-[100px] rounded-full cursor-pointer
+                      text-primary-base-700 bg-secondary-50 border-primary-base-700
+                    ">Topaz</div>
+                                        <div class="flex flex-none items-center justify-center text-center text-sm px-4 py-3 border min-w-[100px] rounded-full cursor-pointer
+                      text-zinc-700 border-zinc-200
+                    ">Sapphire</div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-4 lg:gap-6">
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-arrow-expand-all text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm text-zinc-700">LT:</div>
+                                                <div class="text-sm font-bold ">105m2</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-house text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm text-zinc-700">LB:</div>
+                                                <div class="text-sm font-bold ">156m2</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-bed text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm font-bold ">3 + 1</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-bathroom text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm font-bold ">4 + 1</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-sofa text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm font-bold ">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-kitchen text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm font-bold ">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-2"><span
+                                                class="i-mdi-car text-xl text-primary-base-700"></span>
+                                            <div class="flex gap-1">
+                                                <div class="text-sm font-bold ">2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <div class="flex gap-3 overflow-auto" style="scrollbar-width: none;">
+                                        <div class="relative flex-none">
+                                            <div
+                                                class="absolute bottom-4 left-4 text-sm lg:text-xs text-center text-white font-bold px-3 py-2 bg-black bg-opacity-50 rounded-full">
+                                                First Floor</div>
+                                            <div
+                                                class="absolute top-4 right-4 text-zinc-400 text-2xl lg:text-4xl cursor-pointer">
+                                                <span class="i-ic-fullscreen"></span></div><img alt="floor-plan"
+                                                loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                                class="w-[300px] lg:w-[438px] h-[300px] lg:h-[438px] object-cover border border-zinc-100 rounded-2xl cursor-pointer"
+                                                sizes="full"
+                                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=3840&amp;q=75 3840w"
+                                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=3840&amp;q=75"
+                                                style="color: transparent;">
+                                        </div>
+                                        <div class="relative flex-none">
+                                            <div
+                                                class="absolute bottom-4 left-4 text-sm lg:text-xs text-center text-white font-bold px-3 py-2 bg-black bg-opacity-50 rounded-full">
+                                                Second Floor</div>
+                                            <div
+                                                class="absolute top-4 right-4 text-zinc-400 text-2xl lg:text-4xl cursor-pointer">
+                                                <span class="i-ic-fullscreen"></span></div><img alt="floor-plan"
+                                                loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                                class="w-[300px] lg:w-[438px] h-[300px] lg:h-[438px] object-cover border border-zinc-100 rounded-2xl cursor-pointer"
+                                                sizes="full"
+                                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=3840&amp;q=75 3840w"
+                                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F9NGejWgtyI1727768153534.png&amp;w=3840&amp;q=75"
+                                                style="color: transparent;">
+                                        </div>
+                                        <div class="relative flex-none">
+                                            <div
+                                                class="absolute bottom-4 left-4 text-sm lg:text-xs text-center text-white font-bold px-3 py-2 bg-black bg-opacity-50 rounded-full">
+                                                Third Floor</div>
+                                            <div
+                                                class="absolute top-4 right-4 text-zinc-400 text-2xl lg:text-4xl cursor-pointer">
+                                                <span class="i-ic-fullscreen"></span></div><img alt="floor-plan"
+                                                loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                                class="w-[300px] lg:w-[438px] h-[300px] lg:h-[438px] object-cover border border-zinc-100 rounded-2xl cursor-pointer"
+                                                sizes="full"
+                                                srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=3840&amp;q=75 3840w"
+                                                src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FF58Mi3iRFx1727768153541.png&amp;w=3840&amp;q=75"
+                                                style="color: transparent;">
+                                        </div>
+                                    </div><button type="button"
+                                        class="hidden lg:flex absolute top-1/2 right-0 -translate-y-1/2 items-center justify-center bg-zinc-950 bg-opacity-95 w-[42px] h-[42px] rounded-l-lg"><span
+                                            class="i-mdi-chevron-right w-[24px] h-[24px] text-white"></span></button>
+                                </div>
+                            </div>
+                            <div class="absolute transition-all duration-300 ease-in-out z-50
+      opacity-0 pointer-events-none
+    ">
+                                <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                                    <div class="absolute inset-0">
+                                        <div class="relative h-full w-full">
+                                            <div class="absolute top-4 left-4 text-white">
+                                                <div class="font-semibold">First Floor</div>
+                                            </div><button type="button"
+                                                class="absolute top-4 right-4 text-white text-3xl"><span
+                                                    class="i-ic-close"></span></button>
+                                            <div
+                                                class="absolute bottom-0 flex items-center justify-center gap-10 bg-black bg-opacity-30 w-full py-2 z-10">
+                                                <button type="button"
+                                                    class="flex items-center text-white text-3xl"><span
+                                                        class="i-ic-chevron-left"></span></button>
+                                                <div
+                                                    class="flex items-center justify-center text-white font-semibold w-15">
+                                                    1 / 3</div><button type="button"
+                                                    class="flex items-center text-white text-3xl"><span
+                                                        class="i-ic-chevron-right"></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="relative w-screen lg:max-w-[900px] min-h-56 lg:min-h-135 max-h-screen px-4">
+                                        <img alt="Media 0" loading="lazy" width="0" height="0" decoding="async"
+                                            data-nimg="1"
+                                            class="w-screen lg:max-w-[900px] min-h-56 lg:min-h-135 max-h-screen object-contain"
+                                            sizes="full"
+                                            srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=3840&amp;q=75 3840w"
+                                            src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxR0M9qTKxf1727768153539.png&amp;w=3840&amp;q=75"
+                                            style="color: transparent;"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-xl lg:text-2xl font-bold">Cluster Facilities</div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Jogging Track</div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Playground</div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Security System 24 hours</div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Yoga Park</div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Pool</div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="flex p-1"><span
+                                                class="i-mdi-circle text-xs text-secondary-100"></span></div>
+                                        <div class="text-sm lg:text-base text-zinc-700">Clubhouse Cluster</div>
+                                    </div>
+                                </div><a class="text-sm lg:text-xs font-bold text-primary-base-700"
+                                    href="/en/facilities">See All JGC Facilities</a>
+                            </div>
+                        </div>
+                        <div
+                            class="hidden lg:block sticky border border-zinc-100 p-9 rounded-2xl h-fit top-[calc(117px+24px)]">
+                            <form class="flex flex-col gap-9">
+                                <div class="text-2xl font-bold">Interested?<br>Contact Us For More information!</div>
+                                <div class="flex flex-col gap-9 lg:gap-6">
+                                    <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="text" placeholder="Name" class="text-sm w-full outline-none" type="text" value=""
+                                                name="name"></label></div>
+                                    <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="tel" placeholder="WhatsApp Number" class="text-sm w-full outline-none" type="tel"
+                                                value="" name="phone"></label></div>
+                                    <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="email" placeholder="Email" class="text-sm w-full outline-none" type="email" value=""
+                                                name="email"></label></div>
+                                </div>
+                                <div class="flex flex-col items-center gap-4 lg:gap-3"><button type="submit" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      text-white bg-primary-base-700 hover:bg-primary-900
+      false
+      false
+      rounded-full transition-colors duration-300 ease-in-out">Send</button><span
+                                        class="text-xs text-zinc-700">Or</span><a
+                                        href="https://wa.me/6281388884446?text=I%20am%20interested%20in%20Mahakam%20The%20Signature"
+                                        target="_blank" rel="noreferrer noopener"><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      false
+      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50
+      false
+      rounded-full transition-colors duration-300 ease-in-out"><span class="i-mdi-whatsapp text-lg mr-2"></span>Contact
+                                            Us</button></a></div>
+                            </form>
+                            <div class="
+        opacity-0 pointer-events-none
+        transition-opacity duration-300 ease-in-out
+        fixed inset-0 bg-black bg-opacity-50 w-screen h-dvh lg:h-screen z-50">
+                                <div class="flex items-center justify-center px-4 py-16 w-full h-full">
+                                    <div class="relative bg-white rounded-2xl
+            false
+            lg:max-w-[448px]
+            shadow-md w-full max-w-xs h-full lg:h-fit overflow-y-auto"><button type="button"
+                                            class="absolute top-4 right-4 z-10"><span class="i-mdi-close
+                transition-colors duration-300 ease-in-out text-2xl
+              text-zinc-300 hover:text-zinc-500"></span></button>
+                                        <div
+                                            class="flex flex-col items-center justify-center gap-4 lg:gap-9 p-8 h-full">
+                                            <div
+                                                class="i-material-symbols-check-circle-rounded text-primary-base-700 w-15 lg:w-24 h-15 lg:h-24">
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <div class="text-xl lg:text-2xl text-center font-bold">Thank you!</div>
+                                                <div class="text-sm lg:text-base text-center text-zinc-700">We will
+                                                    contact you soon.</div>
+                                            </div><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      false
+      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50
+      false
+      rounded-full transition-colors duration-300 ease-in-out">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 lg:gap-4">
+                        <div class="flex items-end justify-between">
+                            <div class="text-xl lg:text-2xl font-bold">Other Properties</div>
+                            <div class="hidden lg:flex items-center justify-center gap-3"><button type="button" class="flex items-center justify-center
+          w-10 h-10
+         bg-white border border-primary-base-700 rounded-full cursor-not-allowed opacity-25" disabled=""><span class="i-mdi-arrow-left
+             text-base
+             text-primary-base-700"></span></button><button type="button" class="flex items-center justify-center
+          w-10 h-10
+            bg-white border border-primary-base-700 rounded-full "><span class="i-mdi-arrow-right
+             text-base
+             text-primary-base-700"></span></button></div>
+                        </div>
+                        <div class="flex gap-3 lg:gap-4 overflow-auto" style="scrollbar-width: none;"><a
+                                class="flex-none" href="/en/properties/residential/Mahakam The Signature"><img
+                                    alt="property" loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F8prR526w7M1725520064958.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Vastu"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FN0czvNFbzs1725451732724.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/The Essence"><img alt="property" loading="lazy"
+                                    width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FAL9ZYcphJW1725502762018.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Mahakam"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FcrwrokkJfd1725509608868.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/La Seine"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FjVWFnHmcZy1724690480064.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Shinano"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F6qajDHaowf1725505026368.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Thames"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FxWAW0HXPNB1724690822141.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Mississippi"><img alt="property" loading="lazy"
+                                    width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FBcn0pWqiiJ1724691496720.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/D'Banyan"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FNXQU8GhrIp1724690351858.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/residential/Palm Spring"><img alt="property" loading="lazy"
+                                    width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FVWHmFZZGMD1724689187550.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/apartment/Cleon Park Apartment"><img alt="property" loading="lazy"
+                                    width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FOW8ZZQJ7GS1724470548157.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/Jakarta Business District (JBD)"><img alt="property"
+                                    loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgayxEex8td1725507611639.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/New East"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FymObiwXwWU1725505307123.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/Cleon Park"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FhFCHlX6a761725504844210.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/The Walk"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FSIuqomS8xA1725508310062.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/The Savoy"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FS1OcV3o5ig1725505677880.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/Avenue"><img alt="property" loading="lazy" width="0"
+                                    height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2FgaS6hK55se1725507815331.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a><a class="flex-none"
+                                href="/en/properties/commercial/The Boulevard"><img alt="property" loading="lazy"
+                                    width="0" height="0" decoding="async" data-nimg="1"
+                                    class="w-[144px] h-[144px] object-contain rounded-2xl border border-zinc-100"
+                                    sizes="full"
+                                    srcset="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=16&amp;q=75 16w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=32&amp;q=75 32w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=48&amp;q=75 48w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=64&amp;q=75 64w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=96&amp;q=75 96w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=128&amp;q=75 128w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=256&amp;q=75 256w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=384&amp;q=75 384w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=3840&amp;q=75 3840w"
+                                    src="/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F1H7reR9xpF1725508577465.png&amp;w=3840&amp;q=75"
+                                    style="color: transparent;"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative block lg:hidden container mx-auto py-15 bg-secondary-50"><img alt="ornament"
+                    loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+                    class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-fit object-cover"
+                    src="/images/property-ornament.svg" style="color: transparent;">
+                <div class="relative bg-white border border-zinc-100 p-6 rounded-2xl h-fit">
+                    <form class="flex flex-col gap-9">
+                        <div class="text-2xl font-bold">Interested?<br>Contact Us For More information!</div>
+                        <div class="flex flex-col gap-9 lg:gap-6">
+                            <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="text" placeholder="Name" class="text-sm w-full outline-none" type="text" value=""
+                                        name="name"></label></div>
+                            <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="tel" placeholder="WhatsApp Number" class="text-sm w-full outline-none" type="tel"
+                                        value="" name="phone"></label></div>
+                            <div class="relative w-full transition-all duration-300 ease-in-out"><label class="pb-2 border-b block
+            border-zinc-300
+          "><input inputmode="email" placeholder="Email" class="text-sm w-full outline-none" type="email" value=""
+                                        name="email"></label></div>
+                        </div>
+                        <div class="flex flex-col items-center gap-4 lg:gap-3"><button type="submit" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      text-white bg-primary-base-700 hover:bg-primary-900
+      false
+      false
+      rounded-full transition-colors duration-300 ease-in-out">Send</button><span
+                                class="text-xs text-zinc-700">Or</span><a
+                                href="https://wa.me/6281388884446?text=I%20am%20interested%20in%20Mahakam%20The%20Signature"
+                                target="_blank" rel="noreferrer noopener"><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      false
+      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50
+      false
+      rounded-full transition-colors duration-300 ease-in-out"><span class="i-mdi-whatsapp text-lg mr-2"></span>Contact
+                                    Us</button></a></div>
+                    </form>
+                    <div class="
+        opacity-0 pointer-events-none
+        transition-opacity duration-300 ease-in-out
+        fixed inset-0 bg-black bg-opacity-50 w-screen h-dvh lg:h-screen z-50">
+                        <div class="flex items-center justify-center px-4 py-16 w-full h-full">
+                            <div class="relative bg-white rounded-2xl
+            false
+            lg:max-w-[448px]
+            shadow-md w-full max-w-xs h-full lg:h-fit overflow-y-auto"><button type="button"
+                                    class="absolute top-4 right-4 z-10"><span class="i-mdi-close
+                transition-colors duration-300 ease-in-out text-2xl
+              text-zinc-300 hover:text-zinc-500"></span></button>
+                                <div class="flex flex-col items-center justify-center gap-4 lg:gap-9 p-8 h-full">
+                                    <div
+                                        class="i-material-symbols-check-circle-rounded text-primary-base-700 w-15 lg:w-24 h-15 lg:h-24">
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="text-xl lg:text-2xl text-center font-bold">Thank you!</div>
+                                        <div class="text-sm lg:text-base text-center text-zinc-700">We will contact you
+                                            soon.</div>
+                                    </div><button type="button" class="flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full
+      lg:w-full
+      false
+      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50
+      false
+      rounded-full transition-colors duration-300 ease-in-out">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed bottom-2 right-2 z-10 flex flex-col items-center gap-2"><button type="button"
+            class="flex items-center justify-center w-12 h-12 bg-white border-2 border-primary-base-700 rounded-full transition-all duration-300 ease-in-out opacity-100"><span
+                class="i-mdi-arrow-up text-primary-base-700 text-xl"></span></button><a href="https://wa.link/n8kh8z"
+            target="_blank" rel="noreferrer noopener" class="cursor-pointer">
+            <div class="relative">
+                <div class="absolute w-[80px] h-[80px]">
+                    <div class="w-[80px] h-[80px] opacity-0"></div>
+                </div><iframe src="https://lottie.host/embed/cac40293-ca35-4282-8016-eb79a3baeee8/5Bpw315mYs.json"
+                    title="whatsapp" class="w-[80px] h-[80px]"></iframe>
+            </div>
+        </a></div>
+    <div class="relative lg:m-4"><img alt="footer-bg" loading="lazy" width="0" height="0" decoding="async" data-nimg="1"
+            class="absolute top-0 left-0 w-full h-full object-cover lg:rounded-2xl -z-10" style="color:transparent"
+            sizes="fill"
+            srcset="/_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=16&amp;q=75 16w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=3840&amp;q=75 3840w"
+            src="/_next/image?url=%2Fimages%2Ffooter-bg.png&amp;w=3840&amp;q=75">
+        <div class="flex flex-col gap-15 py-15 lg:py-[90px]">
+            <div class="lg:container lg:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-9 px-4">
+                <div class="flex flex-col gap-6 lg:gap-7 lg:col-span-4">
+                    <div class="text-lg font-bold">Visit Us</div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex gap-2"><span
+                                class="flex-none i-ic-outline-home-work text-secondary-base-500 w-6 h-6"></span>
+                            <div class="text-sm lg:text-base text-zinc-800">Sales Gallery, Main Boulevard, Jl. Jakarta
+                                Garden City Main Boulevard, Jakarta</div>
+                        </div>
+                        <div class="flex gap-2"><span
+                                class="flex-none i-ic-outline-access-time text-secondary-base-500 w-6 h-6"></span>
+                            <div class="text-sm lg:text-base text-zinc-800">Operational Hours<table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Monday<!-- --> - <!-- -->Saturday</td>
+                                            <td>:</td>
+                                            <td>09:00<!-- --> - <!-- -->20:00<!-- --> WIB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sunday</td>
+                                            <td>:</td>
+                                            <td>09:00<!-- --> - <!-- -->21:00<!-- --> WIB</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 lg:gap-7 lg:col-span-3">
+                    <div class="text-lg font-bold">Contact Us</div>
+                    <div class="flex flex-col gap-4 text-zinc-800 w-fit"><a href="tel:622146838888" target="_blank"
+                            rel="noreferrer noopener" class="flex items-center gap-2"><span
+                                class="i-mdi-phone-outline text-secondary-base-500 w-5 h-5"></span>
+                            <div class="text-sm lg:text-base underline">(+6221) 4683 8888</div>
+                        </a><a href="https://wa.me/6281388884446" target="_blank" rel="noreferrer noopener"
+                            class="flex items-center gap-2"><span
+                                class="i-mdi-whatsapp text-secondary-base-500 w-5 h-5"></span>
+                            <div class="text-sm lg:text-base underline">+62813 8888 4446</div>
+                        </a><a href="mailto:sales.jgc@modernland.co.id" target="_blank" rel="noreferrer noopener"
+                            class="flex items-center gap-2"><span
+                                class="i-mdi-email-outline text-secondary-base-500 w-5 h-5"></span>
+                            <div class="text-sm lg:text-base underline">sales.jgc@modernland.co.id</div>
+                        </a></div>
+                </div>
+                <div class="flex flex-col gap-6 lg:gap-7 lg:col-span-2">
+                    <div class="text-lg font-bold">Quick Access</div>
+                    <div class="flex flex-col gap-4 text-zinc-800"><a class="text-sm lg:text-base underline h-5"
+                            href="https://modernland.co.id">Modernland.co.id</a><a
+                            class="text-sm lg:text-base underline h-5" href="/en/career">Career</a><a
+                            class="text-sm lg:text-base underline h-5" href="/en/privacy-policy">Privacy Policy</a><a
+                            class="text-sm lg:text-base underline h-5" href="/en/contact-us">Contact</a></div>
+                </div>
+                <div class="flex flex-col gap-6 lg:gap-7 lg:col-span-3">
+                    <div class="text-lg font-bold">Follow Us</div>
+                    <div class="flex items-center gap-4 lg:gap-3 text-zinc-800"><a title="Social Media"
+                            class="flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14"
+                            href="https://www.facebook.com/JakartaGardenCityOfficialPage/?locale=id_ID"><span
+                                class="i-mdi-facebook text-secondary-base-500 w-6 h-6"></span></a><a
+                            title="Social Media"
+                            class="flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14"
+                            href="https://www.instagram.com/jakartagardencity/?hl=en"><span
+                                class="i-mdi-instagram text-secondary-base-500 w-6 h-6"></span></a><a
+                            title="Social Media"
+                            class="flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14"
+                            href="https://www.youtube.com/@jktgardencity/"><span
+                                class="i-mdi-youtube text-secondary-base-500 w-6 h-6"></span></a><a title="Social Media"
+                            class="flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14"
+                            href="https://www.tiktok.com/@official_jgc"><span
+                                class="i-ic-baseline-tiktok text-secondary-base-500 w-6 h-6"></span></a></div>
+                </div>
+            </div>
+            <div
+                class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:justify-between gap-6 px-4 text-xs text-zinc-800">
+                <div class="text-sm lg:text-base">© <!-- -->2025<!-- --> <!-- -->Jakarta Garden City<!-- --> by PT
+                    MODERNLAND REALTY Tbk</div>
+            </div><img alt="ribbon" loading="lazy" width="0" height="0" decoding="async" data-nimg="1" class="w-full"
+                style="color:transparent" sizes="fill"
+                srcset="/_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=16&amp;q=75 16w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=3840&amp;q=75 3840w"
+                src="/_next/image?url=%2Fimages%2Fmodernland-ribbon.png&amp;w=3840&amp;q=75">
+        </div>
+    </div>
+    <div class="opacity-0
+      transition-opacity duration-300">
+        <div class="fixed bottom-0 right-0 z-50 w-fit p-4 pb-6">
+            <div class="flex items-center justify-between bg-zinc-950 text-white text-xs p-3 rounded-lg shadow-xl">
+                <span></span>
+                <div><button type="button" class="text-white font-bold">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="/_next/static/chunks/webpack-09681df025376fbd.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/2b3f1035ed87a788-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/d9624a49594cc664.css\",\"style\"]\n3:HL[\"/_next/static/css/bb0d09ee6f118cd7.css\",\"style\"]\n"])</script>
+    <script>self.__next_f.push([1, "4:I[5751,[],\"\"]\n8:I[9275,[],\"\"]\n9:I[1343,[],\"\"]\na:I[8709,[\"160\",\"static/chunks/app/not-found-995a239115df0583.js\"],\"default\"]\nc:I[6130,[],\"\"]\nd:[]\n0:[\"$\",\"$L4\",null,{\"buildId\":\"B1vpzrEgcO8aSF1zxApTz\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"en\"],\"initialTree\":[\"\",{\"children\":[[\"locale\",\"en\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[[\"locale\",\"en\",\"d\"],{\"children\":[\"__PAGE__\",{},[[\"$L5\",\"$L6\",[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/bb0d09ee6f118cd7.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]]],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d9624a49594cc664.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],\"$L7\"],null],[[\"$\",\"div\",null,{\"className\":\"flex items-center justify-center w-full h-dvh\",\"children\":[\"$\",\"div\",null,{\"className\":\"animate-spin rounded-full h-32 w-32 border-b-4 border-primary-base-700\"}]}],[],[]]]},[[null,[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[\"$\",\"$La\",null,{}],\"notFoundStyles\":[]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$Lb\"],\"globalErrorComponent\":\"$c\",\"missingSlots\":\"$Wd\"}]\n"])</script>
+    <script>self.__next_f.push([1, "b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Create a million stories, colorful happiness with your beloved family in the independent city of Jakarta Garden City.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:title\",\"content\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:description\",\"content\":\"Create a million stories, colorful happiness with your beloved family in the independent city of Jakarta Garden City.\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:site_name\",\"content\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://jakartagardencity.com/icons/logo-green.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:width\",\"content\":\"800\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:height\",\"content\":\"600\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:alt\",\"content\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:title\",\"content\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:description\",\"content\":\"Create a million stories, colorful happiness with your beloved family in the independent city of Jakarta Garden City.\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:image\",\"content\":\"https://jakartagardencity.com/icons/logo-green.png\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:image:width\",\"content\":\"800\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:image:height\",\"content\":\"600\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:image:alt\",\"content\":\"Jakarta Garden City\"}],[\"$\",\"meta\",\"18\",{\"name\":\"next-size-adjust\"}]]\n5:null\n"])</script>
+    <script>self.__next_f.push([1, "e:I[4404,[\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"782\",\"static/chunks/782-9e8968beadf7aa96.js\",\"203\",\"static/chunks/app/%5Blocale%5D/layout-642f9bd961841adb.js\"],\"GoogleAnalytics\"]\n7:[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"__variable_6b8127 text-tertiary-950\",\"children\":[[\"$\",\"$Le\",null,{\"gaId\":\"GTM-N2XQGKT\"}],[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"180x180\",\"href\":\"/apple-touch-icon.png\"}],[\"$\",\"link\",null,{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"32x32\",\"href\":\"/favicon-32x32.png\"}],[\"$\",\"link\",null,{\"rel\":\"icon\",\"type\":\"image/png\",\"sizes\":\"16x16\",\"href\":\"/favicon-16x16.png\"}],[\"$\",\"link\",null,{\"rel\":\"manifest\",\"href\":\"/site.webmanifest\"}],[\"$\",\"link\",null,{\"rel\":\"mask-icon\",\"href\":\"/safari-pinned-tab.svg\",\"color\":\"#5bbad5\"}],[\"$\",\"meta\",null,{\"name\":\"msapplication-TileColor\",\"content\":\"#da532c\"}],[\"$\",\"meta\",null,{\"name\":\"theme-color\",\"content\":\"#ffffff\"}]]}],[\"$\",\"body\",null,{\"children\":\"$Lf\"}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "10:I[11,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n12:I[7713,[\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"782\",\"static/chunks/782-9e8968beadf7aa96.js\",\"203\",\"static/chunks/app/%5Blocale%5D/layout-642f9bd961841adb.js\"],\"default\"]\n13:\"$Sreact.suspense\"\n16:I[6833,[\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"782\",\"static/chunks/782-9e8968beadf7aa96.js\",\"203\",\"static/chunks/app/%5Blocale%5D/layout-642f9bd961841adb.js\"],\"default\"]\n18:I[5761,[\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"782\",\"static/chunks/782-9e8968beadf7aa96.js\",\"203\",\"static/chunks/app/%5Blocale%5D/layout-642f9bd961841adb.js\"],\"default\"]\n11:Tc62,"])</script>
+    <script>self.__next_f.push([1, "Living in a residential area with a strategic location can provide various advantages, both in terms of comfort, investment value, and accessibility. No wonder, location is often the main reason for home seekers when hunting for their dream home. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eOne of the residential areas that has a strategic location and offers many advantages in the Jakarta area is Jakarta Garden City (JGC). A 370-hectare independent city-scale development area (township) on Jalan Raya Cakung-Cilincing, and just a step from the Cakung Timur toll exit, East Jakarta. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eAs one of the most complete residential areas in Jakarta, JGC offers many advantages to its residents. JGC offers various types of housing, from landed houses to apartments. There are also residential clusters with various designs and concepts ranging from modern tropical to Scandinavian. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eEquipped with various commercial facilities. In addition to houses and apartments, JGC is also developing commercial areas with various facilities such as shopping centers such as AEON Mall and IKEA, Modern Market, Shell gas stations, restaurants, and comfortable and modern business areas. Other facilities currently under construction are the Mayapada Hospital in East Jakarta and will open in 2026. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eParks and Green Open Spaces. The \"Garden City\" concept emphasizes the presence of parks and green open spaces throughout the area, providing a comfortable and green environmental feel. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eJGC also has educational facilities, such as schools, which support the needs of families in terms of children's education, schools (Global Mandiri School), Singapore Intercultural School (SIS) will start operating in January 2025. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eJGC's location is relatively close to the center of Jakarta, and its accessibility has been improved through road infrastructure and public transportation. The rapid development in Jakarta Garden City supported by the high intensity of infrastructure and economic development in the East Jakarta Corridor area is a golden momentum for Jakarta Garden City. In actual conditions, the Jakarta Garden City area has very good accessibility and can be reached from all corners of Jakarta easily and quickly. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eJakarta Garden City takes on a new mandate as the center of Jakarta's new economic infrastructure master plan. By providing a \"Huge Opportunity\" or golden opportunity for all investors to join and follow the success of international caliber investment partners in Jakarta Garden City such as Astra Land, Hongkong Land, Lotte E\u0026C, AEON Mall, and IKEA. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eInvestors who are interested in taking investment opportunities will gain profits in the Jakarta Garden City township which continues to be developed into a Global City, the largest and most complete modern residential area in East Jakarta. \u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eCarrying the concept of sustainable development. As a developer company, PT Modernland Realty Tbk., has proven its consistency in carrying out development and maintenance so that JGC remains a residential environment that continues to develop and is sustainable."])</script>
+    <script>self.__next_f.push([1, "14:[\"locale\",\"en\",\"d\"]\n"])</script>
+    <script>self.__next_f.push([1, "f:[\"$\",\"$L10\",null,{\"locale\":\"en\",\"now\":\"$D2025-01-23T11:03:51.564Z\",\"timeZone\":\"Asia/Jakarta\",\"messages\":{\"LocaleLayout\":{\"description\":\"Create a million stories, colorful happiness blossoms with your beloved family in the self-sufficient city of Jakarta Garden City.\"},\"HomePage\":{\"title\":\"Home Page\",\"welcome\":\"Welcome to\u003cbr\u003e\u003c/br\u003eJakarta Garden City\u003cbr\u003e\u003c/br\u003e\\\"Good Life Matters\\\"\",\"welcomeDescription\":\"Create a million stories, colorful happiness with your beloved family in the independent city of Jakarta Garden City.\",\"seeResidential\":\"Get Your Dream\",\"preferredPromo\":\"Preferred Promo\",\"preferredPromoTitle\":\"Realize Your Dreams Now\",\"aboutUs\":\"About Us\",\"aboutUsTitle\":\"Integrated Residential \u0026 Commercial Area\",\"aboutUsDescription\":\"Developed within Jakarta with a development area of 370 hectares, Jakarta Garden City combines all aspects of residential and commercial comfort to provide the best benefits and advantages for its owners.\",\"seeMore\":\"See More\",\"ourProperty\":\"Our Properties\",\"ourPropertyTitle\":\"Live in Quality Residential\",\"ourFacilities\":\"Our Facilities\",\"ourFacilitiesTitle\":\"The Comfort of Living in Jakarta Garden City\",\"ourFacilitiesDescription\":\"We realize that an area must be created with all the things that can make your life and the lives of your loved ones more comfortable.\",\"testimony\":\"Testimonials\",\"testimonyTitle\":\"Those Who Have Joined\",\"news\":\"Our Blog\",\"newsTitle\":\"Read The Latest News\"},\"common:award\":\"Award\",\"common:awardsTitle\":\"Our Awards\",\"common:contact\":\"Contact\",\"common:contactTitle\":\"Have a Question?\u003cbr\u003e\u003c/br\u003eContact us\",\"common:contactDescription\":\"Please fill out the form on the side so that our team can contact you.\",\"common:about\":\"About\",\"common:jakartaGardenCity\":\"Jakarta Garden City\",\"common:aboutDescription\":\"$11\",\"common:ourDeveloper\":\"Our Developer\",\"common:developerDescription\":\"PT Modernland Realty Tbk has been established for more than 40 years as a leading property developer in Indonesia. For decades, the Company has proven its dedication and participation in developing the best properties in Indonesia, especially in the Jabodetabek area.\",\"common:more\":\"More\",\"common:siteMap\":\"Site Map\",\"common:siteMapTitle\":\"Jakarta Garden City Master Plan\",\"common:siteMapDescription\":\"Hover over the icons to see place descriptions\",\"common:siteMapButton\":\"Download Master Plan\",\"common:cluster\":\"Cluster\",\"common:facility\":\"Facility\",\"common:apartment\":\"Apartment\",\"common:apartmentCommercial\":\"Apartment \u0026 Commercial\",\"common:seeDetail\":\"See Detail\",\"common:joinUs\":\"Interested in Joining Us?\",\"common:careerDescription\":\"Seize opportunities and develop your career with us!\",\"common:careerButton\":\"View Openings\",\"property\":{\"unit\":\"Floor Plan\",\"about\":\"About\",\"readMore\":\"Read More\",\"conceptDesign\":\"Concept Design\",\"facilities\":\"Cluster Facilities\",\"seeAllFacilities\":\"See All JGC Facilities\",\"otherProperties\":\"Other Properties\",\"downloadBrochure\":\"View Brochure\",\"residential\":\"Residential\",\"apartment\":\"Apartment\",\"commercial\":\"Commercial\",\"residentialDescription\":\"Residential designed with a modern concept that blends with the environment. Offers comfortable and safe residential.\",\"apartmentDescription\":\"Offers a modern and practical lifestyle with fully equipped residential.\",\"commercialDescription\":\"Modern office buildings and bustling retail areas create an environment that supports business growth.\",\"form\":{\"title\":\"Interested?\u003cbr\u003e\u003c/br\u003eContact Us For More information!\",\"brochure\":{}},\"brochure\":{\"form\":{\"title\":\"Please fill out the form below\",\"download\":\"View Brochure\"}}},\"facility\":{\"readMore\":\"Read More\",\"facilities\":\"Facilities\",\"title\":\"Our Facilities\",\"description\":\"Jakarta Garden City has complete supporting facilities for residents and visitors, ranging from shopping centers, lifestyle centers, modern markets, culinary centers, to sports and recreation centers, all presented in the Jakarta Garden City area, 60 percent of which is green open space.\",\"otherFacilities\":\"Other Facilities\",\"about\":\"About\",\"contact\":\"Contact Us\",\"gallery\":\"Gallery\",\"meta\":{\"description\":\"Jakarta Garden City Facilities\"}},\"news\":{\"title\":\"Latest News from Jakarta Garden City\",\"description\":\"Our latest stories and news. Discover everything you want to know about us.\",\"promo\":\"Check the Latest Promo\",\"promoDescription\":\"Get our exclusive promos, let's see the latest promos!\",\"viewPromo\":\"View Promo\",\"news\":\"News\",\"previous\":\"Previous\",\"next\":\"Next\",\"otherNews\":\"Other News\",\"meta\":{\"description\":\"Jakarta Garden City News\"}},\"promo\":{\"title\":\"Latest Promos from Jakarta Garden City\",\"description\":\"Get affordable properties using our exclusive promos.\",\"news\":\"Check The Latest News\",\"newsDescription\":\"See our award news and other activities at Jakarta Garden City!\",\"seeNews\":\"See News\",\"promo\":\"Promo\",\"otherPromo\":\"Other Promos\",\"relatedProperties\":\"Related Products\",\"meta\":{\"description\":\"Jakarta Garden City Promos\"},\"form\":{\"title\":\"Get Special Offers and The Latest Products from Us\",\"submit\":\"Subscribe\"}},\"career\":{\"title\":\"Together Building Quality \u0026 Sustainable Residential\",\"seeAvailablePosition\":\"See Available Positions\",\"aboutUs\":\"About Us\",\"aboutUsDescription\":\"Jakarta Garden City is under PT Mitra Indo Sukses, a subsidiary of PT Modernland Realty TBK., one of the largest property companies in Indonesia founded more than 30 years ago as a pioneer in the property business in Indonesia. Jakarta Garden City is an integrated city development that integrates residential development with commercial development and is also known as the largest real land in Jakarta.\u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eAs the developer of Jakarta Garden City, PT Mitra Sindo Sukses always strives to create a comfortable and dynamic work environment for you, professionals who want to grow and always give their best. With the great prospects of Jakarta Garden City development, your opportunities to grow are expanding.\",\"whyUs\":\"Why Choose Us?\",\"reasons\":{\"goodEnvironment\":\"Comfortable working environment\",\"healthInsurance\":\"Health \u0026 employment insurance\",\"leadership\":\"Leadership training\",\"culture\":\"Balanced organizational culture\",\"tools\":\"Adequate work tools\"},\"career\":\"Career\",\"meta\":{\"description\":\"Jakarta Garden City Career\"}},\"privacyPolicy\":{\"title\":\"Privacy Policy\",\"description\":\"We comply with the privacy policy stated here. Please read our privacy policy before using this site or submitting your personal information on this site. By using this site, you understand and agree to accept all policies and activities described in our privacy policy without exception. Policies or activities that apply may change with prior notice through this site. And changes only apply to future activities and information, not those that have occurred. This privacy policy only applies to our site, if you enter other sites we suggest that you read the different privacy policies on each site first.\",\"dataTitle\":\"Information Collection \u0026 Use\",\"dataDescription\":\"Personal information such as name, address, email voluntarily provided by site visitors is information collected by us. This information is only used for the purpose of developing services to you. You are not required to provide all of your personal data, but there is a possibility that if you do not provide your data completely and accurately, you may not be able to enjoy the facilities we provide on this site.\u003cbr\u003e\u003c/br\u003e\u003cbr\u003e\u003c/br\u003eWe also collect data obtained from cookies used by web servers uniquely and also statistical data to identify your habits when visiting our site so that we can improve our services to you. Site users have the right to deactivate their cookies at any time they visit. However, if you refuse or block or even delete cookies between site visits, you may not be able to use certain functions or features on our site.\",\"meta\":{\"description\":\"Jakarta Garden City Privacy Policy\"}},\"location\":{\"title\":\"Our Location\",\"map\":\"Location Map\",\"direction\":\"Jakarta Garden City location can be followed from the following roads\"},\"common:previous\":\"Previous\",\"common:next\":\"Next\",\"blog\":{\"readMore\":\"Read More\"},\"navigation\":{\"home\":\"Home\",\"about-us\":\"About Us\",\"residential\":\"Residential\",\"apartment\":\"Apartment\",\"commercial\":\"Commercial\",\"news\":\"News\",\"promo\":\"Promo\",\"contact\":\"Contact\",\"contact-us\":\"Contact Us\",\"properties\":\"Properties\",\"facilities\":\"Facilities\",\"newsPromo\":\"News \u0026 Promo\",\"contactUs\":\"Contact Us\",\"searchDescription\":\"To perform a search\",\"searchEnter\":\"Enter\",\"search\":\"Search\",\"allFacilities\":\"All Facilities\"},\"footer\":{\"aboutUs\":\"About Us\",\"properties\":\"Properties\",\"facilities\":\"Facilities\",\"career\":\"Career\",\"privacyPolicy\":\"Privacy Policy\",\"contact\":\"Contact\",\"operationalHours\":\"Operational Hours\",\"monday\":\"Monday\",\"saturday\":\"Saturday\",\"contactUs\":\"Contact Us\",\"quickAccess\":\"Quick Access\",\"followUs\":\"Follow Us\",\"sunday\":\"Sunday\"},\"common:visitUs\":\"Visit Us\",\"common:search\":\"Search\",\"search\":{\"searchResults\":\"Search Results\",\"noResult\":\"Sorry, no results found\",\"noResultDescription\":\"Please use different keywords or go back to\",\"home\":\"Home\",\"meta\":{\"description\":\"Jakarta Garden City Search\"}},\"contact\":{\"meta\":{\"description\":\"Contact us for more information\"}},\"about\":{\"meta\":{\"description\":\"About Us Jakarta Garden City\"},\"aboutUs\":\"About Us\",\"watchUs\":\"Watch About Us\"},\"common:property\":\"Property\",\"common:news\":\"News\",\"common:promo\":\"Promo\",\"form\":{\"name\":\"Name\",\"email\":\"Email\",\"phone\":\"WhatsApp Number\",\"nameRequired\":\"Name is required\",\"nameMaxLength\":\"Name can't exceed 50 characters\",\"emailInvalid\":\"Invalid email\",\"emailRequired\":\"Email is required\",\"phoneInvalid\":\"Invalid WhatsApp number\",\"phoneRequired\":\"WhatsApp number is required\",\"phoneMinLength\":\"WhatsApp number must be at least 8 characters\",\"phoneMaxLength\":\"WhatsApp number can't exceed 15 characters\",\"messageMaxLength\":\"Message can't exceed 300 characters\",\"sendMessage\":\"Send\",\"message\":\"Message\",\"success\":\"Thank you, we will contact you soon.\",\"successTitle\":\"Thank you\",\"successInfo\":\"We will contact you soon.\",\"defaults\":{\"message\":\"Hello, I would like to ask about Jakarta Garden City.\"}},\"common:or\":\"Or\",\"common:contactUs\":\"Contact Us\",\"common:contactUWhatsAppText\":\"I am interested in\",\"common:ok\":\"Ok\",\"common:all\":\"All\",\"NotFoundPage\":{\"title\":\"Page Not Found\",\"description\":\"Sorry, we couldn't find the page you're looking for.\",\"backToHome\":\"Back to Home Page\"},\"common:career\":\"Career\",\"common:back\":\"Back\",\"common\":{\"soon\":\"Soon\",\"close\":\"Close\"},\"sites\":{\"global-mandiri-school\":\"Global Mandiri School\",\"mayapada-hospital\":\"Mayapada Hospital\",\"shell-gas-station\":\"Shell Gas Station\",\"jgc-mosque\":\"JGC Mosque\",\"town-park\":\"Town Park\",\"gpdi\":\"Pentecostal Church in Indonesia (GPDI)\",\"gbi\":\"Bethel Church of Indonesia (GBI)\",\"gki\":\"Indonesian Christian Church (GKI)\",\"abbalove-church\":\"Abbalove Church\",\"shophouse-apartment\":\"{place} Shophouse \u0026 Apartment\",\"shophouse\":\"{place} Shophouse\"}},\"children\":[[\"$\",\"$L12\",null,{\"footer\":{\"description\":\"\",\"address\":\"Sales Gallery, Main Boulevard, Jl. Jakarta Garden City Main Boulevard, Jakarta\",\"phoneNumber\":\"(+6221) 4683 8888\",\"whatsappNumber\":\"+62813 8888 4446\",\"email\":\"sales.jgc@modernland.co.id\",\"facebookUrl\":\"www.facebook.com/JakartaGardenCityOfficialPage/?locale=id_ID\",\"instagramUrl\":\"www.instagram.com/jakartagardencity/?hl=en\",\"youtubeUrl\":\"www.youtube.com/@jktgardencity/\",\"tiktokUrl\":\"www.tiktok.com/@official_jgc\",\"openTime\":\"09:00\",\"closeTime\":\"20:00\",\"openTimeSunday\":\"09:00\",\"closeTimeSunday\":\"21:00\"}}],[\"$\",\"$13\",null,{\"fallback\":[\"$\",\"div\",null,{\"className\":\"flex items-center justify-center w-full h-dvh\",\"children\":[\"$\",\"div\",null,{\"className\":\"animate-spin rounded-full h-32 w-32 border-b-4 border-primary-base-700\"}]}],\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"$14\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$L15\",\"notFoundStyles\":[]}]}],[\"$\",\"div\",null,{\"className\":\"fixed bottom-2 right-2 z-10 flex flex-col items-center gap-2\",\"children\":[[\"$\",\"$L16\",null,{}],[\"$\",\"a\",null,{\"href\":\"https://wa.link/n8kh8z\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"cursor-pointer\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute w-[80px] h-[80px]\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-[80px] h-[80px] opacity-0\"}]}],[\"$\",\"iframe\",null,{\"src\":\"https://lottie.host/embed/cac40293-ca35-4282-8016-eb79a3baeee8/5Bpw315mYs.json\",\"title\":\"whatsapp\",\"className\":\"w-[80px] h-[80px]\"}]]}]}]]}],\"$L17\",[\"$\",\"$L18\",null,{}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "19:I[8173,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"Image\"]\n15:[\"$\",\"div\",null,{\"className\":\"pt-[68px] lg:pt-[116px]\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-center gap-14 lg:gap-[110px] py-15\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/images/ornament.svg\",\"alt\":\"ornament\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"absolute -z-10 top-[25px] lg:top-1/2 right-1/2 translate-x-1/2 lg:-translate-y-1/2 w-full max-w-[450px] h-fit\"}],[\"$\",\"$L19\",null,{\"src\":\"/images/404.png\",\"alt\":\"404\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"w-[242px] lg:w-[440px] h-[242px] lg:h-[440px] mx-auto lg:mx-0\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-9 lg:gap-8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4 lg:gap-5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-center lg:text-start text-2xl lg:text-4xl font-bold\",\"children\":\"Page Not Found\"}],[\"$\",\"div\",null,{\"className\":\"text-center lg:text-start text-sm lg:text-base text-zinc-700\",\"children\":\"Sorry, we couldn't find the page you're looking for.\"}]]}],\"$L1a\"]}]]}]}]\n"])</script>
+    <script>self.__next_f.push([1, "17:[\"$\",\"div\",null,{\"className\":\"relative lg:m-4\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/images/footer-bg.png\",\"alt\":\"footer-bg\",\"width\":0,\"height\":0,\"sizes\":\"fill\",\"className\":\"absolute top-0 left-0 w-full h-full object-cover lg:rounded-2xl -z-10\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-15 py-15 lg:py-[90px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"lg:container lg:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-9 px-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-6 lg:gap-7 lg:col-span-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-lg font-bold\",\"children\":\"Visit Us\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"flex-none i-ic-outline-home-work text-secondary-base-500 w-6 h-6\"}],[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base text-zinc-800\",\"children\":\"Sales Gallery, Main Boulevard, Jl. Jakarta Garden City Main Boulevard, Jakarta\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"flex-none i-ic-outline-access-time text-secondary-base-500 w-6 h-6\"}],[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base text-zinc-800\",\"children\":[\"Operational Hours\",[\"$\",\"table\",null,{\"children\":[\"$\",\"tbody\",null,{\"children\":[[\"$\",\"tr\",null,{\"children\":[[\"$\",\"td\",null,{\"children\":[\"Monday\",\" - \",\"Saturday\"]}],[\"$\",\"td\",null,{\"children\":\":\"}],[\"$\",\"td\",null,{\"children\":[\"09:00\",\" - \",\"20:00\",\" WIB\"]}]]}],[\"$\",\"tr\",null,{\"children\":[[\"$\",\"td\",null,{\"children\":\"Sunday\"}],[\"$\",\"td\",null,{\"children\":\":\"}],[\"$\",\"td\",null,{\"children\":[\"09:00\",\" - \",\"21:00\",\" WIB\"]}]]}]]}]}]]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-6 lg:gap-7 lg:col-span-3\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-lg font-bold\",\"children\":\"Contact Us\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4 text-zinc-800 w-fit\",\"children\":[[\"$\",\"a\",\"0\",{\"href\":\"tel:622146838888\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex items-center gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"i-mdi-phone-outline text-secondary-base-500 w-5 h-5\"}],[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base underline\",\"children\":\"(+6221) 4683 8888\"}]]}],[\"$\",\"a\",\"1\",{\"href\":\"https://wa.me/6281388884446\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex items-center gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"i-mdi-whatsapp text-secondary-base-500 w-5 h-5\"}],[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base underline\",\"children\":\"+62813 8888 4446\"}]]}],[\"$\",\"a\",\"2\",{\"href\":\"mailto:sales.jgc@modernland.co.id\",\"target\":\"_blank\",\"rel\":\"noreferrer noopener\",\"className\":\"flex items-center gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"i-mdi-email-outline text-secondary-base-500 w-5 h-5\"}],[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base underline\",\"children\":\"sales.jgc@modernland.co.id\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-6 lg:gap-7 lg:col-span-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-lg font-bold\",\"children\":\"Quick Access\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4 text-zinc-800\",\"children\":[\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\"]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-6 lg:gap-7 lg:col-span-3\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-lg font-bold\",\"children\":\"Follow Us\"}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-4 lg:gap-3 text-zinc-800\",\"children\":[\"$L1f\",\"$L20\",\"$L21\",\"$L22\"]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"lg:container lg:mx-auto flex flex-col lg:flex-row lg:justify-between gap-6 px-4 text-xs text-zinc-800\",\"children\":[\"$\",\"div\",null,{\"className\":\"text-sm lg:text-base\",\"children\":[\"© \",2025,\" \",\"Jakarta Garden City\",\" by PT MODERNLAND REALTY Tbk\"]}]}],[\"$\",\"$L19\",null,{\"src\":\"/images/modernland-ribbon.png\",\"alt\":\"ribbon\",\"width\":0,\"height\":0,\"sizes\":\"fill\",\"className\":\"w-full\"}]]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "23:I[4327,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n1a:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/\",\"children\":[\"$\",\"button\",null,{\"type\":\"button\",\"className\":\"flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full \\n      lg:w-fit\\n      text-white bg-primary-base-700 hover:bg-primary-900\\n      false\\n      false\\n      rounded-full transition-colors duration-300 ease-in-out\",\"disabled\":\"$undefined\",\"onClick\":\"$undefined\",\"children\":\"Back to Home Page\"}]}]\n1b:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"https://modernland.co.id\",\"className\":\"text-sm lg:text-base underline h-5\",\"children\":\"Modernland.co.id\"}]\n1c:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/career\",\"className\":\"text-sm lg:text-base underline h-5\",\"children\":\"Career\"}]\n1d:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/privacy-policy\",\"className\":\"text-sm lg:text-base underline h-5\",\"children\":\"Privacy Policy\"}]\n1e:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/contact-us\",\"className\":\"text-sm lg:text-base underline h-5\",\"children\":\"Contact\"}]\n1f:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"https://www.facebook.com/JakartaGardenCityOfficialPage/?locale=id_ID\",\"title\":\"Social Media\",\"className\":\"flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14\",\"children\":[\"$\",\"span\",null,{\"className\":\"i-mdi-facebook text-secondary-b"])</script>
+    <script>self.__next_f.push([1, "ase-500 w-6 h-6\"}]}]\n20:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"https://www.instagram.com/jakartagardencity/?hl=en\",\"title\":\"Social Media\",\"className\":\"flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14\",\"children\":[\"$\",\"span\",null,{\"className\":\"i-mdi-instagram text-secondary-base-500 w-6 h-6\"}]}]\n21:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"https://www.youtube.com/@jktgardencity/\",\"title\":\"Social Media\",\"className\":\"flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14\",\"children\":[\"$\",\"span\",null,{\"className\":\"i-mdi-youtube text-secondary-base-500 w-6 h-6\"}]}]\n22:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"https://www.tiktok.com/@official_jgc\",\"title\":\"Social Media\",\"className\":\"flex items-center justify-center border border-secondary-base-500 rounded-full w-14 h-14\",\"children\":[\"$\",\"span\",null,{\"className\":\"i-ic-baseline-tiktok text-secondary-base-500 w-6 h-6\"}]}]\n"])</script>
+    <script>self.__next_f.push([1, "26:I[7080,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n27:I[6094,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n29:I[9290,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n2a:I[5235,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n30:I[5925,[\"922\",\"static/chu"])</script>
+    <script>self.__next_f.push([1, "nks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n31:I[995,[\"922\",\"static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js\",\"173\",\"static/chunks/173-bc8f6f0d4394add7.js\",\"954\",\"static/chunks/954-93f304cf9fe32d5e.js\",\"434\",\"static/chunks/434-c734685b7dd127dc.js\",\"171\",\"static/chunks/171-e795a94998170fb7.js\",\"729\",\"static/chunks/729-e8cc72c771947e17.js\",\"785\",\"static/chunks/785-efc77339c31f8d41.js\",\"561\",\"static/chunks/561-7613385e89c3f29d.js\",\"925\",\"static/chunks/925-91e353237087978b.js\",\"61\",\"static/chunks/app/%5Blocale%5D/page-4a56b819e985e2a5.js\"],\"default\"]\n"])</script>
+    <script>self.__next_f.push([1, "6:[\"$\",\"div\",null,{\"children\":[[\"$\",\"div\",null,{\"className\":\"overflow-x-hidden\",\"children\":[[\"$\",\"div\",null,{\"className\":\"relative w-screen\",\"children\":[[\"$\",\"iframe\",null,{\"src\":\"https://www.youtube.com/embed/1l-EHZnupQQ?autoplay=1\u0026loop=1\u0026mute=1\u0026controls=0\u0026showinfo=0\u0026autohide=1\u0026playlist=1l-EHZnupQQ\",\"title\":\"hero\",\"allow\":\"autoplay; encrypted-media; frameborder=0\",\"className\":\"w-screen h-screen object-cover pointer-events-none\"}],[\"$\",\"div\",null,{\"className\":\"absolute bottom-0 left-0 right-0 flex items-center justify-center pb-8 lg:pb-11\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center gap-1 lg:gap-4 animate-bounce\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/icons/mouse.svg\",\"alt\":\"mouse\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"h-6 lg:h-7 w-6 lg:w-7\"}],[\"$\",\"div\",null,{\"className\":\"text-white text-sm lg:text-base\",\"children\":\"Scroll\"}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"relative container mx-auto\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/images/ornament.svg\",\"alt\":\"ornament\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"absolute top-1/2 lg:-bottom-1/2 left-1/2 lg:left-0 -translate-x-1/2 -translate-y-1/2 lg:translate-y-0 w-full max-w-[450px] h-fit object-fit -z-10\"}],[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 lg:grid-cols-2 lg:items-center lg:justify-center gap-9 lg:gap-0 py-4 lg:p-0\",\"children\":[[\"$\",\"div\",null,{\"className\":\"lg:order-last\",\"children\":[\"$\",\"$L19\",null,{\"src\":\"/images/welcome-image.png\",\"alt\":\"hero-section\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"w-full\"}]}],[\"$\",\"div\",null,{\"className\":\"flex justify-end\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-9 lg:gap-10 max-w-[840px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4 lg:gap-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-3xl lg:text-5xl font-bold !leading-snug\",\"children\":[\"Welcome to\",[\"$\",\"br\",\"br0\",{}],\"Jakarta Garden City\",[\"$\",\"br\",\"br1\",{}],\"\\\"Good Life Matters\\\"\"]}],[\"$\",\"div\",null,{\"className\":\"text-base lg:text-lg text-zinc-700\",\"children\":\"Create a million stories, colorful happiness with your beloved family in the independent city of Jakarta Garden City.\"}]]}],\"$L24\"]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[false,[\"$\",\"div\",null,{\"className\":\"relative lg:px-4\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/images/ornament.svg\",\"alt\":\"ornament\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"absolute -z-10 top-[25px] lg:top-1/2 right-1/2 translate-x-1/2 lg:-translate-y-1/2 w-fit max-w-[450px] h-fit\"}],[\"$\",\"div\",null,{\"className\":\"container mx-auto lg:w-2/3 flex flex-col items-center gap-9 lg:px-0 pt-[60px] pb-[40px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-6 lg:gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-1 lg:gap-3\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center gap-2 lg:gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-zinc-500 font-bold text-xs uppercase tracking-widest\",\"children\":\"About Us\"}],[\"$\",\"div\",null,{\"className\":\"w-6 border-0 border-b-2 border-primary-base-700\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center text-2xl lg:text-4xl font-bold !leading-snug\",\"children\":\"Integrated Residential \u0026 Commercial Area\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center text-zinc-700 text-sm lg:text-lg leading-relaxed\",\"children\":\"Developed within Jakarta with a development area of 370 hectares, Jakarta Garden City combines all aspects of residential and commercial comfort to provide the best benefits and advantages for its owners.\"}]]}],\"$L25\"]}],[\"$\",\"$L19\",null,{\"width\":0,\"height\":0,\"sizes\":\"full\",\"src\":\"/images/facilities.png\",\"alt\":\"facilities\",\"className\":\"w-full lg:rounded-2xl\"}]]}],[\"$\",\"div\",null,{\"className\":\"lg:px-4\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative flex flex-col gap-[60px] py-[60px] bg-property-section lg:rounded-2xl z-0\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"/images/property-ornament.svg\",\"alt\":\"ornament\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-fit object-cover -z-10\"}],[\"$\",\"$L26\",null,{\"properties\":[{\"label\":\"Residential\",\"image\":\"/images/property-residential.png\",\"url\":\"/properties/residential/Mahakam The Signature\",\"description\":\"Residential designed with a modern concept that blends with the environment. Offers comfortable and safe residential.\"},{\"label\":\"Apartment\",\"image\":\"/images/property-apartment.png\",\"url\":\"/properties/apartment/Cleon Park Apartment\",\"description\":\"Offers a modern and practical lifestyle with fully equipped residential.\"},{\"label\":\"Commercial\",\"image\":\"/images/property-commercial.png\",\"url\":\"/properties/commercial/Jakarta Business District (JBD)\",\"description\":\"Modern office buildings and bustling retail areas create an environment that supports business growth.\"}]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center gap-9 lg:gap-11\",\"children\":[[\"$\",\"div\",null,{\"className\":\"container mx-auto lg:w-2/3 flex flex-col gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center gap-2 lg:gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-zinc-500 font-bold text-xs uppercase tracking-widest\",\"children\":\"Our Facilities\"}],[\"$\",\"div\",null,{\"className\":\"w-6 border-0 border-b-2 border-primary-base-700\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center text-2xl lg:text-4xl font-bold !leading-snug\",\"children\":\"The Comfort of Living in Jakarta Garden City\"}],[\"$\",\"div\",null,{\"className\":\"text-center text-sm lg:text-lg text-zinc-700\",\"children\":\"We realize that an area must be created with all the things that can make your life and the lives of your loved ones more comfortable.\"}]]}],[\"$\",\"div\",null,{\"className\":\"w-full flex flex-col gap-14 lg:gap-0\",\"children\":[[\"$\",\"$L27\",null,{\"images\":[{\"image\":\"https://api-web.jakartagardencity.com/JVIAZ3YUje1729146732646.png\",\"label\":\"Singapore Intercultural School (Soon)\",\"type\":\"Education\"},{\"image\":\"https://api-web.jakartagardencity.com/KOfg83OgmO1729146731127.png\",\"label\":\"Global Mandiri School\",\"type\":\"Education\"},{\"image\":\"https://api-web.jakartagardencity.com/MkBVdLmg9q1729146731111.png\",\"label\":\"Golden Baby School\",\"type\":\"Education\"},{\"image\":\"https://api-web.jakartagardencity.com/sB8OXr0R8m1729147399095.png\",\"label\":\"Mayapada Hospital East Jakarta (Soon)\",\"type\":\"Healthcare\"},{\"image\":\"https://api-web.jakartagardencity.com/5kD2lAtw2b1729147565248.png\",\"label\":\"Abbalove Church\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/EHbTE8q6Ut1729147565534.png\",\"label\":\"Gereja Kristen Indonesia (GKI)\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/FBw2l6JcGj1729147565571.png\",\"label\":\"GPdI\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/8O2GdkKDlq1729147565155.png\",\"label\":\"JGC Mosque\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/31jhMhmcP81729147565350.png\",\"label\":\"GBI Boulevard JGC\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/GhtZs3lVwS1729147565140.png\",\"label\":\"Vihara Vaidurya Center\",\"type\":\"Worship Place\"},{\"image\":\"https://api-web.jakartagardencity.com/fOnsnOGqUm1729147886882.png\",\"label\":\"Taman Kota\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/BXcpRG4CkD1729147886658.png\",\"label\":\"Yoga Park\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/LHpN0GOb1Y1729147882518.png\",\"label\":\"Gymnasium\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/2ypt101cKy1729147886140.png\",\"label\":\"Jakarta International Climbing Wall\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/lNOCW50lyC1729147886690.png\",\"label\":\"Jogging Track\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/G6jWrV5c5s1729147886420.png\",\"label\":\"Taman Semut\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/cTX1aKyanz1729147886650.png\",\"label\":\"Basketball Court\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/xGV66p7Nud1729147886628.png\",\"label\":\"Swimming Pool\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/xONUKrqnNm1729147882739.png\",\"label\":\"Practice Room\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/SG2Oam22Gy1729147882088.png\",\"label\":\"Tennis Court\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/zDkqIMqQdc1729147881915.png\",\"label\":\"Clubhouse\",\"type\":\"Sport Centre\"},{\"image\":\"https://api-web.jakartagardencity.com/G93LQ8MAIF1729147974804.png\",\"label\":\"IKEA\",\"type\":\"Lifestyle\"},{\"image\":\"https://api-web.jakartagardencity.com/4ZX4tABzaP1729147974882.png\",\"label\":\"AEON Mall\",\"type\":\"Lifestyle\"},{\"image\":\"https://api-web.jakartagardencity.com/mTpeXo4iuW1729148010732.png\",\"label\":\"Modern Market\",\"type\":\"Lifestyle\"},{\"image\":\"https://api-web.jakartagardencity.com/oH5Fvu1yhB1729148010708.png\",\"label\":\"Beam\",\"type\":\"Lifestyle\"},{\"image\":\"https://api-web.jakartagardencity.com/06tiO99HQL1729148341158.png\",\"label\":\"Richeese\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/3ph9EoVJ4m1729148341477.png\",\"label\":\"Pizza Hut\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/iM4gpUdppd1729148340941.png\",\"label\":\"Food Garden\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/SmR6jwLWIw1729148341474.png\",\"label\":\"MC Donald\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/xwnxNNP5F21729148341795.png\",\"label\":\"Bebek Kaleyo\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/Ez26Bawpxt1729148341749.png\",\"label\":\"Sederhana\",\"type\":\"Culinary\"},{\"image\":\"https://api-web.jakartagardencity.com/lOkms9RUCk1729147132830.png\",\"label\":\"Charging Station\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/qlvtJmkuZD1729147132812.png\",\"label\":\"Patrol Car\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/f2pvjgfd9C1729147124855.png\",\"label\":\"Customer Service\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/tG4ZCx6Ghe1729147132831.png\",\"label\":\"Ambulance\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/xZd54MbfuD1729147132772.png\",\"label\":\"Water Tanker\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/7lHGRWJDuE1729147132749.png\",\"label\":\"Road Sweeper\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/fKH2mIIE2L1729147132821.png\",\"label\":\"Patrol Motorbike\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/f9f7OdYcxj1729147132764.png\",\"label\":\"Fire Truck\",\"type\":\"Estate Services\"},{\"image\":\"https://api-web.jakartagardencity.com/vcoRE7ffuJ1729147132751.png\",\"label\":\"Crane\",\"type\":\"Estate Services\"}]}],[\"$\",\"div\",null,{\"className\":\"flex justify-center\",\"children\":\"$L28\"}]]}]]}]]}]}],[\"$\",\"$L29\",null,{\"achievements\":[{\"image\":\"https://api-web.jakartagardencity.com/NSH7QxbP7i1733200873684.png\",\"year\":2024,\"title\":\"The Prospective Premium Housing Cluster in Jakarta\",\"description\":\"Properti Indonesia Award 2024\\n\"},{\"image\":\"https://api-web.jakartagardencity.com/olbynRHnrL1733200840302.png\",\"year\":2024,\"title\":\"Best Township Development (Jakarta)\",\"description\":\"PropertyGuru Indonesia Property Awards 2024\\n\"},{\"image\":\"https://api-web.jakartagardencity.com/7UMsq4mq1J1733123840266.png\",\"year\":2024,\"title\":\"Best Mid End Housing Development (Jakarta)\",\"description\":\"PropertyGuru Indonesia Property Awards 2024\\n\"},{\"image\":\"https://api-web.jakartagardencity.com/IzXnp2kgC91733123144674.png\",\"year\":2024,\"title\":\"Most Favourite Premium Housing Cluster With Garden Concept in East Jakarta\",\"description\":\"Property \u0026 Bank Award 2024\"},{\"image\":\"https://api-web.jakartagardencity.com/VXP5dc940U1729130274299.png\",\"year\":2023,\"title\":\"The Best in Marketing Campaign\",\"description\":\"Marketing Award 2023\"},{\"image\":\"https://api-web.jakartagardencity.com/EE7uVGr2I51729130001050.png\",\"year\":2023,\"title\":\"Best Regional Scale Development\",\"description\":\"Golden Property Awards 2023\"},{\"image\":\"https://api-web.jakartagardencity.com/dLVGkwsTqh1729130078709.png\",\"year\":2023,\"title\":\"The Innovative Housing Concept in Jakarta\",\"description\":\"Properti Indonesia Award 2023\"},{\"image\":\"https://api-web.jakartagardencity.com/F35ViYiZmB1729130486401.png\",\"year\":2022,\"title\":\"The Innovative Housing Concept in East Jakarta\",\"description\":\"Properti Indonesia Award 2022\"},{\"image\":\"https://api-web.jakartagardencity.com/t7aMAMTlRH1729131011882.png\",\"year\":2021,\"title\":\"Fastest Two Floors House Type 69 Construction\",\"description\":\"Museum Rekor - Dunia Indonesia\"},{\"image\":\"https://api-web.jakartagardencity.com/mX6yN6P0x41729130649598.png\",\"year\":2021,\"title\":\"Best Large Scale Development - Region DKI Jakarta\",\"description\":\"Golden Property Awards 2021\"},{\"image\":\"https://api-web.jakartagardencity.com/JauSky9j4E1729130739742.png\",\"year\":2021,\"title\":\"Best of The Best Large Scale Development\",\"description\":\"Golden Property Awards 2021\"},{\"image\":\"https://api-web.jakartagardencity.com/e8rDrVIy421729130852583.png\",\"year\":2021,\"title\":\"The Recognized Eco Township in East Jakarta\",\"description\":\"Properti Indonesia Award 2021\"},{\"image\":\"https://api-web.jakartagardencity.com/VGr0uSnX4f1729132042430.png\",\"year\":2019,\"title\":\"Best Large Scale Development Project Jakarta Area\",\"description\":\"Golden Property Awards 2019\"},{\"image\":\"https://api-web.jakartagardencity.com/ZU6Jc8oMHz1729131726246.png\",\"year\":2019,\"title\":\"The Most Favorite Middle Up House of Township Scale Housing in Jakarta\",\"description\":\"Housing Estate Award 2019\"},{\"image\":\"https://api-web.jakartagardencity.com/szj7PQWBze1729131550765.png\",\"year\":2019,\"title\":\"Best Township Masterplan Design\",\"description\":\"PropertyGuru Indonesia Property Awards 2019\"},{\"image\":\"https://api-web.jakartagardencity.com/FoektkEQ5f1729131308068.png\",\"year\":2019,\"title\":\"Excellence in Building and Managing Customer Service Experience\",\"description\":\"Carre \u0026 Property-In\"},{\"image\":\"https://api-web.jakartagardencity.com/HsFi6YrTos1729131410544.png\",\"year\":2019,\"title\":\"The Prospective Housing Development in East Jakarta\",\"description\":\"Properti Indonesia Award 2019\"},{\"image\":\"https://api-web.jakartagardencity.com/VvpH8FUqIw1729132232556.png\",\"year\":2018,\"title\":\"The Most Favorite Middle Up House of Township Scale Housing in Jakarta\",\"description\":\"Housing Estate Award 2018\"},{\"image\":\"https://api-web.jakartagardencity.com/RdHAh3Q5BE1729146904307.png\",\"year\":2017,\"title\":\"Best Housing Development (Jakarta)\",\"description\":\"PropertyGuru Indonesia Property Awards 2017\"},{\"image\":\"https://api-web.jakartagardencity.com/n7Bu2hXRYN1729146781610.png\",\"year\":2017,\"title\":\"Best Housing Development (Indonesia)\",\"description\":\"PropertyGuru Indonesia Property Awards 2017\"},{\"image\":\"https://api-web.jakartagardencity.com/LeCmdaYA7W1724693211056.png\",\"year\":2017,\"title\":\"Green Open Space Residential Category Township Scale Housing Estate\",\"description\":\"Housing Estate Award 2017\"},{\"image\":\"https://api-web.jakartagardencity.com/dSlTKsK1Cl1724693176105.png\",\"year\":2017,\"title\":\"The Most Favorite Township Scale Housing Estate in Jakarta\",\"description\":\"Housing Estate Award 2017\"},{\"image\":\"https://api-web.jakartagardencity.com/t1GeI0pBvD1724693120378.png\",\"year\":2017,\"title\":\"The Highly Progressive Township\",\"description\":\"Properti Indonesia Award 2017\"},{\"image\":\"https://api-web.jakartagardencity.com/SGmT6rvA2g1729146632034.png\",\"year\":2016,\"title\":\"Best Housing Development (Jakarta)\",\"description\":\"PropertyGuru Indonesia Property Awards 2016\"},{\"image\":\"https://api-web.jakartagardencity.com/9DmCgoAYhH1724693280919.png\",\"year\":2016,\"title\":\"The Most Favorite Luxurious Class Housing Project Big Scale in Jakarta\",\"description\":\"Housing Estate Award 2016\"},{\"image\":\"https://api-web.jakartagardencity.com/beGEKPN06X1724693245561.png\",\"year\":2016,\"title\":\"The Prospective Township East Jakarta\",\"description\":\"Properti Indonesia Award 2016\"},{\"image\":\"https://api-web.jakartagardencity.com/wrF1nX9kPA1724693362353.png\",\"year\":2015,\"title\":\"The Most Favorite Housing Project Large Scale\",\"description\":\"Housing Estate Award 2015\"},{\"image\":\"https://api-web.jakartagardencity.com/tAy78xyEev1724693313651.png\",\"year\":2015,\"title\":\"The Emerging Township Project\",\"description\":\"Properti Indonesia Award 2015\"},{\"image\":\"https://api-web.jakartagardencity.com/kBI6iyMTFC1724693451419.png\",\"year\":2014,\"title\":\"The Most Favourite Landed Housing Big Scale Jakarta\",\"description\":\"Housing Estate Award 2014\"},{\"image\":\"https://api-web.jakartagardencity.com/jhEJI87tJ61724693409141.png\",\"year\":2014,\"title\":\"The Biggest Real Land Township\",\"description\":\"Indonesia Property \u0026 Bank Award 2014\"},{\"image\":\"https://api-web.jakartagardencity.com/6ikW5a2YCj1729498080231.png\",\"year\":2012,\"title\":\"Highly Recommended \\\"Green Development\\\"\",\"description\":\"South East Asia Property Awards 2012\"},{\"image\":\"https://api-web.jakartagardencity.com/2JXaKPfXhA1724693488603.png\",\"year\":2012,\"title\":\"Winner Best Villa Development (Indonesia)\",\"description\":\"South East Asia Property Awards 2012\"},{\"image\":\"https://api-web.jakartagardencity.com/eVSxelYP1r1729148131784.jpg\",\"year\":2011,\"title\":\"Green Mark Gold Award\",\"description\":\"Building and Construction Authority of Singapore\"},{\"image\":\"https://api-web.jakartagardencity.com/jbLFxjib2r1729497641796.png\",\"year\":2010,\"title\":\"Runner Up Best Residential (Low Rise)\",\"description\":\"FIABCI Prix d’Excellence Awards 2010\"},{\"image\":\"https://api-web.jakartagardencity.com/POaEWLtchz1729497630538.png\",\"year\":2009,\"title\":\"Winner Middle Class Residential\",\"description\":\"FIABCI Prix d’Excellence Awards 2009\"}]}],[\"$\",\"$L2a\",null,{\"testimonies\":[{\"name\":\"Raden Bayu Yunianto\",\"description\":\"\\\"So far, I feel very comfortable living here. The environment is very harmonious and the layout is well organized. The service facilities are also very satisfying\\\"\",\"property\":\"Vastu\"},{\"name\":\"Jhonathan\",\"description\":\"\\\"While living here, I felt very helped by the flood-free environment. Then, access to the nearby toll road made it easier to travel to work. Apart from that, the management is also very professional, responsive to residents needs and problems.\\\"\",\"property\":\"Shinano\"},{\"name\":\"Ade Oktaviandi\",\"description\":\"\\\"Cleon Park Commercial is a really great place! The environment is very beautiful and calm, I am sure that with the various facilities available and the ongoing development around it, Cleon Park is a smart future investment!\\\"\",\"property\":\"Cleon Park\"},{\"name\":\"Litania\",\"description\":\"\\\"The township area is nice without traffic jams and toll road access is also close, and the environment is also cool in the city of Jakarta\\\"\",\"property\":\"Avenue\"},{\"name\":\"Vikki\",\"description\":\"\\\"What we feel is that the environment is maintained, clean and safe. Then, every time there is a complaint from the management here, they immediately respond quickly and provide friendly service.\\\"\",\"property\":\"The Savoy\"},{\"name\":\"Novendi Alexander\",\"description\":\"\\\"The environment is safe because there are security guards, so if I was come home in the middle of the night feels safe because there is a guard at every gate.\\\"\",\"property\":\"La Seine\"},{\"name\":\"Akmal\",\"description\":\"\\\"While I was in the shophouse, the environment was comfortable and pleasant for visitors because there were pedestrians and trees, so it felt comfortable for residents and business people alike.\\\"\",\"property\":\"The Savoy\"}]}],[\"$\",\"div\",null,{\"className\":\"container mx-auto flex flex-col items-center gap-9 py-[90px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"lg:flex items-end justify-between w-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-start gap-1 lg:gap-4 w-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 lg:gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-zinc-500 font-bold text-xs uppercase tracking-widest\",\"children\":\"Our Blog\"}],[\"$\",\"div\",null,{\"className\":\"w-6 border-0 border-b-2 border-primary-base-700\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-2xl lg:text-4xl font-bold\",\"children\":\"Read The Latest News\"}]]}],\"$L2b\"]}],[\"$\",\"div\",null,{\"className\":\"grid lg:grid-cols-3 gap-6 lg:gap-4\",\"children\":[\"$L2c\",\"$L2d\",\"$L2e\"]}],[\"$\",\"div\",null,{\"className\":\"lg:hidden\",\"children\":\"$L2f\"}]]}],[\"$\",\"$L30\",null,{\"footer\":{\"description\":\"\",\"address\":\"Sales Gallery, Main Boulevard, Jl. Jakarta Garden City Main Boulevard, Jakarta\",\"phoneNumber\":\"(+6221) 4683 8888\",\"whatsappNumber\":\"+62813 8888 4446\",\"email\":\"sales.jgc@modernland.co.id\",\"facebookUrl\":\"www.facebook.com/JakartaGardenCityOfficialPage/?locale=id_ID\",\"instagramUrl\":\"www.instagram.com/jakartagardencity/?hl=en\",\"youtubeUrl\":\"www.youtube.com/@jktgardencity/\",\"tiktokUrl\":\"www.tiktok.com/@official_jgc\",\"openTime\":\"09:00\",\"closeTime\":\"20:00\",\"openTimeSunday\":\"09:00\",\"closeTimeSunday\":\"21:00\"}}]]}]]}],[\"$\",\"$L31\",null,{\"images\":[\"https://api-web.jakartagardencity.com/EEVO8kHlU91736824918978.png\",\"https://api-web.jakartagardencity.com/Y4kdkiEnBf1733454325843.png\"]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "24:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/properties/residential/Mahakam The Signature\",\"children\":[\"$\",\"button\",null,{\"type\":\"button\",\"className\":\"flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-full \\n      lg:w-fit\\n      text-white bg-primary-base-700 hover:bg-primary-900\\n      false\\n      false\\n      rounded-full transition-colors duration-300 ease-in-out\",\"disabled\":\"$undefined\",\"onClick\":\"$undefined\",\"children\":\"Get Your Dream\"}]}]\n25:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/about-us\",\"children\":[\"$\",\"button\",null,{\"type\":\"button\",\"className\":\"flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-fit \\n      lg:w-fit\\n      text-white bg-primary-base-700 hover:bg-primary-900\\n      false\\n      false\\n      rounded-full transition-colors duration-300 ease-in-out\",\"disabled\":\"$undefined\",\"onClick\":\"$undefined\",\"children\":\"See More\"}]}]\n28:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/facilities\",\"children\":[\"$\",\"button\",null,{\"type\":\"button\",\"className\":\"flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-fit \\n      lg:w-fit\\n      text-white bg-primary-base-700 hover:bg-primary-900\\n      false\\n      false\\n      rounded-full transition-colors duration-300 ease-in-out\",\"disabled\":\"$undefined\",\"onClick\":\"$undefined\",\"children\":\"See More\"}]}]\n2b:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/news\",\"className\":\"hidden lg:block text-xs text-primary-base-700 font-bold whitespace-nowrap\",\"children\":\"See More\"}]\n2c:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/news/JGC Collaborates to Enhance Public Safety Initiatives Over the Festive Season\",\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"https://api-web.jakartagardencity.com/3aQXu92LhU1735639884180.png\",\"alt\":\"news\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"round"])</script>
+    <script>self.__next_f.push([1, "ed-2xl w-full h-[162px] lg:h-[172px] object-cover\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-xs font-bold text-zinc-400 uppercase tracking-wider\",\"children\":\"December 31, 2024\"}],[\"$\",\"div\",null,{\"className\":\"text-base lg:text-lg font-bold line-clamp-2\",\"children\":\"JGC Collaborates to Enhance Public Safety Initiatives Over the Festive Season\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-sm font-bold text-primary-base-700\",\"children\":\"Read More\"}]]}]]}]\n2d:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/news/Following the approval of its Extraordinary General Meeting of Shareholders (EGMS), Modernland Realty is poised to implement its strategic plan for asset guarantee.\",\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"https://api-web.jakartagardencity.com/JREfNRhzgR1735549006881.png\",\"alt\":\"news\",\"width\":0,\"height\":0,\"sizes\":\"full\",\"className\":\"rounded-2xl w-full h-[162px] lg:h-[172px] object-cover\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-xs font-bold text-zinc-400 uppercase tracking-wider\",\"children\":\"December 30, 2024\"}],[\"$\",\"div\",null,{\"className\":\"text-base lg:text-lg font-bold line-clamp-2\",\"children\":\"Following the approval of its Extraordinary General Meeting of Shareholders (EGMS), Modernland Realty is poised to implement its strategic plan for asset guarantee.\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-sm font-bold text-primary-base-700\",\"children\":\"Read More\"}]]}]]}]\n2e:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/news/Blood Donation Drive in Collaboration with PMI Jakarta Timur at Jakarta Garden City\",\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"$L19\",null,{\"src\":\"https://api-web.jakartagardencity.com/9rO6ppbjEU1734845989739.png\",\"alt\":\"news\",\"width\":0,\"height\":0,\"si"])</script>
+    <script>self.__next_f.push([1, "zes\":\"full\",\"className\":\"rounded-2xl w-full h-[162px] lg:h-[172px] object-cover\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-xs font-bold text-zinc-400 uppercase tracking-wider\",\"children\":\"December 22, 2024\"}],[\"$\",\"div\",null,{\"className\":\"text-base lg:text-lg font-bold line-clamp-2\",\"children\":\"Blood Donation Drive in Collaboration with PMI Jakarta Timur at Jakarta Garden City\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-sm font-bold text-primary-base-700\",\"children\":\"Read More\"}]]}]]}]\n2f:[\"$\",\"$L23\",null,{\"locale\":\"en\",\"localePrefixMode\":\"always\",\"prefix\":\"/en\",\"href\":\"/news\",\"children\":[\"$\",\"button\",null,{\"type\":\"button\",\"className\":\"flex items-center justify-center text-sm lg:text-xs font-bold px-6 py-4 w-fit \\n      lg:w-fit\\n      false\\n      text-primary-base-700 border border-primary-base-700 hover:bg-secondary-50\\n      false\\n      rounded-full transition-colors duration-300 ease-in-out\",\"disabled\":\"$undefined\",\"onClick\":\"$undefined\",\"children\":\"See More\"}]}]\n"])</script>
+    <script>$RC = function (b, c, e) { c = document.getElementById(c); c.parentNode.removeChild(c); var a = document.getElementById(b); if (a) { b = a.previousSibling; if (e) b.data = "$!", a.setAttribute("data-dgst", e); else { e = b.parentNode; a = b.nextSibling; var f = 0; do { if (a && 8 === a.nodeType) { var d = a.data; if ("/$" === d) if (0 === f) break; else f--; else "$" !== d && "$?" !== d && "$!" !== d || f++ } d = a.nextSibling; e.removeChild(a); a = d } while (a); for (; c.firstChild;)e.insertBefore(c.firstChild, a); b.data = "$" } b._reactRetry && b._reactRetry() } }; $RC("B:0", "S:0")</script>
+    <script id="_next-ga-init" data-nscript="afterInteractive">
+        window['dataLayer'] = window['dataLayer'] || [];
+        function gtag() { window['dataLayer'].push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'GTM-N2XQGKT');</script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=GTM-N2XQGKT" id="_next-ga"
+        data-nscript="afterInteractive"></script><iframe height="0" width="0"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-821169959" data-load-time="1737630233427" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/821169959?random=1737630233426&amp;cv=11&amp;fst=1737630233426&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0z8810448747za201zb810448747&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-778922051/NUBpCKOYlY8BEMPQtfMC" data-load-time="1737630233441" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/778922051?random=1737630233440&amp;cv=11&amp;fst=1737630233440&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0z8810448747za201zb810448747&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=NUBpCKOYlY8BEMPQtfMC&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-11087126952/2veZCK7l8ecZEKjD4KYp" data-load-time="1737630233465" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/11087126952?random=1737630233464&amp;cv=11&amp;fst=1737630233464&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je51m0v9101798594z8810448747za201&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=2veZCK7l8ecZEKjD4KYp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;ct_cookie_present=0"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-11087126952/IkIfCIvE5ecZEKjD4KYp" data-load-time="1737630233467" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/11087126952?random=1737630233466&amp;cv=11&amp;fst=1737630233466&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je51m0v9101798594z8810448747za201&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;label=IkIfCIvE5ecZEKjD4KYp&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;value=0&amp;bttype=purchase&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;capi=1&amp;ct_cookie_present=0"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-11087126952" data-load-time="1737630233497" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/11087126952?random=1737630233492&amp;cv=11&amp;fst=1737630233492&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0v9101798594z8810448747za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608~102504186&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config"
+        style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
+        data-tagging-id="AW-11087126952" data-load-time="1737630237990" height="0" width="0"
+        src="https://td.doubleclick.net/td/rul/11087126952?random=1737630237986&amp;cv=11&amp;fst=1737630237986&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be51m0v9101798594za200&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102067555~102067808~102081485~102123608~102504186&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fjakartagardencity.com%2Fen%2Fproperties%2Fresidential%2FMahakam%2520The%2520Signature&amp;ref=https%3A%2F%2Fjakartagardencity.com%2Fen&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Mahakam%20The%20Signature%20%7C%20Jakarta%20Garden%20City&amp;npa=0&amp;pscdl=noapi&amp;auid=1786591979.1736926598&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B131.0.6778.205%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=14.5.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dpage_view"
+        style="display: none; visibility: hidden;"></iframe><next-route-announcer
+        style="position: absolute;"></next-route-announcer>
+</body>
+
+</html>
