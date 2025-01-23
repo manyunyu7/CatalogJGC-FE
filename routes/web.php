@@ -27,6 +27,7 @@ Route::get("/user-info", [AuthController::class, 'getUserInfo']);
 Route::post("/login-action",[AuthController::class, 'login'])->name('login-action');
 
 Route::view("/login", 'auth/login')->name('login');
+Route::view("/detail", 'catalog/detail');
 
 Route::get("/login",[AuthController::class,'loginView']);
 

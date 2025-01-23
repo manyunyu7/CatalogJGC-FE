@@ -9,25 +9,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
+
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
+
     <link rel="stylesheet" href="{{ asset('catalog/catalog.css') }}" />
     <title>E-Catalog JGC</title>
 </head>
 
 <body class="">
-    <!-- Navbar -->
-    <nav class="bg-jgc sticky top-0 z-50">
-        <div class="container mx-auto flex items-center justify-between px-4 py-2">
-            <div class="flex items-center">
-                <img src="{{ asset('catalog/img/jgc-logo.png') }}" alt="JGC Logo" class="w-[115px] h-[115px]" />
-            </div>
-            <div class="flex space-x-4">
-                <a href="#"><img src="{{ asset('catalog/img/fb.png') }}" alt="Facebook" class="w-5" /></a>
-                <a href="#"><img src="{{ asset('catalog/img/ig.png') }}" alt="Instagram" class="w-5" /></a>
-                <a href="#"><img src="{{ asset('catalog/img/yt.png') }}" alt="YouTube" class="w-5" /></a>
-                <a href="#"><img src="{{ asset('catalog/img/tiktok.png') }}" alt="TikTok" class="w-5" /></a>
-            </div>
-        </div>
-    </nav>
+    @include('catalog.components.navbar')
 
     <!-- Slideshow -->
     <section class="relative mx-auto w-full max-w-screen-lg overflow-hidden">
@@ -128,10 +120,8 @@
                         <span id="dropdownTextHarga" class="pl-8">Rentang Harga</span>
                         <svg id="dropdownIconHarga"
                             class="w-4 h-4 ml-2 mt-1 transform transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <ul id="dropdownMenuHarga"
@@ -245,7 +235,7 @@
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->
-                    <div class="flex transition-transform duration-300" id="slide-wrapper-{{$loop->iteration}}">
+                    <div class="flex transition-transform duration-300" id="slide-wrapper-{{ $loop->iteration }}">
                         @foreach ($item->images as $image)
                             <div class="flex-shrink-0">
                                 <img class="w-full h-48 object-cover sm:h-56" src="{{ $image->full_image_path }}"
@@ -287,7 +277,8 @@
                                 <span class="ml-1 truncate text-sm">0</span>
                             </div>
                             <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
+                                    class="w-6 h-6 sm:w-8 sm:h-8" />
                                 <span class="ml-1 truncate text-sm">1</span>
                             </div>
                             <div class="flex items-center">
@@ -295,11 +286,13 @@
                                 <span class="ml-1 truncate text-sm">1 - 10</span>
                             </div>
                             <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
+                                    class="w-6 h-6 sm:w-8 sm:h-8" />
                                 <span class="ml-1 truncate text-sm">1</span>
                             </div>
                             <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
+                                    class="w-6 h-6 sm:w-8 sm:h-8" />
                                 <span class="ml-1 truncate text-sm">1</span>
                             </div>
                         </div>
@@ -315,101 +308,6 @@
 
     </div>
 
-    {{-- <div
-        class="card-container container mx-auto px-4 py-8 grid gap-8 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        @foreach ($products as $item)
-            <div class="relative card">
-                <div style="z-index: 10" class="rounded-3xl" data-category="Apartemen" data-price="1200000000"
-                    data-harga="1200000000" data-luas="23">
-                    <!-- Card Content -->
-                    <div
-                        class="slider-card relative bg-white border-4 border-black rounded-3xl shadow-lg w-[280px] h-auto overflow-hidden">
-                        <!-- Gambar Utama -->
-                        <!-- Slide Wrapper -->
-                        <div class="flex transition-transform duration-300"
-                            id="slide-wrapper-{{ $loop->iteration }}">
-                            @foreach ($item->plans as $plan_item)
-                                <div class="flex-shrink-0">
-                                    <img class="w-full h-48 object-cover sm:h-56"
-                                        src="{{ $plan_item->full_image_path }}" alt="" />
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <!-- Left Button -->
-                        <button class="absolute left-2 transform -translate-y-32 p-2"
-                            id="prev-btn-{{ $loop->iteration }}">
-                            <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
-                        </button>
-
-                        <!-- Right Button -->
-                        <button class="absolute right-2 transform -translate-y-32 p-2"
-                            id="next-btn-{{ $loop->iteration }}">
-                            <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
-                        </button>
-
-                        <!-- Konten Card -->
-                        <div class="p-4">
-                            <a href="page1.html">
-                                <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
-                                    {{ $item->detail_name }}
-                                </h5>
-                            </a>
-                            <div class="flex space-x-2 mt-2">
-                                <span
-                                    class="px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl">Apartemen</span>
-                                <span
-                                    class="px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl">LB:
-                                    23 m²</span>
-                            </div>
-                            <div class="flex items-center space-x-4 mt-4">
-                                <!-- Icons -->
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/Left.png') }}img/surface 4.png"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 text-sm">0</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 text-sm">1</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/stair 2.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 text-sm">1-10</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 text-sm">1</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 text-sm">1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-4 border-t border-gray-300">
-                            <span class="text-sm text-gray-500">Mulai dari</span>
-                            <span class="block text-lg font-semibold text-green-600">Rp 1.200.000.000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Promo Image Positioning Adjusted -->
-                <div style="position: absolute; top: -7px; right: -7px; z-index:20">
-                    <img alt="Promo" width="120" height="120" src="{{ asset('catalog/img/promo.png') }}"
-                        style="color: transparent;">
-                </div>
-            </div>
-        @endforeach
-    </div> --}}
-
-
-
-
 
     <div class="flex justify-center items-center gap-4 mt-12">
         <button id="view-more-btn"
@@ -424,98 +322,8 @@
     </div>
 
     <!-- Footer Section -->
-    <div class="footer relative w-full mt-12">
-        <!-- Wrapper for background -->
-        <div class="absolute w-full h-full top-0 left-0">
-            <img class="background w-full h-full object-cover" src="{{ asset('catalog/img/Background.jpg') }}"
-                alt="Background Image" />
-        </div>
+    @include('catalog.components.footer')
 
-        <!-- Footer content -->
-        <div class="relative z-10 w-full bg-transparent">
-            <div class="infososmed max-w-7xl mx-auto py-10 px-6 flex flex-wrap justify-between gap-8">
-                <!-- Logo -->
-                <div class="logo flex-shrink-0 flex justify-center w-full md:w-auto">
-                    <img src="{{ asset('catalog/img/jgc.png') }}" alt="Logo Jakarta Garden City"
-                        class="w-[220px] h-[136px]" />
-                </div>
-                <!-- Hubungi Kami -->
-                <div class="info flex-shrink-0 flex justify-center w-full md:w-auto">
-                    <div>
-                        <h3 class="font-poppins text-[#05864d] text-[21.11px] leading-[29.56px] font-semibold mb-4">
-                            Hubungi Kami</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/hubungi/alamat.png') }}" alt="alamat"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-normal text-[14.08px] leading-[22.52px]"> Jl. Raya
-                                    Cakung Clincing Km 0.5 </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/hubungi/call.png') }}" alt="call"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-normal text-[14.08px] leading-[22.52px]"> (021) 4683
-                                    8888 </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/hubungi/whatsapp.png') }}" alt="whatsapp"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-normal text-[14.08px] leading-[22.52px]"> 0813 8888
-                                    4446 </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/hubungi/mail.png') }}" alt="mail"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-normal text-[14.08px] leading-[22.52px]">
-                                    Sales.jgc@modernland.co.id </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Social Media -->
-                <div class="socialmedia flex-shrink-0 flex justify-center w-full md:w-auto">
-                    <div>
-                        <h3 class="font-poppins text-[#05864d] text-[21.11px] leading-[29.56px] font-semibold mb-4">
-                            Social Media</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/socmed/facebook_footer.png') }}" alt="fb"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-poppins font-normal text-[14.08px] leading-[22.52px]">
-                                    Jakarta Garden City </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/socmed/ig_footer.png') }}" alt="ig"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-poppins font-normal text-[14.08px] leading-[22.52px]">
-                                    @jakartagardencity </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/socmed/tk_footer.png') }}" alt="tk"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-poppins font-normal text-[14.08px] leading-[22.52px]">
-                                    @official_jgc </span>
-                            </li>
-                            <li class="flex items-center space-x-4">
-                                <img src="{{ asset('catalog/img/socmed/yt_footer.png') }}" alt="yt"
-                                    class="w-5 h-5 object-cover" />
-                                <span class="text-[#545454] font-poppins font-normal text-[14.08px] leading-[22.52px]">
-                                    jakartagardencityofficial </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Garis Batas -->
-            <div class="border-t border-[#0c5154] mt-8 mx-20">
-                <div class="text-center text-[14.08px] leading-[22.52px] font-poppins text-[#545454] py-4 mt-8">© 2024
-                    Jakarta Garden City owned by PT Modernland Realty Tbk</div>
-            </div>
-            <!-- Pita -->
-            <img class="pita w-full h-auto py-10 object-contain" src="{{ asset('catalog/img/Pita.png') }}"
-                alt="Bottom Overlay" />
-        </div>
-    </div>
 
     <script src="{{ asset('catalog/catalog.js') }}"></script>
 </body>
