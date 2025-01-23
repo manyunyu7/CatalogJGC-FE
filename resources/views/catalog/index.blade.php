@@ -246,9 +246,9 @@
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->
                     <div class="flex transition-transform duration-300" id="slide-wrapper-{{$loop->iteration}}">
-                        @foreach ($item->plans as $plan_item)
+                        @foreach ($item->images as $image)
                             <div class="flex-shrink-0">
-                                <img class="w-full h-48 object-cover sm:h-56" src="{{ $plan_item->full_image_path }}"
+                                <img class="w-full h-48 object-cover sm:h-56" src="{{ $image->full_image_path }}"
                                     alt="" />
                             </div>
                         @endforeach
@@ -269,7 +269,8 @@
                     <div class="p-4">
                         <a href="page1.html">
                             <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
-                                {{ $item->detail_name }}
+                                {{ $item->parent_name }} -
+                                {{ $item->category_name }}
                             </h5>
                         </a>
                         <div class="flex items-center gap-2 mt-2 overflow-hidden">

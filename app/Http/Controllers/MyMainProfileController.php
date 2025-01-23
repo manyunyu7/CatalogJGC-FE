@@ -15,7 +15,7 @@ class MyMainProfileController extends Controller
     public function index(Request $request)
     {
         // Cache key for the products
-        $cacheKey = 'products_cache';
+        $cacheKey = 'products_csacxshex12';
 
         // Check and fetch products from cache or database
         $products = Cache::remember($cacheKey, 1440, function () {
@@ -81,10 +81,15 @@ class MyMainProfileController extends Controller
                     $plan->full_image_path = "https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F" . urlencode($plan->image) . "&w=1920&q=75";
                 }
 
+                foreach ($productDetails->images as $images) {
+                    $images->full_image_path = "https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F" . urlencode($images->image) . "&w=1920&q=75";
+                }
+
                 $categoriesSet[] = (object)[
                     'id' => $category->id,
-                    'name_id' => $category->name_id,
-                    'detail_name' => $productDetails->name ?? '',
+                    'category_name' => $category->name_id,
+                    'parent_name' => $productDetails->name ?? '',
+                    'images'=> $productDetails->images ?? [],
                     'plans' => $category->plans ?? [],
                 ];
             }
