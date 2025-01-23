@@ -306,6 +306,7 @@ function renderCards() {
 }
 
 // Fungsi untuk membuat pagination
+// Fungsi untuk membuat pagination
 function renderPagination(totalPages) {
     const pageNumbersContainer = document.getElementById("page-numbers");
     const prevBtn = document.getElementById("prev-btn");
@@ -315,24 +316,38 @@ function renderPagination(totalPages) {
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
 
-    for (let i = 1; i <= totalPages; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
+    // Logic to show only 3 card buttons
+    let startPage = Math.max(1, currentPage - 1); // Ensure startPage is at least 1
+    let endPage = Math.min(totalPages, currentPage + 1); // Ensure endPage doesn't exceed totalPages
 
-        // Tentukan class berdasarkan halaman saat ini
-        button.className = `w-10 h-10 ${i === currentPage ? "bg-[#05864D] text-white" : "bg-white text-gray-800 border border-gray-300"} rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
-
-        // Tambahkan event listener untuk mengubah halaman
-        button.addEventListener("click", () => {
-            currentPage = i; // Perbarui halaman saat ini
-            renderCards(); // Render ulang kartu
-            renderPagination(totalPages); // Render ulang pagination
-        });
-
-        // Tambahkan tombol ke container
-        pageNumbersContainer.appendChild(button);
+    // Adjust start and end pages to always show 3 buttons if possible
+    if (endPage - startPage < 2) {
+      const diff = 2 - (endPage - startPage);
+      if (startPage - diff >= 1) {
+        startPage -= diff;
+      } else {
+        endPage += diff;
+      }
     }
-}
+
+    for (let i = startPage; i <= endPage; i++) {
+      const button = document.createElement("button");
+      button.textContent = i;
+
+      // Tentukan class berdasarkan halaman saat ini
+      button.className = `w-10 h-10 ${i === currentPage ? "bg-[#05864D] text-white" : "bg-white text-gray-800 border border-gray-300"} rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
+
+      // Tambahkan event listener untuk mengubah halaman
+      button.addEventListener("click", () => {
+        currentPage = i; // Perbarui halaman saat ini
+        renderCards(); // Render ulang kartu
+        renderPagination(totalPages); // Render ulang pagination
+      });
+
+      // Tambahkan tombol ke container
+      pageNumbersContainer.appendChild(button);
+    }
+  }
 
 // Event listener untuk pencarian
 document.getElementById("search").addEventListener("input", () => {
