@@ -53,8 +53,6 @@
                                                 <th data-sortable="">Urutan</th>
                                                 <th data-sortable="">Title</th>
                                                 <th data-sortable="">Description</th>
-                                                <th data-sortable="">Action</th>
-                                                <th data-sortable="">Action Link</th>
                                                 <th data-sortable="">Tanggal Dibuat</th>
                                                 <th data-sortable="">Hapus</th>
                                                 <th data-sortable=""></th>
@@ -73,10 +71,6 @@
                                                     <td>{{ $item->order }}</td>
                                                     <td>{{ $item->title }}</td>
                                                     <td>{{ $item->description }}</td>
-                                                    <td>{{ $item->action }}</td>
-                                                    <td>{{ $item->action_link }}</td>
-                                                    <td>{{ $item->second_action }}</td>
-                                                    <td>{{ $item->second_action_link }}</td>
                                                     <td>{{ $item->created_at }}</td>
                                                     <td>
                                                         <button id="{{ $item->id }}"  data-toggle="modal" type="button"
