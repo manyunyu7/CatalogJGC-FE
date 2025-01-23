@@ -100,8 +100,8 @@
 
 
 
-    <section>
-        <div class="flex w-full h-screen flex-col md:flex-row ">
+    <section class="w-full ">
+        <div class="flex w-full flex-col md:flex-row ">
             <!-- Left Section -->
             <div class="w-full md:w-[70%]">
 
@@ -191,8 +191,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Right Section (Map) -->
-            <!-- Right Section (Map) -->
+
             <div class="w-full md:w-[30%] relative max-h-[400px] flex justify-center">
                 <div class="relative w-[400px] h-[400px]">
                     <iframe class="w-full h-full rounded-[20px]"

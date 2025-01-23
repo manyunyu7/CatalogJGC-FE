@@ -312,16 +312,20 @@
 
     <div class="flex justify-center items-center gap-4 mt-12">
         <button id="view-more-btn"
-            class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition duration-200 hidden">View
-            More</button>
+            class="hidden px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition-all duration-200">
+            View More
+        </button>
         <button id="prev-btn"
-            class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition duration-200"
-            disabled>Prev</button>
+            class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition-all duration-200"
+            disabled>
+            Prev
+        </button>
         <div id="page-numbers" class="flex gap-2"></div>
         <button id="next-btn"
-            class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition duration-200">Next</button>
+            class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-400 transition-all duration-200">
+            Next
+        </button>
     </div>
-
     <!-- Footer Section -->
     @include('catalog.components.footer')
 
