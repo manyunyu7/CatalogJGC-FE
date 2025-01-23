@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories and Plans Cards/List</title>
+    <title>Categories and Plans Accordion</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -12,23 +12,12 @@
 <body class="bg-gray-100 p-4">
 
     <!-- Cards/List Container -->
-    <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div id="cards-container" class=" mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <!-- Categories will be injected here -->
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
-        <div class="bg-white rounded-lg p-8 max-w-lg w-full">
-            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">X</button>
-            <h2 id="modal-title" class="text-2xl font-semibold mb-4"></h2>
-            <img id="modal-image" class="w-full h-auto rounded-lg" />
-        </div>
     </div>
 
     <script>
         const cardsContainer = document.getElementById('cards-container');
-        const modal = document.getElementById('modal');
-        const closeModalBtn = document.getElementById('close-modal');
         let allCategories = [];
 
         // Function to fetch product details (including types and categories)
@@ -90,70 +79,154 @@
             console.log(allCategories);
         }
 
-        // Render categories as cards with images
+        // Render categories as cards with accordion
         function renderCards(categories) {
             cardsContainer.innerHTML = '';
-            cardsContainer.classList.remove('space-y-4');
-            cardsContainer.classList.add('grid', 'grid-cols-1', 'md:grid-cols-2', 'lg:grid-cols-3', 'gap-4');
 
             if (categories.length === 0) {
-                cardsContainer.innerHTML = "<p class='col-span-full text-center text-xl text-red-500'>No categories available.</p>";
+                cardsContainer.innerHTML = "<p class='text-center text-xl text-red-500'>No categories available.</p>";
                 return;
             }
 
+            // Inside the renderCards function, after creating each card:
             categories.forEach(category => {
                 const card = document.createElement('div');
-                card.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md', 'hover:shadow-lg', 'cursor-pointer');
+                card.classList.add('relative', 'card', 'bg-white', 'border', 'border-gray-200', 'rounded-lg', 'shadow', 'w-full', 'h-auto', 'overflow-hidden');
 
-                // Check if plans exist and extract image from the first plan
-                let imageUrl = '';
-                if (category.plans && category.plans.length > 0 && category.plans[0].image) {
-                    imageUrl = `https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F${category.plans[0].image.replace('/', '')}&w=1920&q=75`;
-                } else {
-                    imageUrl = 'https://via.placeholder.com/1920x1080?text=No+Image'; // Fallback placeholder
-                }
+                // Add the slider and other content as before...
+                const images = category.plans.map(plan => {
+                    return `<div class="flex-shrink-0">
+            <img class="w-full h-48 object-cover sm:h-56" src="https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F${plan.image.replace('/', '')}&w=1920&q=75" alt="${plan.name_en}" />
+        </div>`;
+                }).join('');
 
                 card.innerHTML = `
-                    <h2 class="text-xl font-semibold">${category.detailName}</h2>
-                    <h3 class="text-lg font-medium text-gray-600">${category.name_id}</h3>
-                `;
+        <div class="slider-card relative bg-white border border-gray-200 rounded-lg shadow w-full h-auto overflow-hidden">
+            <div class="flex transition-transform duration-300" id="slide-wrapper-${category.id}">
+                ${images}
+            </div>
+            <button class="absolute left-2 transform -translate-y-32 p-2" id="prev-btn-${category.id}">
+                <img src="img/Left.png" alt="Left" class="w-8 h-8" />
+            </button>
+            <button class="absolute right-2 transform -translate-y-32 p-2" id="next-btn-${category.id}">
+                <img src="img/Right.png" alt="Right" class="w-8 h-8" />
+            </button>
+            <div class="p-4">
+                <h5 class="text-lg font-semibold text-gray-700 truncate">${category.detailName} - ${category.name_id}</h5>
+                <div class="flex space-x-2 mt-2">
+                    <span class="px-2 py-1 text-sm border border-gray-400 rounded">Category</span>
+                    <span class="px-2 py-1 text-sm border border-gray-400 rounded">Floor Area</span>
+                </div>
+            </div>
+            <div class="p-4 border-t border-gray-200">
+                <span class="text-sm text-gray-500">Starting from</span>
+                <span class="block text-lg font-semibold text-green-600">Price: $1,000,000</span>
+            </div>
+        </div>
+    `;
 
-                // <img src="${imageUrl}" alt="${category.name_id}" class="mt-4 rounded-lg w-full h-auto">
-                // Add event listener to show the modal on card click
-                card.addEventListener('click', () => {
-                    openModal(category);
-                });
+                // Now safely add event listeners for navigation
+                const prevBtn = card.querySelector(`#prev-btn-${category.id}`);
+                const nextBtn = card.querySelector(`#next-btn-${category.id}`);
+
+                if (prevBtn && nextBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        // Handle left button click
+                        const slideWrapper = card.querySelector(`#slide-wrapper-${category.id}`);
+                        slideWrapper.scrollBy({ left: -200, behavior: 'smooth' });
+                    });
+
+                    nextBtn.addEventListener('click', () => {
+                        // Handle right button click
+                        const slideWrapper = card.querySelector(`#slide-wrapper-${category.id}`);
+                        slideWrapper.scrollBy({ left: 200, behavior: 'smooth' });
+                    });
+                }
 
                 cardsContainer.appendChild(card);
             });
+
         }
-
-        // Open modal and show details
-        function openModal(category) {
-            const modalTitle = document.getElementById('modal-title');
-            const modalImage = document.getElementById('modal-image');
-
-            modalTitle.innerText = category.detailName; // Set the modal title
-            // Set the image URL inside the modal
-            let imageUrl = '';
-            if (category.plans && category.plans.length > 0 && category.plans[0].image) {
-                imageUrl = `https://jakartagardencity.com/_next/image?url=https%3A%2F%2Fapi-web.jakartagardencity.com%2F${category.plans[0].image.replace('/', '')}&w=1920&q=75`;
-            } else {
-                imageUrl = 'https://via.placeholder.com/1920x1080?text=No+Image'; // Fallback placeholder
-            }
-
-            modalImage.src = imageUrl; // Set the image source in the modal
-            modal.classList.remove('hidden'); // Show the modal
-        }
-
-        // Close the modal
-        closeModalBtn.addEventListener('click', () => {
-            modal.classList.add('hidden'); // Hide the modal
-        });
 
         // Fetch all products and their details on page load
         fetchProducts();
     </script>
+
+<div
+class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+
+@foreach ($products as $item)
+    <div class="relative card" data-category="Apartemen" data-price="1200000000" data-harga="1200000000"
+        data-luas="23">
+        <div
+            class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-lg shadow w-full h-auto overflow-hidden">
+            <!-- Gambar Utama -->
+            <div class="flex transition-transform duration-300" id="slide-wrapper-1">
+
+                @foreach ($item->plans as $plan_item)
+                <div class="flex-shrink-0">
+                    <img class="w-full h-48 object-cover sm:h-56" src="{{$plan_item->full_image_path}}"
+                        alt="" />
+                </div>
+                @endforeach
+            </div>
+
+            <!-- Left Button -->
+            <button class="absolute left-2 transform -translate-y-32 p-2" id="prev-btn-1">
+                <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
+            </button>
+
+            <!-- Right Button -->
+            <button class="absolute right-2 transform -translate-y-32 p-2" id="next-btn-1">
+                <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
+            </button>
+
+            <!-- Konten Card -->
+            <div class="p-4">
+                <a href="page1.html">
+                    <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
+                        {{ $item->detail_name }}</h5>
+                </a>
+                <div class="flex space-x-2 mt-2">
+                    <span
+                        class="px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl">Apartemen</span>
+                    <span
+                        class="px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl">LB:
+                        23 m²</span>
+                </div>
+                <div class="flex items-center space-x-4 mt-4">
+
+                    <div class="flex items-center">
+                        <img src="{{ asset('catalog/img/Left.png') }}img/surface 4.png" class="w-6 h-6 sm:w-8 sm:h-8" />
+                        <span class="ml-1 text-sm">0</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                        <span class="ml-1 text-sm">1</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                        <span class="ml-1 text-sm">1-10</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                        <span class="ml-1 text-sm">1</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                        <span class="ml-1 text-sm">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t border-slate-950">
+                <span class="text-sm text-gray-500">Mulai dari</span>
+                <span class="block text-lg font-semibold text-green-600">Rp 1.200.000.000</span>
+            </div>
+        </div>
+    </div>
+@endforeach
+
+</div>
 
 </body>
 

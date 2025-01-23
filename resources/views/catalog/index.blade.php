@@ -234,14 +234,95 @@
     </section>
 
     <div
-        class="card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        @foreach ($products as $item)
+            <div class="relative card" data-category="Apartemen" data-price="1200000000" data-harga="1200000000"
+                data-luas="23">
+                <!-- Banner Promo -->
+                <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
+                    <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
+                </div>
+                <div
+                    class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
+                    <!-- Gambar Utama -->
+                    <div class="flex transition-transform duration-300" id="slide-wrapper-{{$loop->iteration}}">
+                        @foreach ($item->plans as $plan_item)
+                            <div class="flex-shrink-0">
+                                <img class="w-full h-48 object-cover sm:h-56" src="{{ $plan_item->full_image_path }}"
+                                    alt="" />
+                            </div>
+                        @endforeach
+
+                    </div>
+
+                    <!-- Left Button -->
+                    <button class="absolute left-2 transform -translate-y-32 p-2" id="prev-btn-1">
+                        <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
+                    </button>
+
+                    <!-- Right Button -->
+                    <button class="absolute right-2 transform -translate-y-32 p-2" id="next-btn-1">
+                        <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
+                    </button>
+
+                    <!-- Konten Card -->
+                    <div class="p-4">
+                        <a href="page1.html">
+                            <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
+                                {{ $item->detail_name }}
+                            </h5>
+                        </a>
+                        <div class="flex items-center gap-2 mt-2 overflow-hidden">
+                            <span
+                                class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                Apartemen </span>
+                            <span
+                                class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                LB: 23 m² </span>
+                        </div>
+                        <div class="flex items-center space-x-4 mt-4">
+                            <div class="flex items-center">
+                                <img src="{{ asset('catalog/img/surface 4.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span class="ml-1 truncate text-sm">0</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span class="ml-1 truncate text-sm">1</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span class="ml-1 truncate text-sm">1 - 10</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span class="ml-1 truncate text-sm">1</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span class="ml-1 truncate text-sm">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 border-t border-slate-950 flex items-center justify-between">
+                        <span class="text-sm font-poppins font-normal text-[#545454]">Mulai dari</span>
+                        <span class="text-2xl font-poppins font-semibold text-[#4f935f]">Rp 1.200.000.000</span>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+
+
+    </div>
+
+    {{-- <div
+        class="card-container container mx-auto px-4 py-8 grid gap-8 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         @foreach ($products as $item)
             <div class="relative card">
-                <div style="z-index: 10" class=" rounded-3xl" data-category="Apartemen" data-price="1200000000"
+                <div style="z-index: 10" class="rounded-3xl" data-category="Apartemen" data-price="1200000000"
                     data-harga="1200000000" data-luas="23">
                     <!-- Card Content -->
                     <div
-                        class="slider-card relative bg-white border border-black rounded-lg shadow-lg w-full h-auto overflow-hidden">
+                        class="slider-card relative bg-white border-4 border-black rounded-3xl shadow-lg w-[280px] h-auto overflow-hidden">
                         <!-- Gambar Utama -->
                         <!-- Slide Wrapper -->
                         <div class="flex transition-transform duration-300"
@@ -253,7 +334,6 @@
                                 </div>
                             @endforeach
                         </div>
-
 
                         <!-- Left Button -->
                         <button class="absolute left-2 transform -translate-y-32 p-2"
@@ -324,7 +404,8 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> --}}
+
 
 
 
