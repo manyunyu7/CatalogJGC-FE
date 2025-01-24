@@ -10,27 +10,19 @@ class MyMainProfileController extends Controller
 {
     public function index(Request $request)
     {
-        // Retrieve the token from session
-        $token = $request->cookie('killaToken');
+        // Fetch the products from the API
+        $response = Http::get(env('URL_BE') . 'products');
 
-        // Ensure the token is available
-        if (!$token) {
-            return back()->with('error', 'User is not authenticated');
+        // Handle errors in the API request and return a detailed error message
+        if (!$response->successful()) {
+            abort(400, 'Failed to fetch products: ' . json_encode($response->json()));  // HTTP status 400 with detailed message
         }
 
-        $response = Http::withToken($token)
-            ->get(env('URL_BE') . 'products');
+        // Process the response and map products
+        $products = collect($response->json()['result'])->map(function ($product) {
+            return (object) $product;  // Convert each product array to an object
+        });
 
-
-        if ($response->successful()) {
-            $products = collect($response->json()['result'])->map(function ($product) {
-                return (object) $product; // Convert each user array to an object
-            });
-
-            $compact = compact('products');
-            return view('catalog.index')->with($compact);
-        }
-
-        return back()->with('error', 'Failed to fetch users');
+        return view('catalog.index', compact('products'));
     }
 }
