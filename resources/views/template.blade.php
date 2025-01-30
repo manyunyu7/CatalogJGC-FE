@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="{{ asset('/frontend') }}/assets/vendors/iconly/bold.css">
 
+    @yield("style")
+
     <link rel="stylesheet" href="{{ asset('/frontend') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="{{ asset('/frontend') }}/assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('/frontend') }}/assets/css/app.css">
