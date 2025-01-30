@@ -26,8 +26,8 @@
         .main-slider img {
             width: 100%;
             max-height:
-            /* Adjust as needed */
-            object-fit: cover;
+                /* Adjust as needed */
+                object-fit: cover;
             /* border-radius: 0.5rem; */
         }
 
@@ -54,23 +54,20 @@
 
     @include('catalog.components.navbar')
 
-    <section class="w-full ">
+    <section class="">
         <!-- Main Photo Slider -->
-        <div class="swiper-container main-slider w-full">
+        <div class="swiper-container main-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="w-full  sm:max-h-20% md:max-h-1/2 rounded-lg"
-                        src="https://i.pinimg.com/736x/36/7e/5e/367e5e0b899fad694a4de1aebcddccda.jpg"
+                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/Cleon Park.JPG"
                         alt="Main Photo 1" />
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full sm:max-h-20% md:max-h-1/2 rounded-lg"
-                        src="https://i.pinimg.com/736x/b7/cf/9d/b7cf9d1802b3b54e08ac6f0555ea0432.jpg"
+                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon/Cleon1.png"
                         alt="Main Photo 2" />
                 </div>
                 <div class="swiper-slide">
-                    <img class="w-full  sm:max-h-20% md:max-h-1/2 rounded-lg"
-                        src="https://i.pinimg.com/736x/f7/bb/10/f7bb1038e959bdaef52d5666341003db.jpg"
+                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon_layout1.png"
                         alt="Main Photo 3" />
                 </div>
             </div>
@@ -80,128 +77,189 @@
         <div class="swiper-container swiper-thumbnails mt-4 px-4">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class=" sm:w-[120px] sm:h-[70px] lg:w-[120px] lg:h-[120px] rounded-lg object-cover"
-                        src="https://i.pinimg.com/736x/36/7e/5e/367e5e0b899fad694a4de1aebcddccda.jpg"
-                        alt="Thumbnail 1" />
+                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
+                        src="catalog/img/Cleon Park.JPG" alt="Thumbnail 1" />
                 </div>
                 <div class="swiper-slide">
-                    <img class=" sm:w-[120px] sm:h-[70px] lg:w-[120px] lg:h-[120px] rounded-lg object-cover"
-                        src="https://i.pinimg.com/736x/b7/cf/9d/b7cf9d1802b3b54e08ac6f0555ea0432.jpg"
-                        alt="Thumbnail 2" />
+                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
+                        src="catalog/img/cleon/Cleon1.png" alt="Thumbnail 2" />
                 </div>
                 <div class="swiper-slide">
-                    <img class=" sm:w-[120px] sm:h-[70px] lg:w-[120px] lg:h-[120px] rounded-lg object-cover"
-                        src="https://i.pinimg.com/736x/f7/bb/10/f7bb1038e959bdaef52d5666341003db.jpg"
-                        alt="Thumbnail 3" />
+                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
+                        src="catalog/img/cleon_layout1.png" alt="Thumbnail 3" />
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="w-full ">
-        <div class="flex w-full flex-col md:flex-row ">
+    <section class="w-full px-4 md:px-8 lg:px-16 pt-3">
+        <div class="flex flex-col md:flex-row w-full gap-6">
             <!-- Left Section -->
-            <div class="w-full md:w-[70%]">
-
-                <div class="flex items-center flex-col md:flex-row md:ml-20 mt-6 mb-4">
-                    <div class="flex justify-center items-center mb-4 md:mb-0">
-                        <img src="{{ asset('catalog/img/logo_cleo.png') }}" alt="Cleon Park Logo"
-                            class="w-[173px] h-[173px] md:mr-6 object-cover border-[1px] rounded-[20px]" />
+            <div class="w-full md:w-2/3">
+                <div class="flex flex-col md:flex-row items-center md:items-start md:ml-8 mt-6 mb-4">
+                    <img src="{{ asset('catalog/img/logo_cleo.png') }}" alt="Cleon Park Logo"
+                        class="w-[140px] h-[180px] md:w-[176px] md:h-[220px] md:mr-6 object-cover border rounded-lg" />
+                    <div class="w-full text-center md:text-left mt-4 md:mt-0">
+                        <h1 class="font-poppins font-semibold text-2xl md:text-4xl text-[#545454] leading-tight mb-2">
+                            Cleon Park - Studio
+                        </h1>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-2">
+                            <img src="catalog/img/freedp.png" alt="Free DP"
+                                class="w-[90px] h-[35px] md:w-[108px] md:h-[42px]" />
+                            <img src="catalog/img/freeBPHTB.png" alt="Free BPHTB"
+                                class="w-[110px] h-[35px] md:w-[138px] md:h-[42px]" />
+                            <img src="catalog/img/limitedStock.png" alt="Limited Stock"
+                                class="w-[130px] h-[35px] md:w-[157px] md:h-[42px]" />
+                        </div>
+                        <div
+                            class="text-[#52525B] text-base md:text-lg flex flex-col md:flex-row items-center justify-center md:justify-start pt-3">
+                            <span class="font-poppins font-normal">Start From</span>
+                            <span class="px-2 md:px-3 font-poppins font-semibold text-2xl md:text-3xl text-[#52525b]">Rp
+                                3.300.000.000</span>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="max-w-full">
-                        <div class="text-[48px] font-[Poppins] text-[#545454] mb-2">
-                            Vastu - V7
+
+                <!-- Detail Section -->
+                <div class="md:ml-8 mt-8 border rounded-xl border-[#eeeef0] p-6">
+                    <h5 class="font-poppins font-semibold text-xl text-black">Detail</h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-4">
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Proyek</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/house-svgrepo-com 1.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">Apartemen</span>
+                            </div>
                         </div>
-                        <div class="text-[#52525B] text-[16px] ml-2 flex items-center">
-                            Start From <span class="text-lg font-bold ml-2">Rp 3.300.000.000</span>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Luas Bangunan</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/webpack_svgrepo.com.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">31 m²</span>
+                            </div>
                         </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Kamar Tidur</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/surface 4.png') }}" class="w-8 h-8" alt="Icon" />
+                                <span class="text-black font-medium">0</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Kamar Mandi</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/shower_svgrepo.com.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">1</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Dapur</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">1</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Lantai</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-8 h-8" alt="Icon" />
+                                <span class="text-black font-medium">1 - 10</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Listrik (Watt)</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/lightning-bolt_svgrepo.com.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">2200</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[#93949d] text-base font-normal">Furnitur</p>
+                            <div class="flex items-center space-x-2">
+                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-8 h-8"
+                                    alt="Icon" />
+                                <span class="text-black font-medium">Semi Furnish</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
 
 
-                <!-- Parent Container with padding -->
-                <div class="flex justify-start  my-8">
-                    <!-- Detail Section -->
-                    <div class="w-full h-auto md:ml-20 max-w-4xl border-[1px] rounded-[20px] border-[#eeeef0] p-5">
-                        <h5 class="font-poppins font-semibold text-[20px] leading-[28px] text-[#000000]">Detail</h5>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-5">
-                            <!-- Proyek -->
-                            <div class="w-full h-[65px]">
-                                <p class="text-[#93949d] text-[16px] font-normal font-poppins leading-[25.6px] mb-2">
-                                    Proyek</p>
-                                <div class="flex items-center space-x-2">
-                                    <img src="{{ asset('catalog/img/house-svgrepo-com 1.png') }}"
-                                        class="w-[30px] h-[30px]" alt="House Icon" />
-                                    <span
-                                        class="text-[#000000] text-[16px] font-poppins leading-[40.1px] font-medium">Apartemen</span>
-                                </div>
+                <!-- Fasilitas Section -->
+                <div class="md:ml-8 mt-8 border rounded-xl border-[#eeeef0] p-6">
+                    <h5 class="font-poppins font-semibold text-xl text-black">Fasilitas Apartemen</h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-4">
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/card_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Kartu Akses">Kartu Akses</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/sink-2_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Wastafel">Wastafel</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/shower_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Shower">Shower</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/balcony_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Balkon">Balkon</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/wifi_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Wifi">Wifi</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/swim_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate group-hover:overflow-visible">Kolam
+                                Renang</span>
+                            <div
+                                class="absolute left-0 bottom-full mb-2 w-max max-w-xs p-2 text-xs text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                                Kolam Renang
                             </div>
-                            <!-- Luas Bangunan -->
-                            <div class="w-full h-[65px]">
-                                <p class="text-[#93949d] text-[16px] font-normal font-poppins leading-[25.6px] mb-2">
-                                    Luas
-                                    Bangunan</p>
-                                <div class="flex items-center space-x-2">
-                                    <img src="{{ asset('catalog/img/webpack_svgrepo.com.png') }}"
-                                        class="w-[30px] h-[30px]" alt="Area Icon" />
-                                    <span
-                                        class="text-[#000000] text-[16px] font-poppins leading-[40.1px] font-medium">31
-                                        m²</span>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/park_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Taman">Taman</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/atm-money_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="ATM">ATM</span>
+                        </div>
+                        <div class="relative flex items-center space-x-2 min-w-0 group">
+                            <img src="{{ asset('catalog/img/walk-go-move-next_svgrepo.com.png') }}" class="w-8 h-8"
+                                alt="Icon" />
+                            <span class="text-black font-medium truncate" title="Jalur Lari">Jalur Lari</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex justify-start  my-8">
-                    <!-- Detail Section -->
-                    <div class="w-full h-auto md:ml-20 max-w-4xl border-[1px] rounded-[20px] border-[#eeeef0] p-5">
-                        <h5 class="font-poppins font-semibold text-[20px] leading-[28px] text-[#000000]">Fasilitas
-                            Cluster</h5>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-5">
-                            <!-- Proyek -->
-                            <div class="w-full h-[65px]">
-                                <p class="text-[#93949d] text-[16px] font-normal font-poppins leading-[25.6px] mb-2">
-                                    Proyek</p>
-                                <div class="flex items-center space-x-2">
-                                    <img src="{{ asset('catalog/img/house-svgrepo-com 1.png') }}"
-                                        class="w-[30px] h-[30px]" alt="House Icon" />
-                                    <span
-                                        class="text-[#000000] text-[16px] font-poppins leading-[40.1px] font-medium">Apartemen</span>
-                                </div>
-                            </div>
-                            <!-- Luas Bangunan -->
-                            <div class="w-full h-[65px]">
-                                <p class="text-[#93949d] text-[16px] font-normal font-poppins leading-[25.6px] mb-2">
-                                    Luas
-                                    Bangunan</p>
-                                <div class="flex items-center space-x-2">
-                                    <img src="{{ asset('catalog/img/webpack_svgrepo.com.png') }}"
-                                        class="w-[30px] h-[30px]" alt="Area Icon" />
-                                    <span
-                                        class="text-[#000000] text-[16px] font-poppins leading-[40.1px] font-medium">31
-                                        m²</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <div class="w-full md:w-[30%] relative max-h-[400px] flex justify-center">
-                <div class="relative w-[400px] h-[400px]">
-                    <iframe class="w-full h-full rounded-[20px]"
+            <!-- Right Section (Google Maps) -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end">
+                <div class="w-full md:w-[400px] h-[400px] relative">
+                    <iframe class="w-full h-full rounded-xl"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4237220058457!2d144.95778431560456!3d-37.81362797975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5ceea61d6b%3A0x14bfb2f81b89a1db!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1636993060137!5m2!1sen!2sus"
-                        frameborder="0" class="border-0" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-
-
         </div>
     </section>
 
