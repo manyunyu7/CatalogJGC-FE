@@ -24,15 +24,15 @@ Route::get('/', function () {
 
 Route::get("/user-info", [AuthController::class, 'getUserInfo']);
 
-Route::post("/login-action",[AuthController::class, 'login'])->name('login-action');
+Route::post("/login-action", [AuthController::class, 'login'])->name('login-action');
 
 Route::view("/login", 'auth/login')->name('login');
 Route::view("/detail", 'catalog/detail');
 Route::view("/detailjg", 'catalog/detailjg');
 
-Route::get("/login",[AuthController::class,'loginView']);
+Route::get("/login", [AuthController::class, 'loginView']);
 
-Route::get('/', [App\Http\Controllers\MyMainProfileController::class, 'index'])->name('');
+Route::get('/', [App\Http\Controllers\MyMainProfileController::class, 'index']);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -51,11 +51,20 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/{id}/delete', [App\Http\Controllers\StaffController::class, 'destroy']);
 
 
+    // /product/detail/{parentId}/{id}
+    Route::prefix("manage-product")->group(function () {
+        Route::get('/', [App\Http\Controllers\ManageProductController::class, 'viewManage']);
+        Route::get('/edit/{parentId}/{id}/', [App\Http\Controllers\ManageProductController::class, 'viewEdit']);
+        Route::post('/price/{parentId}/{id}/update', [App\Http\Controllers\ProductPriceController::class, 'updatePriceFe']);
+
+    });
+
     Route::prefix('company-profile')->group(function () {
         Route::prefix('basic-info')->group(function () {
             Route::get("/", [App\Http\Controllers\BasicInfoController::class, 'index']);
             Route::post('store', [App\Http\Controllers\BasicInfoController::class, 'store']);
         });
+
 
         Route::middleware("killa")->prefix('slider')->group(function () {
             Route::get('/', [App\Http\Controllers\MyProfileSliderController::class, 'manageSlider']);
@@ -64,7 +73,6 @@ Route::group(['middleware' => ['auth']], function () {
             Route::get('{id}/edit', [App\Http\Controllers\MyProfileSliderController::class, 'viewEdit']);
             Route::post('update', [App\Http\Controllers\MyProfileSliderController::class, 'update']);
         });
-
     });
 
 

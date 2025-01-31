@@ -13,6 +13,19 @@ use Illuminate\Http\Request;
 class RazkyFeb
 {
 
+    private $data;
+
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
+
+    // Override __get to return null if the property doesn't exist
+    public function __get($key)
+    {
+        return $this->data[$key] ?? null;
+    }
+
     public static function IndonesianDateTimeline()
     {
         $date = Carbon::now()->locale('id');
