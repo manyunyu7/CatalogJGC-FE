@@ -299,8 +299,9 @@
                         </div>
                     </div>
                     <div class="p-4 border-t border-slate-950 flex items-center justify-between">
-                        <span class="text-sm font-poppins font-normal text-[#545454]">Mulai dari</span>
-                        <span class="text-2xl font-poppins font-semibold text-[#4f935f]">Rp 1.200.000.000</span>
+                        <span class="text-sm font-poppins font-normal text-[#545454]">{{ $item->price_prefix }}</span>
+                        <span class="text-2xl font-poppins font-semibold text-[#4f935f]">
+                            {{ $item->price_formatted }}</span>
                     </div>
                 </div>
             </div>
