@@ -13,6 +13,7 @@ class MyMainProfileController extends Controller
         // Fetch the products from the API
         $response = Http::get(env('URL_BE') . 'products');
 
+
         // Handle errors in the API request and return a detailed error message
         if (!$response->successful()) {
             abort(400, 'Failed to fetch products: ' . json_encode($response->json()));  // HTTP status 400 with detailed message
@@ -22,6 +23,7 @@ class MyMainProfileController extends Controller
         $products = collect($response->json()['result'])->map(function ($product) {
             return (object) $product;  // Convert each product array to an object
         });
+
 
         return view('catalog.index', compact('products'));
     }
