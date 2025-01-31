@@ -69,6 +69,13 @@
                     </ul>
                 </li>
 
+                <li class="sidebar-item {{ Request::is('manage-product') ? 'active' : '' }}">
+                    <a href="/manage-product" class="sidebar-link">
+                        <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+
 
                 <li class="sidebar-title">Inbox</li>
                 <li class="sidebar-item  ">
@@ -86,6 +93,8 @@
                         <span>Logout</span>
                     </a>
                 </li>
+
+
 
 
             </ul>
