@@ -4,8 +4,8 @@
             <div class="d-flex justify-content-between">
                 <div class="logo d-flex">
                     <h1 class="mr-3 d-none">Bestari Setia Abadi</h1>
-                    <a href="{{ url('/') }}"><img src="{{ asset('/bsb') }}/logo-green.png"
-                            alt="Logo" srcset="" class="img-fluid" style="height: 70px !important;"></a>
+                    <a href="{{ url('/') }}"><img src="{{ asset('/bsb') }}/logo-green.png" alt="Logo"
+                            srcset="" class="img-fluid" style="height: 70px !important;"></a>
                 </div>
                 <div class="toggler">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -16,7 +16,8 @@
             <ul class="menu">
                 <li class="sidebar-title">Menu</li>
 
-                <li class="sidebar-item
+                <li
+                    class="sidebar-item
                 {{ Request::is('admin') ? 'active' : '' }}
                 {{ Request::is('staff') ? 'active' : '' }}
                 {{ Request::is('user') ? 'active' : '' }}
@@ -69,11 +70,26 @@
                     </ul>
                 </li>
 
-                <li class="sidebar-item {{ Request::is('manage-product') ? 'active' : '' }}">
-                    <a href="/manage-product" class="sidebar-link">
+                <li class="sidebar-item {{ Request::is('cms/manage-product') ? 'active' : '' }}">
+                    <a href="{{ url('cms/manage-product') }}" class="sidebar-link">
                         <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                         <span>Products</span>
                     </a>
+                </li>
+
+                <li class="sidebar-item has-sub {{ Request::is('cms/fasilitas*') ? 'active' : '' }}">
+                    <a href="#" class='sidebar-link'>
+                        <i class="bi bi-tools"></i>
+                        <span>Fasilitas</span>
+                    </a>
+                    <ul class="submenu {{ Request::is('cms/fasilitas*') ? 'active' : '' }}">
+                        <li class="submenu-item {{ Request::is('cms/fasilitas') ? 'active' : '' }}">
+                            <a href="{{ url('cms/fasilitas') }}">List Fasilitas</a>
+                        </li>
+                        <li class="submenu-item {{ Request::is('cms/fasilitas/create') ? 'active' : '' }}">
+                            <a href="{{ url('cms/fasilitas/create') }}">Tambah Fasilitas</a>
+                        </li>
+                    </ul>
                 </li>
 
 

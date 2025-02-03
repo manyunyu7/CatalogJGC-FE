@@ -67,7 +67,7 @@
                                                     <td> {{ $product->price_formatted }}</td>
                                                     <td>
                                                         <a
-                                                            href="{{ url('manage-product/edit/' . $product->parent_id . '/' . $product->id) }}">
+                                                            href="{{ url('cms/manage-product/edit/' . $product->parent_id . '/' . $product->id) }}">
                                                             <button id="{{ $product->parent_id }}" type="button"
                                                                 class="btn btn-primary">Edit Produk</button>
                                                         </a>

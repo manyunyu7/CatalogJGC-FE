@@ -51,13 +51,30 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/{id}/delete', [App\Http\Controllers\StaffController::class, 'destroy']);
 
 
-    // /product/detail/{parentId}/{id}
-    Route::prefix("manage-product")->group(function () {
-        Route::get('/', [App\Http\Controllers\ManageProductController::class, 'viewManage']);
-        Route::get('/edit/{parentId}/{id}/', [App\Http\Controllers\ManageProductController::class, 'viewEdit']);
-        Route::post('/price/{parentId}/{id}/update', [App\Http\Controllers\ProductPriceController::class, 'updatePriceFe']);
+    Route::middleware('auth')->group(function () {
+        Route::prefix('cms')->group(function () {
 
+            Route::resource('fasilitas-transactions', FasilitasTransactionController::class);
+
+
+            // /product/detail/{parentId}/{id}
+            Route::prefix("manage-product")->group(function () {
+                Route::get('/', [App\Http\Controllers\ManageProductController::class, 'viewManage']);
+                Route::get('/edit/{parentId}/{id}/', [App\Http\Controllers\ManageProductController::class, 'viewEdit']);
+                Route::post('/price/{parentId}/{id}/update', [App\Http\Controllers\ProductPriceController::class, 'updatePriceFe']);
+                Route::post('/unit-facilities/{parentId}/{id}/update', [App\Http\Controllers\ManageProductController::class, 'updateFacility']);
+            });
+
+
+            Route::get('fasilitas', [App\Http\Controllers\FasilitasController::class, 'index'])->name('fasilitas.index');
+            Route::get('fasilitas/create', [App\Http\Controllers\FasilitasController::class, 'create'])->name('fasilitas.create');
+            Route::post('fasilitas/store', [App\Http\Controllers\FasilitasController::class, 'store'])->name('fasilitas.store');
+            Route::get('fasilitas/edit/{id}', [App\Http\Controllers\FasilitasController::class, 'edit'])->name('fasilitas.edit');
+            Route::put('fasilitas/{id}/update/', [App\Http\Controllers\FasilitasController::class, 'update'])->name('fasilitas.update');
+            Route::get('fasilitas/{id}/destroy', [App\Http\Controllers\FasilitasController::class, 'destroy'])->name('fasilitas.destroy');
+        });
     });
+
 
     Route::prefix('company-profile')->group(function () {
         Route::prefix('basic-info')->group(function () {

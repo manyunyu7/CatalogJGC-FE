@@ -230,9 +230,11 @@
             <div class="relative card" data-category="Apartemen" data-price="1200000000" data-harga="1200000000"
                 data-luas="23">
                 <!-- Banner Promo -->
-                <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
-                    <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
-                </div>
+                @if ($item->is_promo)
+                    <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
+                        <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
+                    </div>
+                @endif
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->

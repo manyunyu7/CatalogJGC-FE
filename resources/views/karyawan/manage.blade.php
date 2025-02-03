@@ -72,7 +72,7 @@
                                                             <button id="{{ $user->id }}"  type="button"
                                                           class="btn btn-primary">Edit User</button>
                                                         </a>
-                                                      
+
                                                     </td>
                                                 </tr>
                                             @empty
@@ -105,7 +105,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Data Karyawan terkait akan dihapus. 
+                    Data Karyawan terkait akan dihapus.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light-secondary hide-modal" data-dismiss="modal">
@@ -119,7 +119,7 @@
                             <span class=" d-sm-block">Hapus Karyawan</span>
                         </button>
                     </a>
-                
+
                 </div>
             </div>
         </div>
