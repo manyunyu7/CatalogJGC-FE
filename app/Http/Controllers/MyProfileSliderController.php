@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Http;
 
 class MyProfileSliderController extends Controller
 {
+   
     public function manageSlider(Request $request)
     {
 

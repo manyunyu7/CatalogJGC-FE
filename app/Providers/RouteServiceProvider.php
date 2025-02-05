@@ -51,7 +51,7 @@ class RouteServiceProvider extends ServiceProvider
         // $commonMineral = $this->cari("22");
         // $commonWaterPurification = $this->cari("26");
 
-        // $this->configureRateLimiting();
+        $this->configureRateLimiting();
 
         // $profile = MyBasicIdentity::all()->last() ?? new MyBasicIdentity();
         // $whatsapp = ContactWhatsapp::all() ?? collect();
@@ -84,49 +84,49 @@ class RouteServiceProvider extends ServiceProvider
 
 
 
-    public function cari($categoryId)
-    {
-        // Define cache key
-        $cacheKey = 'categoryxx_' . $categoryId;
+    // public function cari($categoryId)
+    // {
+    //     // Define cache key
+    //     $cacheKey = 'categoryxx_' . $categoryId;
 
-        // Check if data is already cached
-        if (Cache::has($cacheKey)) {
-            return Cache::get($cacheKey);
-        }
+    //     // Check if data is already cached
+    //     if (Cache::has($cacheKey)) {
+    //         return Cache::get($cacheKey);
+    //     }
 
-        // API credentials
-        $consumerKey = 'ck_b80c6c3221800d62fadb72f9e606cc17277f6c8c';
-        $consumerSecret = 'cs_21c9a9af9b5723a2a9e61f64c364d6fa30cd9259';
+    //     // API credentials
+    //     $consumerKey = 'ck_b80c6c3221800d62fadb72f9e606cc17277f6c8c';
+    //     $consumerSecret = 'cs_21c9a9af9b5723a2a9e61f64c364d6fa30cd9259';
 
-        $url = "https://wp.bestarilab.com/wp-json/wc/v3/products/categories?page=1&per_page=100&parent={$categoryId}";
+    //     $url = "https://wp.bestarilab.com/wp-json/wc/v3/products/categories?page=1&per_page=100&parent={$categoryId}";
 
-        $headers = [
-            'Authorization' => 'Basic ' . base64_encode($consumerKey . ':' . $consumerSecret),
-        ];
-        $client = new Client(['headers' => $headers]);
-        $filteredData = [];
+    //     $headers = [
+    //         'Authorization' => 'Basic ' . base64_encode($consumerKey . ':' . $consumerSecret),
+    //     ];
+    //     $client = new Client(['headers' => $headers]);
+    //     $filteredData = [];
 
-        try {
-            $response = $client->request('GET', $url);
-            $data = json_decode($response->getBody());
+    //     try {
+    //         $response = $client->request('GET', $url);
+    //         $data = json_decode($response->getBody());
 
-            // Create a new array with new keys for each object
-            $filteredData = array_map(function ($item){
-                return (object)[
-                    'name' => $item->name,
-                    'slug' => $item->slug,
-                ];
-            }, $data);
+    //         // Create a new array with new keys for each object
+    //         $filteredData = array_map(function ($item){
+    //             return (object)[
+    //                 'name' => $item->name,
+    //                 'slug' => $item->slug,
+    //             ];
+    //         }, $data);
 
-            // Cache the data
-            Cache::put($cacheKey, $filteredData, 3600); // Cache for 1 hour
-        } catch (\Exception $e) {
-            // In case of any errors, return empty array
-            return [];
-        }
+    //         // Cache the data
+    //         Cache::put($cacheKey, $filteredData, 3600); // Cache for 1 hour
+    //     } catch (\Exception $e) {
+    //         // In case of any errors, return empty array
+    //         return [];
+    //     }
 
-        return $filteredData;
-    }
+    //     return $filteredData;
+    // }
 
     /**
      * Configure the rate limiters for the application.

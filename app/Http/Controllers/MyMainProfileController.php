@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
+use App\Models\Promo;
 
 class MyMainProfileController extends Controller
 {
@@ -24,7 +25,13 @@ class MyMainProfileController extends Controller
             return (object) $product;  // Convert each product array to an object
         });
 
+        $bannerResponse = Http::get('http://127.0.0.1:6167/api/banners');  // Sesuaikan URL API banner
+        if (!$bannerResponse->successful()) {
+            abort(400, 'Failed to fetch banners: ' . json_encode($bannerResponse->json()));  // Handle error
+        }
+        $banners = $bannerResponse->json()['banners'];
 
-        return view('catalog.index', compact('products'));
+
+        return view('catalog.index', compact('products','banners'));
     }
 }

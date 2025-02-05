@@ -25,7 +25,7 @@
         /* Make main image full width with rounded corners */
         .main-slider img {
             width: 100%;
-            max-height: 50vh;
+            /* max-height: */
             /* Adjust as needed */
             object-fit: cover;
             /* border-radius: 0.5rem; */

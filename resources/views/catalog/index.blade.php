@@ -25,27 +25,14 @@
     <!-- Slideshow -->
     <section class="relative mx-auto w-full max-w-screen-lg overflow-hidden">
         <div class="slideshow-container w-full flex transition-transform duration-700 ease-in-out" id="slideshow">
-            <!-- Banner 1 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner1.png') }}" alt="Banner 1"
-                        class="object-cover rounded-b-3xl" />
+            @foreach ($banners as $banner)
+                <div class="slide flex-shrink-0 w-full flex justify-center">
+                    <div class="image-wrapper">
+                        <img src="{{ rtrim($banner['image'], '/') }}" alt="Banner {{ $loop->iteration }}"
+                            class="object-cover rounded-b-3xl" />
+                    </div>
                 </div>
-            </div>
-            <!-- Banner 2 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner2.png') }}" alt="Banner 2"
-                        class="object-cover rounded-b-3xl" />
-                </div>
-            </div>
-            <!-- Banner 3 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner3.png') }}" alt="Banner 3"
-                        class="object-cover rounded-b-3xl" />
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -200,7 +187,7 @@
                 <button id="dropdownRelevansi"
                     class="font-poppins inline-flex justify-between items-center w-[223px] h-[42px] px-4 py-2 text-white bg-cari text-[16px] rounded-md focus:outline-none shadow-md">
                     <!-- Ikon Filter -->
-                    <img src="img/filter.png" alt="" class="w-[14px] h-[14px]" />
+                    <img src="{{ asset('catalog/img/filter.png') }}" alt="" class="w-[14px] h-[14px]" />
                     <span id="dropdownTextRelevansi">Relevansi</span>
                     <!-- Teks di sini akan berubah -->
                     <!-- Ikon Panah ke Bawah -->
@@ -227,12 +214,15 @@
     <div
         class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         @foreach ($products as $item)
-            <div class="relative card" data-category="Apartemen" data-price="1200000000" data-harga="1200000000"
-                data-luas="23">
+            <div class="relative card" data-category="{{ $item->property_type }}" data-price="1200000000"
+                data-harga="1200000000" data-luas="23">
                 <!-- Banner Promo -->
-                <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
-                    <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
-                </div>
+                @if ($item->is_promo)
+                    <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
+                        <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
+                    </div>
+                @endif
+
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->
@@ -247,30 +237,45 @@
                     </div>
 
                     <!-- Left Button -->
-                    <button class="absolute left-2 transform -translate-y-32 p-2" id="prev-btn-1">
+                    <button class="absolute left-2 transform -translate-y-32 p-2 prev-btn">
                         <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
                     </button>
 
                     <!-- Right Button -->
-                    <button class="absolute right-2 transform -translate-y-32 p-2" id="next-btn-1">
+                    <button class="absolute right-2 transform -translate-y-32 p-2 next-btn">
                         <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
                     </button>
 
                     <!-- Konten Card -->
                     <div class="p-4">
                         <a href="page1.html">
-                            <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
+                            <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate group-hover:overflow-visible group-hover:whitespace-normal"
+                                title="{{ $item->parent_name }} - {{ $item->category_name }}">
                                 {{ $item->parent_name }} -
                                 {{ $item->category_name }}
                             </h5>
                         </a>
                         <div class="flex items-center gap-2 mt-2 overflow-hidden">
+
                             <span
                                 class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
-                                Apartemen </span>
-                            <span
-                                class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
-                                LB: 23 m² </span>
+                                {{ $item->property_type }}
+
+                            </span>
+
+                            @if (isset($item->luas_tanah) && !is_null($item->luas_tanah))
+                                <span
+                                    class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                    LT: {{ $item->luas_tanah }} m²
+                                </span>
+                            @endif
+
+                            @if (isset($item->luas_bangunan) && !is_null($item->luas_bangunan))
+                                <span
+                                    class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                    LB: {{ $item->luas_bangunan }} m²
+                                </span>
+                            @endif
                         </div>
                         <div class="flex items-center space-x-4 mt-4">
                             <div class="flex items-center">
@@ -332,6 +337,7 @@
 
 
     <script src="{{ asset('catalog/catalog.js') }}"></script>
+
 </body>
 
 </html>

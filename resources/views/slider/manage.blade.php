@@ -6,12 +6,12 @@
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h3>Home Slider</h3>
-                    <p class="text-subtitle text-muted">Gunakan Menu ini untuk mengatur slider profile</p>
+                    <p class="text-subtitle text-muted">Gunakan Menu ini untuk mengatur Banner Home</p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Company Profile</a></li>
+                            <li class="breadcrumb-item"><a href="#">Banner JGC</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Slider</li>
                         </ol>
                     </nav>
@@ -49,7 +49,6 @@
                                             <tr>
                                                 <th data-sortable="">No</th>
                                                 <th data-sortable="">Image</th>
-                                                <th data-sortable="">Icon</th>
                                                 <th data-sortable="">Urutan</th>
                                                 <th data-sortable="">Title</th>
                                                 <th data-sortable="">Description</th>
@@ -63,28 +62,27 @@
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>
-                                                        <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->image }}" alt="slider image">
-                                                    </td>
-                                                    <td>
-                                                        <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->icon }}" alt="">
+                                                        <img style="border-radius: 20px; max-width: 100%; object-fit: cover"
+                                                            src="{{ env('URL_BE_ASSET') . $item->image }}"
+                                                            alt="slider image">
                                                     </td>
                                                     <td>{{ $item->order }}</td>
                                                     <td>{{ $item->title }}</td>
                                                     <td>{{ $item->description }}</td>
                                                     <td>{{ $item->created_at }}</td>
                                                     <td>
-                                                        <button id="{{ $item->id }}"  data-toggle="modal" type="button"
+                                                        <button id="{{ $item->id }}" data-toggle="modal" type="button"
                                                             class="btn btn-primary btn-delete">Hapus</button>
                                                     </td>
                                                     <td>
-                                                        <a href="{{url('company-profile/slider/'.$item->id.'/edit')}}">
-                                                            <button id="{{ $item->id }}"  type="button"
-                                                          class="btn btn-primary">Edit </button>
+                                                        <a
+                                                            href="{{ url('company-profile/slider/' . $item->id . '/edit') }}">
+                                                            <button id="{{ $item->id }}" type="button"
+                                                                class="btn btn-primary">Edit </button>
                                                         </a>
                                                     </td>
                                                 </tr>
                                             @empty
-
                                             @endforelse
 
                                         </tbody>
@@ -101,7 +99,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="destroy-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal fade" id="destroy-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-danger">
@@ -133,8 +132,6 @@
 
         </div>
     </div>
-
-
 @endsection
 
 
@@ -188,6 +185,4 @@
             $("#destroy-modal").modal("show")
         });
     </script>
-
-
 @endpush

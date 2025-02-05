@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\LaravelEstriController;
+use App\Http\Controllers\MyMainProfileController;
+use App\Http\Controllers\MyProfileSliderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/banners', [MyMainProfileController::class, 'index']);
 
 Route::get("/user-info", [AuthController::class, 'getUserInfo']);
 

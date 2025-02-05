@@ -107,22 +107,24 @@
                 <div class="card-body">
                     <h5>Harga Produk</h5>
                     <form action="{{ url('manage-product/price/' . $data->parent_id . '/' . $data->child_id . '/update') }}"
-                        method="POST">
+                        method="POST" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" name="parent_id" value="{{ $data->child_id }}">
                         </input>
                         <div class="form-group">
                             <label for="pricePrefix">Prefix</label>
-                            <input name="price_prefix" type="text" id="pricePrefix" value="{{ $data->price->prefix ?? "" }}"
-                                class="form-control" placeholder="Misal: Dimulai Dari" required>
+                            <input name="price_prefix" type="text" id="pricePrefix"
+                                value="{{ $data->price->prefix ?? '' }}" class="form-control"
+                                placeholder="Misal: Dimulai Dari" required>
                         </div>
 
                         <div class="form-group">
                             <label for="priceInput">Price (Rupiah):</label>
                             <input type="text" id="priceInput" class="form-control" placeholder="Masukkan harga" required
-                                value="{{ $data->price->price ?? ""}}">
+                                value="{{ $data->price->price ?? '' }}">
                             <input type="hidden" name="price" id="price-raw">
                         </div>
+
                         <button type="submit" class="btn btn-primary mt-2">Submit</button>
                     </form>
 
