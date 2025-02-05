@@ -263,7 +263,7 @@ const updateTotalResults = (filteredCards) => {
     totalResultsElement.textContent = filteredCards.length; // Jumlah kartu yang lolos filter
 };
 
-// Fungsi utama untuk menggabungkan search, filter, dan pagination
+// Fungsi utama untuk filter, search, dan pagination
 function renderCards() {
     const query = document.getElementById("search").value.toLowerCase();
 
@@ -324,8 +324,17 @@ function renderCards() {
         card.textContent.toLowerCase().includes(query)
     );
 
+    // **RESET HALAMAN KE 1 JIKA FILTER BERUBAH**
+    // Hanya reset currentPage jika total halaman baru lebih kecil dari currentPage
+    const totalPages = Math.max(
+        1,
+        Math.ceil(filteredCards.length / cardsPerPage)
+    );
+    if (currentPage > totalPages) {
+        currentPage = 1;
+    }
+
     // Pagination
-    const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
     const start = (currentPage - 1) * cardsPerPage;
     const end = currentPage * cardsPerPage;
 
@@ -335,60 +344,110 @@ function renderCards() {
         .slice(start, end)
         .forEach((card) => cardContainer.appendChild(card));
 
-    // Render pagination
+    // Render pagination dengan jumlah halaman yang sesuai
     renderPagination(totalPages);
 
     // Perbarui jumlah total kartu
     updateTotalResults(filteredCards);
 }
 
-// Fungsi untuk membuat pagination
-// Fungsi untuk membuat pagination
 function renderPagination(totalPages) {
     const pageNumbersContainer = document.getElementById("page-numbers");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
 
     pageNumbersContainer.innerHTML = "";
+
+    // Disable tombol "Prev" jika currentPage adalah 1
     prevBtn.disabled = currentPage === 1;
-    nextBtn.disabled = currentPage === totalPages;
 
-    // Logic to show only 3 card buttons
-    let startPage = Math.max(1, currentPage - 1); // Ensure startPage is at least 1
-    let endPage = Math.min(totalPages, currentPage + 1); // Ensure endPage doesn't exceed totalPages
+    // Disable tombol "Next" jika currentPage adalah totalPages atau tidak ada halaman
+    nextBtn.disabled = currentPage === totalPages || totalPages === 0;
 
-    // Adjust start and end pages to always show 3 buttons if possible
-    if (endPage - startPage < 2) {
-        const diff = 2 - (endPage - startPage);
-        if (startPage - diff >= 1) {
-            startPage -= diff;
+    // Jika hanya ada 1 halaman, sembunyikan nomor halaman
+    if (totalPages <= 1) {
+        pageNumbersContainer.classList.add("hidden");
+    } else {
+        pageNumbersContainer.classList.remove("hidden");
+
+        // Fungsi untuk menambahkan tombol halaman
+        const addPageButton = (page) => {
+            const button = document.createElement("button");
+            button.textContent = page;
+            button.className = `w-10 h-10 ${
+                page === currentPage
+                    ? "bg-[#05864D] text-white"
+                    : "bg-white text-gray-800 border border-gray-300"
+            } rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
+            button.addEventListener("click", () => {
+                currentPage = page; // Set currentPage ke halaman yang diklik
+                renderCards(); // Perbarui tampilan
+            });
+            pageNumbersContainer.appendChild(button);
+        };
+
+        // Jika total halaman <= 3, tampilkan semua halaman
+        if (totalPages <= 3) {
+            for (let i = 1; i <= totalPages; i++) {
+                addPageButton(i);
+            }
         } else {
-            endPage += diff;
+            // Halaman pertama selalu ditampilkan
+            addPageButton(1);
+
+            // Jika currentPage dekat dengan awal, tampilkan 1 2 3 ... N
+            if (currentPage <= 2) {
+                addPageButton(2);
+                addPageButton(3);
+                pageNumbersContainer.appendChild(
+                    document.createTextNode("...")
+                );
+                addPageButton(totalPages);
+            }
+            // Jika currentPage dekat dengan akhir, tampilkan 1 ... (N-2) (N-1) N
+            else if (currentPage >= totalPages - 1) {
+                pageNumbersContainer.appendChild(
+                    document.createTextNode("...")
+                );
+                addPageButton(totalPages - 2);
+                addPageButton(totalPages - 1);
+                addPageButton(totalPages);
+            }
+            // Jika currentPage berada di tengah, tampilkan 1 ... X X+1 X+2 ... N
+            else {
+                pageNumbersContainer.appendChild(
+                    document.createTextNode("...")
+                );
+                addPageButton(currentPage - 1);
+                addPageButton(currentPage);
+                addPageButton(currentPage + 1);
+                pageNumbersContainer.appendChild(
+                    document.createTextNode("...")
+                );
+                addPageButton(totalPages);
+            }
         }
     }
-
-    for (let i = startPage; i <= endPage; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
-
-        // Tentukan class berdasarkan halaman saat ini
-        button.className = `w-10 h-10 ${
-            i === currentPage
-                ? "bg-[#05864D] text-white"
-                : "bg-white text-gray-800 border border-gray-300"
-        } rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
-
-        // Tambahkan event listener untuk mengubah halaman
-        button.addEventListener("click", () => {
-            currentPage = i; // Perbarui halaman saat ini
-            renderCards(); // Render ulang kartu
-            renderPagination(totalPages); // Render ulang pagination
-        });
-
-        // Tambahkan tombol ke container
-        pageNumbersContainer.appendChild(button);
-    }
 }
+
+// Event listener untuk tombol prev-next
+document.getElementById("prev-btn").addEventListener("click", () => {
+    if (currentPage > 1) {
+        currentPage--; // Kurangi currentPage
+        renderCards(); // Perbarui tampilan
+    }
+});
+
+document.getElementById("next-btn").addEventListener("click", () => {
+    const totalPages = Math.max(
+        1,
+        Math.ceil(filteredCards.length / cardsPerPage)
+    );
+    if (currentPage < totalPages) {
+        currentPage++; // Tambah currentPage
+        renderCards(); // Perbarui tampilan
+    }
+});
 
 // Event listener untuk pencarian
 document.getElementById("search").addEventListener("input", () => {

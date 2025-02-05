@@ -215,7 +215,7 @@
         class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         @foreach ($products as $item)
             <div class="relative card" data-category="{{ $item->property_type }}" data-price="1200000000"
-                data-harga="1200000000" data-luas="23">
+                data-harga="1200000000" data-luas="{{ $item->luas_bangunan }}">
                 <!-- Banner Promo -->
                 @if ($item->is_promo)
                     <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
