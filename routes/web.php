@@ -52,6 +52,16 @@ Route::group(['middleware' => ['auth']], function () {
 
 
     Route::middleware('auth')->group(function () {
+
+
+        Route::prefix('cms-user')->group(function () {
+            Route::get('product-images/{parentId}/manage', [App\Http\Controllers\ProductImageController::class, 'manageImages'])->name('product-images.manage');
+            Route::post('product-images/{parentId}/upload', [App\Http\Controllers\ProductImageController::class, 'uploadImages'])->name('product-images.upload');
+            Route::delete('product-images/{id}/delete', [App\Http\Controllers\ProductImageController::class, 'deleteImage'])->name('product-images.delete');
+            Route::post('product-images/reorder', [App\Http\Controllers\ProductImageController::class, 'reorderImages'])->name('product-images.reorder');
+        });
+
+
         Route::prefix('cms')->group(function () {
 
             Route::resource('fasilitas-transactions', FasilitasTransactionController::class);
