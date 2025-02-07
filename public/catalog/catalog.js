@@ -182,15 +182,16 @@ document.addEventListener("click", function (event) {
 // Ambil semua card slider
 // Ambil semua card slider
 const sliderCards = document.querySelectorAll(".slider-card");
-sliderCards.forEach((card, index) => {
-    const prevBtn = card.querySelector(`#prev-btn-${index + 1}`);
-    const nextBtn = card.querySelector(`#next-btn-${index + 1}`);
-    const slideWrapper = card.querySelector(`#slide-wrapper-${index + 1}`);
+
+sliderCards.forEach((card) => {
+    const prevBtn = card.querySelector(".prev-btn");
+    const nextBtn = card.querySelector(".next-btn");
+    const slideWrapper = card.querySelector(".flex.transition-transform");
     const slides = slideWrapper?.querySelectorAll("div");
     const totalSlides = slides?.length || 0;
 
     if (!prevBtn || !nextBtn || !slideWrapper || totalSlides === 0) {
-        console.error(`Slider elements missing or invalid for card ${index + 1}`);
+        console.error("Slider elements missing or invalid.");
         return;
     }
 
@@ -198,17 +199,33 @@ sliderCards.forEach((card, index) => {
 
     function updateSlidePosition() {
         const slideWidth = card.offsetWidth;
-        slideWrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
+        slideWrapper.style.transform = `translateX(-${
+            currentSlideIndex * slideWidth
+        }px)`;
         slides.forEach((slide) => {
-            slide.style.width = `${slideWidth}px`;
+            slide.style.width = `${slideWidth}px`; // Pastikan setiap slide memiliki lebar yang sesuai
+        });
+
+        // Tambahan: Pastikan gambar di dalam slide dimuat dengan benar
+        slides.forEach((slide) => {
+            const img = slide.querySelector("img");
+            if (img) {
+                img.style.display = "block"; // Pastikan gambar tidak tersembunyi
+            }
         });
     }
 
     function moveSlide(direction) {
         if (direction === "left") {
-            currentSlideIndex = currentSlideIndex === 0 ? totalSlides - 1 : currentSlideIndex - 1;
+            currentSlideIndex =
+                currentSlideIndex === 0
+                    ? totalSlides - 1
+                    : currentSlideIndex - 1;
         } else {
-            currentSlideIndex = currentSlideIndex === totalSlides - 1 ? 0 : currentSlideIndex + 1;
+            currentSlideIndex =
+                currentSlideIndex === totalSlides - 1
+                    ? 0
+                    : currentSlideIndex + 1;
         }
         updateSlidePosition();
     }
@@ -217,7 +234,9 @@ sliderCards.forEach((card, index) => {
     nextBtn.addEventListener("click", () => moveSlide("right"));
 
     window.addEventListener("resize", updateSlidePosition);
-    window.addEventListener("load", updateSlidePosition);
+
+
+    updateSlidePosition();
 });
 
 const cards = Array.from(document.querySelectorAll(".card")); // Semua kartu

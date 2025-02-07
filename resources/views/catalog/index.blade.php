@@ -241,20 +241,20 @@
                     <div class="flex transition-transform duration-300" id="slide-wrapper-{{ $loop->iteration }}">
                         @foreach ($item->images as $image)
                             <div class="flex-shrink-0">
-                                <img class="w-full h-48 object-cover sm:h-56" src="{{ $image['full_image_path'] }}"
-                                    alt="" />
+                                <img class="w-full h-48 object-cover sm:h-56"
+                                    src="{{ $image['full_image_path'] ?? '' }}" alt="" />
                             </div>
                         @endforeach
 
                     </div>
 
                     <!-- Left Button -->
-                    <button class="absolute left-2 transform -translate-y-32 p-2" id="prev-btn-1">
+                    <button class="absolute left-2 transform -translate-y-32 p-2 prev-btn">
                         <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
                     </button>
 
                     <!-- Right Button -->
-                    <button class="absolute right-2 transform -translate-y-32 p-2" id="next-btn-1">
+                    <button class="absolute right-2 transform -translate-y-32 p-2 next-btn">
                         <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
                     </button>
 
