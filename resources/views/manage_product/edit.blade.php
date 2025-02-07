@@ -211,8 +211,10 @@
                                 @endforeach
 
                                 <div class="col-12 mb-3">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm" id="checkAllBtn">Check All</button>
-                                    <button type="button" class="btn btn-outline-secondary btn-sm" id="uncheckAllBtn">Uncheck All</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" id="checkAllBtn">Check
+                                        All</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                        id="uncheckAllBtn">Uncheck All</button>
                                 </div>
                             </div>
                         </div>
@@ -221,6 +223,205 @@
                     </form>
                 </div>
             </div>
+
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5>Gambar Unit</h5>
+
+                    <!-- Image Upload Form -->
+                    <form id="uploadImageForm" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="imageUpload">Pilih Gambar:</label>
+                            <input type="file" class="form-control-file" id="imageUpload" name="images[]" required>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label for="imageType">Tipe Gambar:</label>
+                            <select class="form-control" id="imageType" name="type" required>
+                                <option value="exterior">Eksterior</option>
+                                <option value="interior">Interior</option>
+                                <option value="feature">Fitur</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <label for="imageDescription">Deskripsi:</label>
+                            <textarea class="form-control" id="imageDescription" name="description" rows="2" required></textarea>
+                        </div>
+
+                        <!-- Image Preview -->
+                        <div id="imagePreview" class="mt-3 d-none">
+                            <label>Pratinjau:</label>
+                            <img id="previewImg" class="img-thumbnail" style="max-width: 150px; max-height: 150px;">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-3">Upload Image</button>
+                    </form>
+
+                    <!-- Image Gallery -->
+                    <div id="imageGallery" class="row mt-3">
+                        <!-- Images will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const childId = "{{ $product->child_id }}"; // Now it's a string
+                    const token = document.cookie.replace(/(?:(?:^|.*;\s*)killaToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
+
+                    // Fetch and display images
+                    fetch(`/cms-user/product-images/${childId}/manage`, {
+                            headers: {
+                                'Authorization': `Bearer ${token}`
+                            },
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.meta.success) {
+                                const gallery = document.getElementById('imageGallery');
+                                data.result.forEach(image => {
+                                    const imgWrapper = document.createElement('div');
+                                    imgWrapper.className = 'col-md-3 mb-3 position-relative';
+                                    imgWrapper.innerHTML = `
+                                        <div class="position-relative">
+                                            <img src="${image.full_image_path}" class="img-thumbnail img-fluid" alt="Image">
+                                            <p class="text-muted small">${image.type} - ${image.description}</p>
+                                            <button onclick="deleteImage(${image.id})" class="btn btn-danger btn-sm position-absolute top-0 end-0 m-1">
+                                                &times;
+                                            </button>
+                                        </div>
+                                    `;
+                                    gallery.appendChild(imgWrapper);
+                                });
+                            } else {
+                                alert('Failed to fetch images: ' + data.meta.message);
+                            }
+                        });
+
+                    // Show image preview before upload
+                    document.getElementById('imageUpload').addEventListener('change', function(event) {
+                        const file = event.target.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                document.getElementById('previewImg').src = e.target.result;
+                                document.getElementById('imagePreview').classList.remove('d-none');
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    });
+
+                    // Handle image upload
+                    document.getElementById('uploadImageForm').addEventListener('submit', async function(e) {
+                        e.preventDefault();
+
+                        const imageInput = document.getElementById('imageUpload');
+                        if (imageInput.files.length === 0) {
+                            Swal.fire("Error", "Please select an image", "error");
+                            return;
+                        }
+
+                        const formData = new FormData();
+                        formData.append('images[]', imageInput.files[0]);
+                        formData.append('type', document.getElementById('imageType').value);
+                        formData.append('description', document.getElementById('imageDescription').value);
+
+                        let csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute(
+                            'content');
+                        let childId = "{{ $product->child_id }}"; // Replace with actual ID logic
+
+                        Swal.fire({
+                            title: "Are you sure?",
+                            text: "Do you want to upload this image?",
+                            icon: "warning",
+                            showCancelButton: true,
+                            confirmButtonColor: "#3085d6",
+                            cancelButtonColor: "#d33",
+                            confirmButtonText: "Yes, upload!"
+                        }).then(async (result) => {
+                            if (result.isConfirmed) {
+                                try {
+                                    const response = await fetch(
+                                        `/cms-user/product-images/${childId}/upload`, {
+                                            method: 'POST',
+                                            headers: {
+                                                'X-CSRF-TOKEN': csrfToken
+                                            },
+                                            body: formData
+                                        });
+
+                                    const data = await response.json();
+
+                                    if (response.ok) {
+                                        Swal.fire("Success", "Image uploaded successfully!",
+                                            "success").then(() => {
+                                            window.location.reload();
+                                        });
+                                    } else {
+                                        Swal.fire("Error", data.message ||
+                                            "Failed to upload image", "error");
+                                    }
+                                } catch (error) {
+                                    Swal.fire("Error", "An error occurred: " + error.message,
+                                        "error");
+                                }
+                            }
+                        });
+                    });
+                });
+
+                // Function to delete an image
+                function deleteImage(imageId) {
+                    Swal.fire({
+                        title: 'Are you sure?',
+                        text: "This action cannot be undone!",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#d33',
+                        cancelButtonColor: '#3085d6',
+                        confirmButtonText: 'Yes, delete it!'
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            let csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+                            fetch(`/cms-user/product-images/${imageId}/delete`, {
+                                    method: 'DELETE',
+                                    headers: {
+                                        'X-CSRF-TOKEN': csrfToken,
+                                        'Content-Type': 'application/json'
+                                    },
+                                    credentials: 'include'
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.success) {
+                                        Swal.fire(
+                                            'Deleted!',
+                                            'Image has been deleted.',
+                                            'success'
+                                        ).then(() => window.location.reload());
+                                    } else {
+                                        Swal.fire(
+                                            'Error!',
+                                            data.error || 'Failed to delete the image.',
+                                            'error'
+                                        );
+                                    }
+                                })
+                                .catch(error => {
+                                    Swal.fire(
+                                        'Error!',
+                                        'An error occurred: ' + error.message,
+                                        'error'
+                                    );
+                                });
+                        }
+                    });
+                }
+            </script>
 
             <script>
                 document.getElementById('checkAllBtn').addEventListener('click', function() {
@@ -241,26 +442,7 @@
     </section>
 @endsection
 
-@section('scripts')
-    <script>
-        const priceInput = document.getElementById('price');
-        const priceRawInput = document.getElementById('price-raw');
 
-        priceInput.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/[^,\d]/g, '').toString();
-            const split = value.split(',');
-            const remainder = split[0].length % 3;
-            let rupiah = split[0].substr(0, remainder);
-            const thousands = split[0].substr(remainder).match(/\d{3}/g);
-
-            if (thousands) {
-                const separator = remainder ? '.' : '';
-                rupiah += separator + thousands.join('.');
-            }
-
-            rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-            e.target.value = rupiah ? 'Rp ' + rupiah : '';
-            priceRawInput.value = value.replace(/[^0-9]/g, '');
-        });
-    </script>
-@endsection
+@push('script')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@endpush
