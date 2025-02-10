@@ -34,4 +34,17 @@ class MyMainProfileController extends Controller
 
         return view('catalog.index', compact('products','banners'));
     }
+    public function showDetail($id)
+    {
+        // Fetch product detail from API
+        $response = Http::get("https://api-web.jakartagardencity.com/product/{$id}");
+        $product = $response->object()->data ?? null;
+    
+        if (!$product) {
+            abort(404); // Produk tidak ditemukan
+        }
+    
+        return view('catalog.detail', compact('product'));
+    }
+    
 }

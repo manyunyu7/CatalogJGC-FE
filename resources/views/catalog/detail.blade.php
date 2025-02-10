@@ -54,62 +54,86 @@
 
     @include('catalog.components.navbar')
 
-    <section class="">
+    <!-- resources/views/catalog/detail.blade.php -->
+    <section class="overflow-hidden">
         <!-- Main Photo Slider -->
-        <div class="swiper-container main-slider">
+        <div class="swiper-container main-slider w-full h-auto">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/Cleon Park.JPG"
-                        alt="Main Photo 1" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon/Cleon1.png"
-                        alt="Main Photo 2" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon_layout1.png"
-                        alt="Main Photo 3" />
-                </div>
+                @foreach ($product->images as $image)
+                    <div class="swiper-slide">
+                        <img class="w-full h-auto aspect-[16/9] object-contain "
+                            src="{{ $baseImageUrl }}{{ $image->image }}" alt="Main Photo {{ $loop->iteration }}" />
+                    </div>
+                @endforeach
+
+                @foreach ($product->types as $type)
+                    @if (!empty($type->categories))
+                        @foreach ($type->categories as $category)
+                            @foreach ($category->plans as $plan)
+                                <div class="swiper-slide">
+                                    <img class="w-full h-auto aspect-[1/1] object-contain "
+                                        src="{{ $baseImageUrl }}{{ $plan->image }}"
+                                        alt="Plan Photo {{ $loop->iteration }}" />
+                                </div>
+                            @endforeach
+                        @endforeach
+                    @endif
+                @endforeach
             </div>
         </div>
 
         <!-- Thumbnails Slider -->
         <div class="swiper-container swiper-thumbnails mt-4 px-4">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/Cleon Park.JPG" alt="Thumbnail 1" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/cleon/Cleon1.png" alt="Thumbnail 2" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/cleon_layout1.png" alt="Thumbnail 3" />
-                </div>
+                @foreach ($product->images as $image)
+                    <div class="swiper-slide">
+                        <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-contain "
+                            src="{{ $baseImageUrl }}{{ $image->image }}" alt="Thumbnail {{ $loop->iteration }}" />
+                    </div>
+                @endforeach
+
+                @foreach ($product->types as $type)
+                    @if (!empty($type->categories))
+                        @foreach ($type->categories as $category)
+                            @foreach ($category->plans as $plan)
+                                <div class="swiper-slide">
+                                    <img class="w-full h-auto aspect-[1/1] rounded-[10px] border border-[#EEEEF0] object-contain "
+                                        src="{{ $baseImageUrl }}{{ $plan->image }}"
+                                        alt="Plan Thumbnail {{ $loop->iteration }}" />
+                                </div>
+                            @endforeach
+                        @endforeach
+                    @endif
+                @endforeach
             </div>
         </div>
     </section>
+
 
     <section class="w-full px-4 md:px-8 lg:px-16 pt-3">
         <div class="flex flex-col md:flex-row w-full gap-6">
             <!-- Left Section -->
             <div class="w-full md:w-2/3">
                 <div class="flex flex-col md:flex-row items-center md:items-start md:ml-8 mt-6 mb-4">
-                    <img src="{{ asset('catalog/img/logo_cleo.png') }}" alt="Cleon Park Logo"
-                        class="w-[140px] h-[180px] md:w-[176px] md:h-[220px] md:mr-6 object-cover border rounded-lg" />
+                    <img src="{{ $baseImageUrl }}{{ $product->logo_colorize }}" alt="{{ $product->name }}"
+                        class="w-[140px] h-[180px] md:w-[176px] md:h-[220px] md:mr-6 object-contain border rounded-lg" />
                     <div class="w-full text-center md:text-left mt-4 md:mt-0">
                         <h1 class="font-poppins font-semibold text-2xl md:text-4xl text-[#545454] leading-tight mb-2">
-                            Cleon Park - Studio
+                            {{ $product->name }}
                         </h1>
+
                         <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-2">
-                            <img src="catalog/img/freedp.png" alt="Free DP"
-                                class="w-[90px] h-[35px] md:w-[108px] md:h-[42px]" />
-                            <img src="catalog/img/freeBPHTB.png" alt="Free BPHTB"
-                                class="w-[110px] h-[35px] md:w-[138px] md:h-[42px]" />
-                            <img src="catalog/img/limitedStock.png" alt="Limited Stock"
-                                class="w-[130px] h-[35px] md:w-[157px] md:h-[42px]" />
+                            @if (!empty($product->promos))
+                                @foreach ($product->promos as $promo)
+                                    <span
+                                        class=" bg-no-repeat text-white px-6 py-2 text-md flex items-center justify-center"
+                                        style="background-image: url('{{ asset('catalog/img/PromoTag.png') }}'); background-size: 100% 100%;">
+                                        {{ $promo->name_id }}
+                                    </span>
+                                @endforeach
+                            @else
+                                <span class="text-gray-500">No promos available.</span>
+                            @endif
                         </div>
                         <div
                             class="text-[#52525B] text-base md:text-lg flex flex-col md:flex-row items-center justify-center md:justify-start pt-3">
@@ -280,6 +304,9 @@
             autoplay: {
                 delay: 3000, // Auto-slide every 3 seconds
             },
+            centeredSlides: true,
+            slidesPerView: 1,
+            autoHeight: true, // Mencegah overflow saat transisi
             allowTouchMove: false // Disable swipe for main slider
         });
 
@@ -293,32 +320,6 @@
 
         mainSwiper.controller.control = thumbnailSwiper;
         thumbnailSwiper.controller.control = mainSwiper;
-
-        // Change the main image when a thumbnail is clicked
-        const thumbnails = document.querySelectorAll(".swiper-thumbnails img");
-        const mainImage = document.querySelector(".main-slider img");
-
-        thumbnails.forEach((thumbnail, index) => {
-            thumbnail.addEventListener("click", () => {
-                mainImage.src = thumbnail.src;
-            });
-        });
-
-        // Initialize PhotoSwipe
-        document.querySelectorAll(".main-slider img").forEach((img) => {
-            img.addEventListener("click", () => {
-                const pswp = new PhotoSwipe({
-                    dataSource: [{
-                        src: img.src,
-                        w: img.naturalWidth,
-                        h: img.naturalHeight,
-                    }, ],
-                    index: 0,
-                });
-
-                pswp.init();
-            });
-        });
     </script>
 </body>
 

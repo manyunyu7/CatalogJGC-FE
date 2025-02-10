@@ -248,7 +248,7 @@
 
                     <!-- Konten Card -->
                     <div class="p-4">
-                        <a href="page1.html">
+                        <a href="{{ route('detail', ['parentId' => $item->parent_id, 'id' => $item->id]) }}">
                             <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate group-hover:overflow-visible group-hover:whitespace-normal"
                                 title="{{ $item->parent_name }} - {{ $item->category_name }}">
                                 {{ $item->parent_name }} -

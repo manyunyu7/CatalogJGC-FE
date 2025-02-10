@@ -5,7 +5,9 @@ use App\Http\Controllers\BannerController;
 use App\Http\Controllers\LaravelEstriController;
 use App\Http\Controllers\MyMainProfileController;
 use App\Http\Controllers\MyProfileSliderController;
+use App\Http\Controllers\ProductDetailController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +35,12 @@ Route::post("/login-action", [AuthController::class, 'login'])->name('login-acti
 Route::view("/login", 'auth/login')->name('login');
 Route::view("/detail", 'catalog/detail');
 Route::view("/detailjg", 'catalog/detailjg');
+
+Route::get('/detail/{parentId}/{id}', function ($parentId, $id) {
+    return view('catalog.detail', compact('parentId', 'id'));
+})->name('detail');
+
+Route::get('/detail/{parentId}/{id}', [ProductDetailController::class, 'show'])->name('detail');
 
 Route::get("/login", [AuthController::class, 'loginView']);
 
