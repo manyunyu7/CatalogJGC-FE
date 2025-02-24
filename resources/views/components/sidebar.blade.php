@@ -4,7 +4,7 @@
             <div class="d-flex justify-content-between">
                 <div class="logo d-flex">
                     <h1 class="mr-3 d-none">Bestari Setia Abadi</h1>
-                    <a href="{{ url('/') }}"><img src="{{ asset('/bsb') }}/logo-green.png" alt="Logo"
+                    <a href="{{ url('/admin') }}"><img src="{{ asset('/bsb') }}/logo-green.png" alt="Logo"
                             srcset="" class="img-fluid" style="height: 70px !important;"></a>
                 </div>
                 <div class="toggler">
@@ -49,9 +49,9 @@
                         <span>Company Profile</span>
                     </a>
                     <ul class="submenu  {{ Request::is('company-profile/*') ? 'active' : '' }} ">
-                        <li class="submenu-item   {{ Request::is('company-profile/basic-info') ? 'active' : '' }}">
+                        {{-- <li class="submenu-item   {{ Request::is('company-profile/basic-info') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/basic-info') }}">Informasi</a>
-                        </li>
+                        </li> --}}
                         <li class="submenu-item   {{ Request::is('company-profile/slider') ? 'active' : '' }}">
                             <a href="{{ url('company-profile/slider') }}">Slider</a>
                         </li>
@@ -94,13 +94,6 @@
 
 
                 <li class="sidebar-title">Inbox</li>
-                <li class="sidebar-item  ">
-
-                    <a href="{{ url('/inbox/manage') }}" class="sidebar-link">
-                        <i class="bi bi-envelope-fill"></i>
-                        <span>Messages</span>
-                    </a>
-                </li>
                 <li class="sidebar-title">Logout</li>
                 <li class="sidebar-item  ">
 
