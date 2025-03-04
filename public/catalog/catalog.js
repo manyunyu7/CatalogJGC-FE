@@ -199,9 +199,8 @@ sliderCards.forEach((card) => {
 
     function updateSlidePosition() {
         const slideWidth = card.offsetWidth;
-        slideWrapper.style.transform = `translateX(-${
-            currentSlideIndex * slideWidth
-        }px)`;
+        slideWrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth
+            }px)`;
         slides.forEach((slide) => {
             slide.style.width = `${slideWidth}px`; // Pastikan setiap slide memiliki lebar yang sesuai
         });
@@ -258,29 +257,15 @@ const updateTotalResults = (filteredCards) => {
     totalResultsElement.textContent = filteredCards.length; // Jumlah kartu yang lolos filter
 };
 
-function parseSearchQuery(query) {
-    const panjangMatch = query.match(/P:(\d+)/); // Extract panjang value
-    const lebarMatch = query.match(/L:(\d+)/);   // Extract lebar value
-
-    return {
-        panjang: panjangMatch ? parseInt(panjangMatch[1]) : null, // Return parsed panjang or null
-        lebar: lebarMatch ? parseInt(lebarMatch[1]) : null,       // Return parsed lebar or null
-        text: query.replace(/P:\d+|L:\d+/g, '').trim(),           // Remove P: and L: from the query for text search
-    };
-}
-
 // Fungsi utama untuk menggabungkan search, filter, dan pagination
 function renderCards() {
     const query = document.getElementById("search").value.toLowerCase();
-    const { panjang, lebar, text } = parseSearchQuery(query); // Parse the search query
 
-    // Filter cards
+    // Filter kartu
     let filteredCards = cards.filter((card) => {
         const cardProyek = card.getAttribute("data-category");
         const cardPrice = parseInt(card.getAttribute("data-price"));
         const cardLuas = parseInt(card.getAttribute("data-luas"));
-        const cardPanjang = parseInt(card.getAttribute("data-building-length"));
-        const cardLebar = parseInt(card.getAttribute("data-building-width"));
 
         // Filter proyek
         const proyekFilter = filters.proyek === "Semua Proyek" || cardProyek === filters.proyek;
@@ -309,36 +294,48 @@ function renderCards() {
             luasFilter = cardLuas >= 121 && cardLuas <= 200;
         }
 
-        // Filter panjang and lebar if specified in the search query
-        const panjangFilter = panjang === null || cardPanjang === panjang;
-        const lebarFilter = lebar === null || cardLebar === lebar;
-
-        // Text search (excluding P: and L:)
-        const textFilter = card.textContent.toLowerCase().includes(text);
-
-        return proyekFilter && priceFilter && luasFilter && panjangFilter && lebarFilter && textFilter;
+        return proyekFilter && priceFilter && luasFilter;
     });
 
-    // Sort cards by relevansi
+    // Urutkan kartu berdasarkan relevansi
     if (filters.relevansi === "Harga Tertinggi") {
         filteredCards.sort((a, b) => parseInt(b.getAttribute("data-price")) - parseInt(a.getAttribute("data-price")));
     } else if (filters.relevansi === "Harga Terendah") {
         filteredCards.sort((a, b) => parseInt(a.getAttribute("data-price")) - parseInt(b.getAttribute("data-price")));
     }
 
+    // Terapkan pencarian
+    filteredCards = filteredCards.filter((card) => {
+        const queryLower = query.toLowerCase().trim();
+        const textMatch = card.textContent.toLowerCase().includes(queryLower);
+
+        // Ambil nilai dari data-building-width
+        const buildingWidth = card.getAttribute("data-building-width");
+
+        // Cek apakah ada format "lebar:<angka>" di query
+        const lebarRegex = /lebar:(\d+)/;
+        const lebarMatch = queryLower.match(lebarRegex);
+
+        const lebarValid = lebarMatch
+            ? buildingWidth && parseInt(buildingWidth, 10) === parseInt(lebarMatch[1], 10)
+            : false;
+
+        return textMatch || lebarValid;
+    });
+
     // Pagination
     const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
     const start = (currentPage - 1) * cardsPerPage;
     const end = currentPage * cardsPerPage;
 
-    // Render cards for the current page
+    // Render kartu sesuai halaman
     cardContainer.innerHTML = "";
     filteredCards.slice(start, end).forEach((card) => cardContainer.appendChild(card));
 
     // Render pagination
     renderPagination(totalPages);
 
-    // Update total results
+    // Perbarui jumlah total kartu
     updateTotalResults(filteredCards);
 }
 
@@ -359,32 +356,32 @@ function renderPagination(totalPages) {
 
     // Adjust start and end pages to always show 3 buttons if possible
     if (endPage - startPage < 2) {
-      const diff = 2 - (endPage - startPage);
-      if (startPage - diff >= 1) {
-        startPage -= diff;
-      } else {
-        endPage += diff;
-      }
+        const diff = 2 - (endPage - startPage);
+        if (startPage - diff >= 1) {
+            startPage -= diff;
+        } else {
+            endPage += diff;
+        }
     }
 
     for (let i = startPage; i <= endPage; i++) {
-      const button = document.createElement("button");
-      button.textContent = i;
+        const button = document.createElement("button");
+        button.textContent = i;
 
-      // Tentukan class berdasarkan halaman saat ini
-      button.className = `w-10 h-10 ${i === currentPage ? "bg-[#05864D] text-white" : "bg-white text-gray-800 border border-gray-300"} rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
+        // Tentukan class berdasarkan halaman saat ini
+        button.className = `w-10 h-10 ${i === currentPage ? "bg-[#05864D] text-white" : "bg-white text-gray-800 border border-gray-300"} rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
 
-      // Tambahkan event listener untuk mengubah halaman
-      button.addEventListener("click", () => {
-        currentPage = i; // Perbarui halaman saat ini
-        renderCards(); // Render ulang kartu
-        renderPagination(totalPages); // Render ulang pagination
-      });
+        // Tambahkan event listener untuk mengubah halaman
+        button.addEventListener("click", () => {
+            currentPage = i; // Perbarui halaman saat ini
+            renderCards(); // Render ulang kartu
+            renderPagination(totalPages); // Render ulang pagination
+        });
 
-      // Tambahkan tombol ke container
-      pageNumbersContainer.appendChild(button);
+        // Tambahkan tombol ke container
+        pageNumbersContainer.appendChild(button);
     }
-  }
+}
 
 // Event listener untuk pencarian
 document.getElementById("search").addEventListener("input", () => {

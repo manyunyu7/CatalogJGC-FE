@@ -231,6 +231,16 @@
                             class="w-[100px] h-[100px]" />
                     </div>
                 @endif
+
+                <span class="hidden-data d-none" style="visibility: hidden;">
+                    {{ $item->property_type }}
+                    {{ $item->price ?? 0 }}
+                    {{ $item->land_length ?? 0 }}
+                    {{ $item->land_width ?? 0 }}
+                    {{ $item->building_length ?? 0 }}
+                    {{ "lebar:".$item->building_width ?? 0 }}
+                </span>
+
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->
