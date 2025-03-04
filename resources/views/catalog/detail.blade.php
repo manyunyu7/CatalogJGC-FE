@@ -22,13 +22,21 @@
     <title>E-Catalog JGC</title>
 
     <style>
+        .clip-ticket {
+            clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
+        }
+
         /* Make main image full width with rounded corners */
         .main-slider img {
             width: 100%;
+            height: 100%;
+            /* Ensures it fills the parent container */
             max-height: 50vh;
-            /* Adjust as needed */
-            object-fit: cover;
-            /* border-radius: 0.5rem; */
+            /* Limits the maximum height */
+            object-fit: contain;
+            border-radius: 20px !important;
+            /* Adjust the value as needed */
+            /* Ensures the entire image is visible without cropping */
         }
 
         /* Make all thumbnails the same size, same height, and rounded corners */
@@ -58,38 +66,27 @@
         <!-- Main Photo Slider -->
         <div class="swiper-container main-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/Cleon Park.JPG"
-                        alt="Main Photo 1" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon/Cleon1.png"
-                        alt="Main Photo 2" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] object-cover " src="catalog/img/cleon_layout1.png"
-                        alt="Main Photo 3" />
-                </div>
+                @foreach ($productImages as $image)
+                    <div class="swiper-slide">
+                        <img class="w-full h-auto aspect-[16/9] object-cover rounded-[10px] "
+                            src="{{ $image->full_img_path }}" alt="Main Photo" />
+                    </div>
+                @endforeach
             </div>
         </div>
 
         <!-- Thumbnails Slider -->
         <div class="swiper-container swiper-thumbnails mt-4 px-4">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/Cleon Park.JPG" alt="Thumbnail 1" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/cleon/Cleon1.png" alt="Thumbnail 2" />
-                </div>
-                <div class="swiper-slide">
-                    <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
-                        src="catalog/img/cleon_layout1.png" alt="Thumbnail 3" />
-                </div>
+                @foreach ($productImages as $image)
+                    <div class="swiper-slide">
+                        <img class="w-full h-auto aspect-[16/9] rounded-[10px] border border-[#EEEEF0] object-cover"
+                            src="{{ $image->full_img_path }}" alt="Thumbnail" />
+                    </div>
+                @endforeach
             </div>
         </div>
+
     </section>
 
     <section class="w-full px-4 md:px-8 lg:px-16 pt-3">
@@ -97,30 +94,39 @@
             <!-- Left Section -->
             <div class="w-full md:w-2/3">
                 <div class="flex flex-col md:flex-row items-center md:items-start md:ml-8 mt-6 mb-4">
-                    <img src="{{ asset('catalog/img/logo_cleo.png') }}" alt="Cleon Park Logo"
+                    <img src="{{ $typeDetail->cluster_icon_path }}"
                         class="w-[140px] h-[180px] md:w-[176px] md:h-[220px] md:mr-6 object-cover border rounded-lg" />
                     <div class="w-full text-center md:text-left mt-4 md:mt-0">
                         <h1 class="font-poppins font-semibold text-2xl md:text-4xl text-[#545454] leading-tight mb-2">
-                            Cleon Park - Studio
+                            {{ $product->name }} - {{ $typeDetail->name_en }}
                         </h1>
                         <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-2">
-                            <img src="catalog/img/freedp.png" alt="Free DP"
-                                class="w-[90px] h-[35px] md:w-[108px] md:h-[42px]" />
-                            <img src="catalog/img/freeBPHTB.png" alt="Free BPHTB"
-                                class="w-[110px] h-[35px] md:w-[138px] md:h-[42px]" />
-                            <img src="catalog/img/limitedStock.png" alt="Limited Stock"
-                                class="w-[130px] h-[35px] md:w-[157px] md:h-[42px]" />
+                            @if (!empty($product->promos))
+                                @foreach ($product->promos as $promo)
+                                    <span
+                                        class=" bg-no-repeat text-white px-6 py-2 text-md flex items-center justify-center"
+                                        style="background-image: url('{{ asset('catalog/img/promo_tag.png') }}'); background-size: 100% 100%;">
+                                        {{ $promo->name_id }}
+                                    </span>
+                                @endforeach
+                            @else
+                                <span class="text-gray-500">No promos available.</span>
+                            @endif
                         </div>
                         <div
                             class="text-[#52525B] text-base md:text-lg flex flex-col md:flex-row items-center justify-center md:justify-start pt-3">
-                            <span class="font-poppins font-normal">Start From</span>
-                            <span class="px-2 md:px-3 font-poppins font-semibold text-2xl md:text-3xl text-[#52525b]">Rp
-                                3.300.000.000</span>
+                            <span class="font-poppins font-normal">{{ $product->price->prefix ?? '' }}</span>
+                            <span class="px-2 md:px-3 font-poppins font-semibold text-2xl md:text-3xl text-[#52525b]">
+                                @if ($product->price != null)
+                                    {{ 'Rp' . $product->price->formatted_price ?? '' }}
+                                @endif
+                            </span>
                         </div>
                     </div>
                 </div>
 
 
+                <!-- Detail Section -->
                 <!-- Detail Section -->
                 <div class="md:ml-8 mt-8 border rounded-xl border-[#eeeef0] p-6">
                     <h5 class="font-poppins font-semibold text-xl text-black">Detail</h5>
@@ -133,120 +139,116 @@
                                 <span class="text-black font-medium">Apartemen</span>
                             </div>
                         </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Luas Bangunan</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/webpack_svgrepo.com.png') }}" class="w-8 h-8"
-                                    alt="Icon" />
-                                <span class="text-black font-medium">31 m²</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Kamar Tidur</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/surface 4.png') }}" class="w-8 h-8" alt="Icon" />
-                                <span class="text-black font-medium">0</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Kamar Mandi</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/shower_svgrepo.com.png') }}" class="w-8 h-8"
-                                    alt="Icon" />
-                                <span class="text-black font-medium">1</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Dapur</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-8 h-8"
-                                    alt="Icon" />
-                                <span class="text-black font-medium">1</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Lantai</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-8 h-8" alt="Icon" />
-                                <span class="text-black font-medium">1 - 10</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Listrik (Watt)</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/lightning-bolt_svgrepo.com.png') }}" class="w-8 h-8"
-                                    alt="Icon" />
-                                <span class="text-black font-medium">2200</span>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-[#93949d] text-base font-normal">Furnitur</p>
-                            <div class="flex items-center space-x-2">
-                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-8 h-8"
-                                    alt="Icon" />
-                                <span class="text-black font-medium">Semi Furnish</span>
-                            </div>
-                        </div>
 
+                        @if ($typeDetail->luas_bangunan)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Luas Bangunan</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/webpack_svgrepo.com.png') }}" class="w-8 h-8"
+                                        alt="Icon" />
+                                    <span class="text-black font-medium">{{ $typeDetail->luas_bangunan }} m²</span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->bedroom || $typeDetail->bedroom_bonus)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Kamar Tidur</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/surface 4.png') }}" class="w-8 h-8"
+                                        alt="Icon" />
+                                    <span class="text-black font-medium">
+                                        {{ $typeDetail->bedroom }} @if ($typeDetail->bedroom_bonus > 0)
+                                            +{{ $typeDetail->bedroom_bonus }}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->bathroom || $typeDetail->bathroom_bonus)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Kamar Mandi</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/shower_svgrepo.com.png') }}" class="w-8 h-8"
+                                        alt="Icon" />
+                                    <span class="text-black font-medium">
+                                        {{ $typeDetail->bathroom }} @if ($typeDetail->bathroom_bonus > 0)
+                                            +{{ $typeDetail->bathroom_bonus }}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->kitchen || $typeDetail->kitchen_bonus)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Dapur</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}" class="w-8 h-8"
+                                        alt="Icon" />
+                                    <span class="text-black font-medium">{{ $typeDetail->kitchen }} @if ($typeDetail->kitchen_bonus > 0)
+                                            +{{ $typeDetail->kitchen_bonus }}
+                                        @endif
+                                    </span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->floor)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Lantai</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-8 h-8" alt="Icon" />
+                                    <span class="text-black font-medium">{{ $typeDetail->floor }} Lantai</span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->electricity)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Listrik (Watt)</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/lightning-bolt_svgrepo.com.png') }}"
+                                        class="w-8 h-8" alt="Icon" />
+                                    <span class="text-black font-medium">{{ $typeDetail->electricity }} Watt</span>
+                                </div>
+                            </div>
+                        @endif
+
+                        @if ($typeDetail->furnish != null)
+                            <div>
+                                <p class="text-[#93949d] text-base font-normal">Furnitur</p>
+                                <div class="flex items-center space-x-2">
+                                    <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}" class="w-8 h-8"
+                                        alt="Icon" />
+                                    <span class="text-black font-medium">{{ $typeDetail->furnish }}</span>
+                                </div>
+                            </div>
+                        @endif
                     </div>
                 </div>
 
 
 
+
+
                 <!-- Fasilitas Section -->
                 <div class="md:ml-8 mt-8 border rounded-xl border-[#eeeef0] p-6">
-                    <h5 class="font-poppins font-semibold text-xl text-black">Fasilitas Apartemen</h5>
+                    <h5 class="font-poppins font-semibold text-xl text-black">Fasilitas
+                        {{-- {{$product->propertyTypeName}} --}}
+                    </h5>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-4">
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/card_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Kartu Akses">Kartu Akses</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/sink-2_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Wastafel">Wastafel</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/shower_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Shower">Shower</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/balcony_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Balkon">Balkon</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/wifi_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Wifi">Wifi</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/swim_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate group-hover:overflow-visible">Kolam
-                                Renang</span>
-                            <div
-                                class="absolute left-0 bottom-full mb-2 w-max max-w-xs p-2 text-xs text-white bg-gray-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                                Kolam Renang
+                        @forelse ($facilitiesTransaction as $facility)
+                            <div class="relative flex items-center space-x-2 min-w-0 group">
+                                <img src="{{ $facility->fasilitas->img_full_path }}" class="w-5 h-5"
+                                    alt="{{ $facility->fasilitas->img_full_path }}" />
+                                <span class="text-black font-medium truncate"
+                                    title="{{ $facility->fasilitas->name }}">{{ $facility->fasilitas->name }}</span>
                             </div>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/park_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Taman">Taman</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/atm-money_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="ATM">ATM</span>
-                        </div>
-                        <div class="relative flex items-center space-x-2 min-w-0 group">
-                            <img src="{{ asset('catalog/img/walk-go-move-next_svgrepo.com.png') }}" class="w-8 h-8"
-                                alt="Icon" />
-                            <span class="text-black font-medium truncate" title="Jalur Lari">Jalur Lari</span>
-                        </div>
+                        @empty
+                            <div class="text-gray-500">No facilities available.</div>
+                        @endforelse
                     </div>
                 </div>
 
@@ -254,10 +256,10 @@
 
             <!-- Right Section (Google Maps) -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-end">
-                <div class="w-full md:w-[400px] h-[400px] relative">
-                    <iframe class="w-full h-full rounded-xl"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4237220058457!2d144.95778431560456!3d-37.81362797975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5ceea61d6b%3A0x14bfb2f81b89a1db!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1636993060137!5m2!1sen!2sus"
-                        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="w-full md:w-[400px] h-[400px] relative mt-5">
+                    @if ($productInformationDetail?->map_embed_code)
+                        {!! $productInformationDetail->map_embed_code !!}
+                    @endif
                 </div>
             </div>
         </div>
