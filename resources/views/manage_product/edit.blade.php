@@ -104,6 +104,390 @@
             </div>
 
             <div class="card">
+                <div class="card-header">
+                    <h5>Facilities and Product Information</h5>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{{ route('manage-product-details.storeOrUpdate', $product->child_id) }}">
+                        @csrf
+                        <input type="hidden" name="_method" value="POST">
+
+                        <div class="row">
+                            <!-- Floor Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="floor" class="form-label">Lantai</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control @error('floor') is-invalid @enderror"
+                                        id="floor" name="floor" placeholder="Masukan jumlah lantai/tingkat"
+                                        value="{{ old('floor', $productInformationDetail->floor ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-house-door"></i>
+                                    </div>
+                                </div>
+                                @error('floor')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Electricity Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="electricity" class="form-label">Daya Listrik</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control @error('electricity') is-invalid @enderror"
+                                        id="electricity" name="electricity" placeholder="Masukkan Jumlah Watt"
+                                        value="{{ old('electricity', $productInformationDetail->electricity ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-lightbulb"></i>
+                                    </div>
+                                </div>
+                                @error('electricity')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Panjang Tanah Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="land_length" class="form-label">Panjang Tanah</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control @error('land_length') is-invalid @enderror"
+                                        id="land_length" name="land_length" placeholder="Masukkan panjang tanah"
+                                        value="{{ old('land_length', $productInformationDetail->land_length ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-rulers"></i>
+                                    </div>
+                                </div>
+                                @error('land_length')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Lebar Tanah Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="land_width" class="form-label">Lebar Tanah</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control @error('land_width') is-invalid @enderror"
+                                        id="land_width" name="land_width" placeholder="Masukkan lebar tanah"
+                                        value="{{ old('land_width', $productInformationDetail->land_width ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-rulers"></i>
+                                    </div>
+                                </div>
+                                @error('land_width')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Panjang Bangunan Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="building_length" class="form-label">Panjang Bangunan</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text"
+                                        class="form-control @error('building_length') is-invalid @enderror"
+                                        id="building_length" name="building_length"
+                                        placeholder="Masukkan panjang bangunan"
+                                        value="{{ old('building_length', $productInformationDetail->building_length ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-rulers"></i>
+                                    </div>
+                                </div>
+                                @error('building_length')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <!-- Lebar Bangunan Input with Icon -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="building_width" class="form-label">Lebar Bangunan</label>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text"
+                                        class="form-control @error('building_width') is-invalid @enderror"
+                                        id="building_width" name="building_width" placeholder="Masukkan lebar bangunan"
+                                        value="{{ old('building_width', $productInformationDetail->building_width ?? '') }}">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-rulers"></i>
+                                    </div>
+                                </div>
+                                @error('building_width')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+
+
+                            <!-- Land Area -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="luas_tanah" class="form-label">Land Area (m²)</label>
+                                <p class="text-muted">The total area of the land where the property is located.</p>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control" id="luas_tanah" name="luas_tanah"
+                                        placeholder="Land Area" value="{{ $product->type_detail->luas_tanah }}" readonly>
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-pin-map"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Building Area -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="luas_bangunan" class="form-label">Building Area (m²)</label>
+                                <p class="text-muted">The total area occupied by the building, including all floors.</p>
+                                <div class="form-group position-relative has-icon-left">
+                                    <input type="text" class="form-control" id="luas_bangunan" name="luas_bangunan"
+                                        placeholder="Building Area" value="{{ $product->type_detail->luas_bangunan }}"
+                                        readonly>
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-building"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Room & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="additional_room" class="form-label">Additional Rooms</label>
+                                <p class="text-muted">Additional rooms within the property, not considered as primary
+                                    living
+                                    spaces.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="additional_room"
+                                                name="additional_room" placeholder="Additional Rooms"
+                                                value="{{ $product->type_detail->additional_room }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-door-open"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="additional_room_bonus"
+                                                name="additional_room_bonus" placeholder="Additional Room Bonus"
+                                                value="{{ $product->type_detail->additional_room_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-door-open"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bedrooms & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="bedroom" class="form-label">Bedrooms</label>
+                                <p class="text-muted">Number of bedrooms in the property.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="bedroom" name="bedroom"
+                                                placeholder="Bedrooms" value="{{ $product->type_detail->bedroom }}"
+                                                readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-door-closed"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="bedroom_bonus"
+                                                name="bedroom_bonus" placeholder="Bedroom Bonus"
+                                                value="{{ $product->type_detail->bedroom_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-door-closed"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bathrooms & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="bathroom" class="form-label">Bathrooms</label>
+                                <p class="text-muted">Number of bathrooms available in the property.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="bathroom" name="bathroom"
+                                                placeholder="Bathrooms" value="{{ $product->type_detail->bathroom }}"
+                                                readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-water"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="bathroom_bonus"
+                                                name="bathroom_bonus" placeholder="Bathroom Bonus"
+                                                value="{{ $product->type_detail->bathroom_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-water"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Garages & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="garage" class="form-label">Garages</label>
+                                <p class="text-muted">Number of garages or parking spaces included with the property.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="garage" name="garage"
+                                                placeholder="Garages" value="{{ $product->type_detail->garage }}"
+                                                readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-car-front"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="garage_bonus"
+                                                name="garage_bonus" placeholder="Garage Bonus"
+                                                value="{{ $product->type_detail->garage_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-car-front"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kitchens & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="kitchen" class="form-label">Kitchens</label>
+                                <p class="text-muted">Number of kitchens available within the property.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="kitchen" name="kitchen"
+                                                placeholder="Kitchens" value="{{ $product->type_detail->kitchen }}"
+                                                readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-egg-fried"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="kitchen_bonus"
+                                                name="kitchen_bonus" placeholder="Kitchen Bonus"
+                                                value="{{ $product->type_detail->kitchen_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-egg-fried"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Living Rooms & Bonus -->
+                            <div class="col-lg-6 mb-3">
+                                <label for="living_room" class="form-label">Living Rooms</label>
+                                <p class="text-muted">Number of living rooms in the property, designed for daily
+                                    activities.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="living_room"
+                                                name="living_room" placeholder="Living Rooms"
+                                                value="{{ $product->type_detail->living_room }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-house-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group position-relative has-icon-left">
+                                            <input type="text" class="form-control" id="living_room_bonus"
+                                                name="living_room_bonus" placeholder="Living Room Bonus"
+                                                value="{{ $product->type_detail->living_room_bonus }}" readonly>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-house-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <!-- Input for the map embed code -->
+                                <div class="form-group">
+                                    <label for="mapEmbedCode">Map Embed Code:</label>
+                                    <textarea name="map_embed_code" id="mapEmbedCode" class="form-control" placeholder="Paste your map embed code here"
+                                        rows="5">{{ old('map_embed_code', $productInformationDetail->map_embed_code ?? '') }}</textarea>
+
+                                    <!-- Error message for map_embed_code -->
+                                    @if ($errors->has('map_embed_code'))
+                                        <div class="text-danger">
+                                            <ul>
+                                                @foreach ($errors->get('map_embed_code') as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+                                </div>
+
+                                <!-- Preview iframe -->
+                                <div class="form-group" id="mapPreviewContainer" style="display: none;">
+                                    <label>Preview:</label>
+                                    <div id="mapPreview" class="embed-responsive embed-responsive-16by9">
+                                        <!-- Preview iframe will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    const mapEmbedCodeInput = document.getElementById("mapEmbedCode");
+                                    const mapPreviewContainer = document.getElementById("mapPreviewContainer");
+                                    const mapPreview = document.getElementById("mapPreview");
+
+                                    function updatePreview() {
+                                        const embedCode = mapEmbedCodeInput.value.trim();
+
+                                        // Only show preview if there's a value
+                                        if (embedCode) {
+                                            mapPreviewContainer.style.display = "block"; // Show preview container
+                                            mapPreview.innerHTML = "";
+
+                                            // Create iframe element
+                                            const iframe = document.createElement("iframe");
+                                            iframe.setAttribute("class", "embed-responsive-item");
+                                            iframe.setAttribute("srcdoc", embedCode); // Set srcdoc with embed code
+                                            iframe.setAttribute("frameborder", "0");
+                                            iframe.setAttribute("allowfullscreen", "");
+
+                                            // Append iframe to preview container
+                                            mapPreview.appendChild(iframe);
+                                        } else {
+                                            mapPreviewContainer.style.display = "none"; // Hide preview if no value
+                                        }
+                                    }
+
+                                    // Initialize preview based on existing value
+                                    updatePreview();
+
+                                    // Update preview on input change
+                                    mapEmbedCodeInput.addEventListener("input", updatePreview);
+                                });
+                            </script>
+
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary">Save Details</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
                 <div class="card-body">
                     <h5>Harga Produk</h5>
                     <form
@@ -121,8 +505,8 @@
 
                         <div class="form-group">
                             <label for="priceInput">Price (Rupiah):</label>
-                            <input type="text" id="priceInput" class="form-control" placeholder="Masukkan harga" required
-                                value="{{ $product->price->price ?? '' }}">
+                            <input type="text" id="priceInput" class="form-control" placeholder="Masukkan harga"
+                                required value="{{ $product->price->price ?? '' }}">
                             <input type="hidden" name="price" id="price-raw">
                         </div>
                         <button type="submit" class="btn btn-primary mt-2">Submit</button>
@@ -211,7 +595,8 @@
                                 @endforeach
 
                                 <div class="col-12 mb-3">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm" id="checkAllBtn">Check
+                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                        id="checkAllBtn">Check
                                         All</button>
                                     <button type="button" class="btn btn-outline-secondary btn-sm"
                                         id="uncheckAllBtn">Uncheck All</button>
