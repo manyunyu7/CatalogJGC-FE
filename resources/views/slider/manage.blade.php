@@ -49,7 +49,6 @@
                                             <tr>
                                                 <th data-sortable="">No</th>
                                                 <th data-sortable="">Image</th>
-                                                <th data-sortable="">Icon</th>
                                                 <th data-sortable="">Urutan</th>
                                                 <th data-sortable="">Title</th>
                                                 <th data-sortable="">Description</th>
@@ -64,9 +63,6 @@
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>
                                                         <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->image }}" alt="slider image">
-                                                    </td>
-                                                    <td>
-                                                        <img height="200px" style="border-radius: 20px; max-width: 200px; object-fit: cover" src="{{ env('URL_BE_ASSET') . $item->icon }}" alt="">
                                                     </td>
                                                     <td>{{ $item->order }}</td>
                                                     <td>{{ $item->title }}</td>
