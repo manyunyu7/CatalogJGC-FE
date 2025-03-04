@@ -24,7 +24,6 @@ class ManageProductController extends Controller
 
     public function viewEdit(Request $request, $clusterId, $id)
     {
-
         // Retrieve the token from session
         $token = $request->cookie('killaToken');
 
@@ -40,37 +39,51 @@ class ManageProductController extends Controller
             $data = new SafeObjectHelper($result); // Convert everything to SafeObject
             $typeDetail = null; // Initialize as null (no match found yet)
 
-
             $product = $data->product;
-            foreach ($product->types as $type) {
-                foreach ($type->categories as $category) {
-                    if ($category->id === $id) {
-                        $typeDetail =  (object) $category; // Assign the matching category
-                        break 2; // Exit both loops once a match is found
+            $productInformationDetail = $data->productInformationDetail;
+
+            // Ensure product has types before iterating
+            if (!empty($product->types)) {
+                foreach ($product->types as $type) {
+                    // If categories exist, check for a match
+                    if (!empty($type->categories)) {
+                        foreach ($type->categories as $category) {
+                            if ($category->id === $id) {
+                                $typeDetail = (object) $category; // Assign the matching category
+                                break 2; // Exit both loops once a match is found
+                            }
+                        }
+                    }
+
+                    // If no category matches, but type exists, use the type itself
+                    if (!$typeDetail) {
+                        $typeDetail = (object) $type;
                     }
                 }
             }
 
-
+            // Assign type_detail, even if null (ensures no undefined variables)
             $product->type_detail = $typeDetail;
             $product->parent_id = $clusterId;
             $product->child_id = $id;
 
-            $facilities = $data->facilities;
-            $facilitiesTransaction = $data->facilities_transaction;
+            $facilities = $data->facilities ?? [];
+            $facilitiesTransaction = $data->facilities_transaction ?? [];
 
-
-            // Wrap the data in optional() so it can handle missing properties safely
-            $product = optional($product);
-            $compact = compact('product', 'facilities','facilitiesTransaction');
-
+            // Wrap in optional() to prevent errors from missing properties
+            $compact = compact('product', 'facilities', 'facilitiesTransaction','productInformationDetail');
             if ($request->dump == true) {
                 return $compact;
             }
+            $product = optional($product);
+            $compact = compact('product', 'facilities', 'facilitiesTransaction','productInformationDetail');
+
+
 
 
             return view('manage_product.edit', $compact);
         }
+
 
         // Log the error details for debugging
         Log::error('Failed to fetch user data', [
@@ -122,11 +135,11 @@ class ManageProductController extends Controller
         $validatedData = $request->validate([
             'parent_id' => 'nullable',
             'unit_facilities' => 'required|array',
-            'unit_facilities.*' => 'required|exists:fasilitas,id',
         ]);
 
         $apiUrl = env('URL_BE') . 'fasilitas-transactions/bulk-update';
         $client = new Client();
+
 
         $multipartData = [];
         foreach ($validatedData as $key => $value) {
