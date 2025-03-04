@@ -1,12 +1,12 @@
 @extends('template')
 
 @section('page-heading')
-    <div class="page-heading">
+    <div class="page-heading d-none">
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
                     <h3></h3>
-                    <p class="text-subtitle text-muted">Click on left menu to do some action</p>
+                    {{-- <p class="text-subtitle text-muted">Click on left menu to do some action</p> --}}
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
@@ -23,7 +23,7 @@
 
 @section('page-content')
     <section class="row">
-        <div class="col-12 col-lg-12">
+        <div class="col-12 col-lg-12 d-none">
             <div class="row">
                 <div class="col-6 col-lg-3 col-md-6">
                     <a href="{{ url('supplier/manage') }}">
