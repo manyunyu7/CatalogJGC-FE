@@ -232,14 +232,6 @@
                     </div>
                 @endif
 
-                <span class="hidden-data d-none" style="visibility: hidden;">
-                    {{ $item->property_type }}
-                    {{ $item->price ?? 0 }}
-                    {{ $item->land_length ?? 0 }}
-                    {{ $item->land_width ?? 0 }}
-                    {{ $item->building_length ?? 0 }}
-                    {{ "lebar:".$item->building_width ?? 0 }}
-                </span>
 
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
@@ -363,6 +355,17 @@
                                     <span class="ml-1 truncate text-sm">{{ $item->kitchen }}</span>
                                 </div>
                             @endif
+
+                            <span style="visibility: hidden;">
+                                {{ $item->property_type }}
+                                {{ $item->price ?? 0 }}
+                                {{ $item->land_length ?? 0 }}
+                                {{ $item->land_width ?? 0 }}
+                                {{ $item->building_length ?? 0 }}
+                                {{ "lebar:".$item->building_width ?? 0 }}
+                            </span>
+
+
                         </div>
                     </div>
                     @if ($item->price_prefix && $item->price_formatted)
