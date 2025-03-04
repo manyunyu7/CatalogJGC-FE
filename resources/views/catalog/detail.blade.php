@@ -136,7 +136,7 @@
                             <div class="flex items-center space-x-2">
                                 <img src="{{ asset('catalog/img/house-svgrepo-com 1.png') }}" class="w-8 h-8"
                                     alt="Icon" />
-                                <span class="text-black font-medium">Apartemen</span>
+                                <span class="text-black font-medium">{{$product->propertyTypeName}}</span>
                             </div>
                         </div>
 
