@@ -25,27 +25,16 @@
     <!-- Slideshow -->
     <section class="relative mx-auto w-full max-w-screen-lg overflow-hidden">
         <div class="slideshow-container w-full flex transition-transform duration-700 ease-in-out" id="slideshow">
-            <!-- Banner 1 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner1.png') }}" alt="Banner 1"
-                        class="object-cover rounded-b-3xl" />
+
+            @foreach ($sliders as $item)
+                <!-- Banner 1 -->
+                <div class="slide flex-shrink-0 w-full flex justify-center">
+                    <div class="image-wrapper">
+                        <img src="{{ asset("$item->full_img_path") }}"
+                            class="object-cover rounded-b-3xl" />
+                    </div>
                 </div>
-            </div>
-            <!-- Banner 2 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner2.png') }}" alt="Banner 2"
-                        class="object-cover rounded-b-3xl" />
-                </div>
-            </div>
-            <!-- Banner 3 -->
-            <div class="slide flex-shrink-0 w-full flex justify-center">
-                <div class="image-wrapper">
-                    <img src="{{ asset('catalog/img/baner/banner3.png') }}" alt="Banner 3"
-                        class="object-cover rounded-b-3xl" />
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
@@ -227,12 +216,19 @@
     <div
         class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         @foreach ($products as $item)
-            <div class="relative card" data-category="Apartemen" data-price="1200000000" data-harga="1200000000"
-                data-luas="23">
+            <div class="relative card"
+                data-category="{{ $item->property_type }}"
+                data-price="{{ $item->price ?? 0 }}"
+                data-land-length="{{ $item->land_length ?? 0 }}"
+                data-land-width="{{ $item->land_width ?? 0 }}"
+                data-building-length="{{ $item->building_length ?? 0 }}"
+                data-building-width="{{ $item->building_width ?? 0 }}"
+                data-harga="{{ $item->price }}" data-luas="{{ $item->luas_bangunan }}">
                 <!-- Banner Promo -->
                 @if ($item->is_promo)
                     <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
-                        <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo" class="w-[100px] h-[100px]" />
+                        <img src="{{ asset('catalog/img/promo.png') }}" alt="Promo"
+                            class="w-[100px] h-[100px]" />
                     </div>
                 @endif
                 <div
@@ -260,56 +256,118 @@
 
                     <!-- Konten Card -->
                     <div class="p-4">
-                        <a href="page1.html">
+                        <a href="{{ url('detail/' . $item->full_slug) }}">
                             <h5 class="text-2xl font-poppins font-semibold text-[#545454] truncate">
-                                {{ $item->parent_name }} -
-                                {{ $item->category_name }}
+                                {{ $item->parent_name }} - {{ $item->category_name }}
                             </h5>
                         </a>
                         <div class="flex items-center gap-2 mt-2 overflow-hidden">
                             <span
                                 class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
-                                Apartemen </span>
-                            <span
-                                class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
-                                LB: 23 m² </span>
+                                {{ $item->property_type }} </span>
+                            @if ($item->luas_tanah && $item->luas_tanah != 0)
+                                <span
+                                    class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                    LT: {{ $item->luas_tanah }} m²
+                                </span>
+                            @endif
+
+                            @if ($item->luas_bangunan && $item->luas_bangunan != 0)
+                                <span
+                                    class="truncate px-3 py-1 font-poppins font-normal text-sm text-[#545454] border-[#545454] border-[0.99px] rounded-xl text-[clamp(10px, 1vw, 14px)]">
+                                    LB: {{ $item->luas_bangunan }} m²
+                                </span>
+                            @endif
                         </div>
                         <div class="flex items-center space-x-4 mt-4">
-                            <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/surface 4.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
-                                <span class="ml-1 truncate text-sm">0</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
-                                    class="w-6 h-6 sm:w-8 sm:h-8" />
-                                <span class="ml-1 truncate text-sm">1</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/stair 2.png') }}" class="w-6 h-6 sm:w-8 sm:h-8" />
-                                <span class="ml-1 truncate text-sm">1 - 10</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
-                                    class="w-6 h-6 sm:w-8 sm:h-8" />
-                                <span class="ml-1 truncate text-sm">1</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
-                                    class="w-6 h-6 sm:w-8 sm:h-8" />
-                                <span class="ml-1 truncate text-sm">1</span>
-                            </div>
+                            @if (trim($item->bedroom) && trim($item->bedroom_bonus) && $item->bedroom_bonus !== '0')
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/surface 4.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">
+                                        {{ $item->bedroom }} - {{ $item->bedroom_bonus }}
+                                    </span>
+                                </div>
+                            @elseif(trim($item->bedroom))
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/surface 4.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">{{ $item->bedroom }}</span>
+                                </div>
+                            @endif
+
+                            @if (trim($item->bathroom) && trim($item->bathroom_bonus) && $item->bathroom_bonus !== '0')
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">
+                                        {{ $item->bathroom }} - {{ $item->bathroom_bonus }}
+                                    </span>
+                                </div>
+                            @elseif(trim($item->bathroom))
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">{{ $item->bathroom }}</span>
+                                </div>
+                            @endif
+
+                            @if (trim($item->living_room) && trim($item->living_room_bonus) && $item->living_room_bonus !== '0')
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">
+                                        {{ $item->living_room }} - {{ $item->living_room_bonus }}
+                                    </span>
+                                </div>
+                            @elseif(trim($item->living_room))
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">{{ $item->living_room }}</span>
+                                </div>
+                            @endif
+
+
+                            @if (trim($item->floor) && trim($item->floor) && $item->floor !== '0')
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/stair 2.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">1 - 10</span>
+                                </div>
+                            @endif
+
+
+                            @if (trim($item->kitchen) && trim($item->kitchen_bonus) && $item->kitchen_bonus !== '0')
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">
+                                        {{ $item->kitchen }} - {{ $item->kitchen_bonus }}
+                                    </span>
+                                </div>
+                            @elseif(trim($item->kitchen))
+                                <div class="flex items-center">
+                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
+                                        class="w-6 h-6 sm:w-8 sm:h-8" />
+                                    <span class="ml-1 truncate text-sm">{{ $item->kitchen }}</span>
+                                </div>
+                            @endif
                         </div>
                     </div>
-                    <div class="p-4 border-t border-slate-950 flex items-center justify-between">
-                        <span class="text-sm font-poppins font-normal text-[#545454]">{{ $item->price_prefix }}</span>
-                        <span class="text-2xl font-poppins font-semibold text-[#4f935f]">
-                            {{ $item->price_formatted }}</span>
-                    </div>
+                    @if ($item->price_prefix && $item->price_formatted)
+                        <div class="p-4 border-t border-slate-950 flex items-center justify-between">
+                            <span class="text-sm font-poppins font-normal text-[#545454]">
+                                {{ $item->price_prefix }}
+                            </span>
+                            <span class="text-2xl font-poppins font-semibold text-[#4f935f]">
+                                {{ $item->price_formatted }}
+                            </span>
+                        </div>
+                    @endif
                 </div>
             </div>
         @endforeach
-
-
     </div>
 
 
