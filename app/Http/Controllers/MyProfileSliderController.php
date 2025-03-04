@@ -109,7 +109,7 @@ class MyProfileSliderController extends Controller
         $validatedData = $request->validate([
             'title' => 'nullable|string|max:255',
             'description' => 'nullable|string',
-            'image' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
+            'image' => 'nullable|image',
         ]);
 
         // Prepare the data for the API
@@ -204,7 +204,6 @@ class MyProfileSliderController extends Controller
             // 'second_action_link' => 'nullable|url|max:255',
             'order' => 'required|integer|min:1',
             'image' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
-            'icon' => 'nullable|file|mimes:jpg,jpeg,png|max:5120',
         ]);
 
         // Prepare the data for the API
@@ -212,11 +211,9 @@ class MyProfileSliderController extends Controller
             'title',
             'description',
             'action',
-            'action_link',
-            'second_action',
-            'second_action_link',
             'order',
         ]);
+
 
         // Prepare the multipart data for Guzzle
         $multipartData = [];

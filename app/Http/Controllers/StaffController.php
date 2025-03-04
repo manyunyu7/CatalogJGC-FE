@@ -36,7 +36,7 @@ class StaffController extends Controller
     }
 
 
-    public function viewAdminEdit(Request $request,$id)
+    public function viewAdminEdit(Request $request, $id)
     {
 
         // Retrieve the token from session
@@ -85,7 +85,7 @@ class StaffController extends Controller
     {
         $token = $request->cookie('killaToken');
 
-        $response = Http::withToken($token)->put(env('URL_BE') . '/cms-user/update', [
+        $response = Http::withToken($token)->put(env('URL_BE') . 'cms-user/update', [
             'id' => $request->id,
             'user_name' => $request->user_name,
             'user_email' => $request->user_email,
@@ -96,14 +96,19 @@ class StaffController extends Controller
             'address' => $request->address,
         ]);
 
-        if ($response->successful()) {
-            return back()->with('success', 'User updated successfully');
+        // Decode JSON response
+        $responseData = $response->json();
+
+        // Check if success is true in meta
+        if ($response->successful() && isset($responseData['meta']['success']) && $responseData['meta']['success']) {
+            return back()->with('success', $responseData['meta']['message'] ?? 'Operation successful');
         }
 
-        return back()->with('error', 'Failed to update user');
+        return back()->with('error', $responseData['meta']['message'] ?? 'Failed to update user');
     }
 
-    public function destroy(Request $request,$id)
+
+    public function destroy(Request $request, $id)
     {
         $token = $request->cookie('killaToken');
         $response = Http::withToken($token)->delete(env('URL_BE') . "cms-user/destroy/{$id}");

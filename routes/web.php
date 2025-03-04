@@ -21,6 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/detail/{cluster_slug}/{title_slug}', [App\Http\Controllers\ProductDetailController::class, 'show']);
 
 Route::get("/user-info", [AuthController::class, 'getUserInfo']);
 
@@ -53,8 +54,17 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::middleware('auth')->group(function () {
 
+        Route::get('/admin/user/create', [App\Http\Controllers\StaffController::class, 'viewAdminCreate']);
+        Route::get('/admin/user/manage', [App\Http\Controllers\StaffController::class, 'viewAdminManage']);
+        Route::get('/admin/user/{id}/edit', [App\Http\Controllers\StaffController::class, 'viewAdminEdit']);
+
 
         Route::prefix('cms-user')->group(function () {
+            Route::get('manage-product-details/{parent_id}', [App\Http\Controllers\ManageProductDetailController::class, 'index'])->name('manage-product-details.index');
+            Route::post('manage-product-details/{parent_id}', [App\Http\Controllers\ManageProductDetailController::class, 'storeOrUpdate'])->name('manage-product-details.storeOrUpdate');
+            Route::delete('manage-product-details/{parent_id}', [App\Http\Controllers\ManageProductDetailController::class, 'destroy'])->name('manage-product-details.destroy');
+
+
             Route::get('product-images/{parentId}/manage', [App\Http\Controllers\ProductImageController::class, 'manageImages'])->name('product-images.manage');
             Route::post('product-images/{parentId}/upload', [App\Http\Controllers\ProductImageController::class, 'uploadImages'])->name('product-images.upload');
             Route::delete('product-images/{id}/delete', [App\Http\Controllers\ProductImageController::class, 'deleteImage'])->name('product-images.delete');
@@ -104,9 +114,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 
-    Route::get('/admin/user/create', [App\Http\Controllers\StaffController::class, 'viewAdminCreate']);
-    Route::get('/admin/user/manage', [App\Http\Controllers\StaffController::class, 'viewAdminManage']);
-    Route::get('/admin/user/{id}/edit', [App\Http\Controllers\StaffController::class, 'viewAdminEdit']);
+
 });
 
 
@@ -117,5 +125,8 @@ Route::get('logout', function () {
     auth()->logout();
     Session()->flush();
 
-    return Redirect::to('/');
+    // Clear the 'killaToken' cookie
+    $cookie = cookie()->forget('killaToken');
+
+    return Redirect::to('/')->withCookie($cookie);
 })->name('logout');

@@ -258,15 +258,29 @@ const updateTotalResults = (filteredCards) => {
     totalResultsElement.textContent = filteredCards.length; // Jumlah kartu yang lolos filter
 };
 
+function parseSearchQuery(query) {
+    const panjangMatch = query.match(/P:(\d+)/); // Extract panjang value
+    const lebarMatch = query.match(/L:(\d+)/);   // Extract lebar value
+
+    return {
+        panjang: panjangMatch ? parseInt(panjangMatch[1]) : null, // Return parsed panjang or null
+        lebar: lebarMatch ? parseInt(lebarMatch[1]) : null,       // Return parsed lebar or null
+        text: query.replace(/P:\d+|L:\d+/g, '').trim(),           // Remove P: and L: from the query for text search
+    };
+}
+
 // Fungsi utama untuk menggabungkan search, filter, dan pagination
 function renderCards() {
     const query = document.getElementById("search").value.toLowerCase();
+    const { panjang, lebar, text } = parseSearchQuery(query); // Parse the search query
 
-    // Filter kartu
+    // Filter cards
     let filteredCards = cards.filter((card) => {
         const cardProyek = card.getAttribute("data-category");
         const cardPrice = parseInt(card.getAttribute("data-price"));
         const cardLuas = parseInt(card.getAttribute("data-luas"));
+        const cardPanjang = parseInt(card.getAttribute("data-building-length"));
+        const cardLebar = parseInt(card.getAttribute("data-building-width"));
 
         // Filter proyek
         const proyekFilter = filters.proyek === "Semua Proyek" || cardProyek === filters.proyek;
@@ -295,32 +309,36 @@ function renderCards() {
             luasFilter = cardLuas >= 121 && cardLuas <= 200;
         }
 
-        return proyekFilter && priceFilter && luasFilter;
+        // Filter panjang and lebar if specified in the search query
+        const panjangFilter = panjang === null || cardPanjang === panjang;
+        const lebarFilter = lebar === null || cardLebar === lebar;
+
+        // Text search (excluding P: and L:)
+        const textFilter = card.textContent.toLowerCase().includes(text);
+
+        return proyekFilter && priceFilter && luasFilter && panjangFilter && lebarFilter && textFilter;
     });
 
-    // Urutkan kartu berdasarkan relevansi
+    // Sort cards by relevansi
     if (filters.relevansi === "Harga Tertinggi") {
         filteredCards.sort((a, b) => parseInt(b.getAttribute("data-price")) - parseInt(a.getAttribute("data-price")));
     } else if (filters.relevansi === "Harga Terendah") {
         filteredCards.sort((a, b) => parseInt(a.getAttribute("data-price")) - parseInt(b.getAttribute("data-price")));
     }
 
-    // Terapkan pencarian
-    filteredCards = filteredCards.filter((card) => card.textContent.toLowerCase().includes(query));
-
     // Pagination
     const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
     const start = (currentPage - 1) * cardsPerPage;
     const end = currentPage * cardsPerPage;
 
-    // Render kartu sesuai halaman
+    // Render cards for the current page
     cardContainer.innerHTML = "";
     filteredCards.slice(start, end).forEach((card) => cardContainer.appendChild(card));
 
     // Render pagination
     renderPagination(totalPages);
 
-    // Perbarui jumlah total kartu
+    // Update total results
     updateTotalResults(filteredCards);
 }
 

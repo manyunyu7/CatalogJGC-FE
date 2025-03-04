@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
+use Laravel\Ui\Presets\React;
 
 class MyMainProfileController extends Controller
 {
@@ -12,6 +13,10 @@ class MyMainProfileController extends Controller
     {
         // Fetch the products from the API
         $response = Http::get(env('URL_BE') . 'products');
+
+
+        $responseSlider = Http::get(env('URL_BE') . 'slider/all');
+
 
 
         // Handle errors in the API request and return a detailed error message
@@ -24,7 +29,17 @@ class MyMainProfileController extends Controller
             return (object) $product;  // Convert each product array to an object
         });
 
+        $sliders = collect($responseSlider->json()['result'])->map(function ($slider) {
+            return (object) $slider;  // Convert each product array to an object
+        });
 
-        return view('catalog.index', compact('products'));
+
+        $compact = compact('products', 'sliders');
+
+        if($request->dump==true) {
+            return response()->json($compact);
+        }
+
+        return view('catalog.index', $compact);
     }
 }

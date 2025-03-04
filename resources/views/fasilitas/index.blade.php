@@ -41,7 +41,7 @@
                                         <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Icon</th>
+                                                <th>Image</th>
                                                 <th>Nama</th>
                                                 <th>Deskripsi</th>
                                                 <th>Edit</th>
