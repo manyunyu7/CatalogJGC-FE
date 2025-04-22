@@ -30,8 +30,7 @@
                 <!-- Banner 1 -->
                 <div class="slide flex-shrink-0 w-full flex justify-center">
                     <div class="image-wrapper">
-                        <img src="{{ asset("$item->full_img_path") }}"
-                            class="object-cover rounded-b-3xl" />
+                        <img src="{{ asset("$item->full_img_path") }}" class="object-cover rounded-b-3xl" />
                     </div>
                 </div>
             @endforeach
@@ -189,9 +188,8 @@
                 <button id="dropdownRelevansi"
                     class="font-poppins inline-flex justify-between items-center w-[223px] h-[42px] px-4 py-2 text-white bg-cari text-[16px] rounded-md focus:outline-none shadow-md">
                     <!-- Ikon Filter -->
-                    <img src="img/filter.png" alt="" class="w-[14px] h-[14px]" />
+                    <img src="{{ asset('catalog/img/filter.png') }}" alt="" class="w-[14px] h-[14px]" />
                     <span id="dropdownTextRelevansi">Relevansi</span>
-                    <!-- Teks di sini akan berubah -->
                     <!-- Ikon Panah ke Bawah -->
                     <svg id="dropdownIconRelevansi" class="w-4 h-4 ml-2 transform transition-transform duration-300"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -216,14 +214,12 @@
     <div
         class="produk card-container container mx-auto px-4 py-8 grid gap-6 grid-cols-3 xa:grid-cols-1 xb:grid-cols-1 xc:grid-cols-1 xd:grid-cols-1 xe:grid-cols-1 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         @foreach ($products as $item)
-            <div class="relative card"
-                data-category="{{ $item->property_type }}"
-                data-price="{{ $item->price ?? 0 }}"
-                data-land-length="{{ $item->land_length ?? 0 }}"
+            <div class="relative card" data-id="{{ $item->id }}" data-category="{{ $item->property_type }}"
+                data-price="{{ $item->price ?? 0 }}" data-land-length="{{ $item->land_length ?? 0 }}"
                 data-land-width="{{ $item->land_width ?? 0 }}"
                 data-building-length="{{ $item->building_length ?? 0 }}"
-                data-building-width="{{ $item->building_width ?? 0 }}"
-                data-harga="{{ $item->price }}" data-luas="{{ $item->luas_bangunan }}">
+                data-building-width="{{ $item->building_width ?? 0 }}" data-harga="{{ $item->price }}"
+                data-luas="{{ $item->luas_bangunan }}">
                 <!-- Banner Promo -->
                 @if ($item->is_promo)
                     <div class="absolute top-[-6px] right-0 mr-[-7px] z-10">
@@ -236,23 +232,27 @@
                 <div
                     class="slider-card relative bg-white border-[1px] dark:border-gray-700 border-gray-200 rounded-[21.23px] shadow w-full h-auto overflow-hidden">
                     <!-- Gambar Utama -->
-                    <div class="flex transition-transform duration-300" id="slide-wrapper-{{ $loop->iteration }}">
+                    <div class="flex transition-transform duration-300" id="slide-wrapper-{{ $item->id }}">
                         @foreach ($item->images as $image)
                             <div class="flex-shrink-0">
-                                <img class="w-full h-48 object-cover sm:h-56"
-                                    src="{{ $image['full_image_path'] ?? '' }}" alt="" />
+                                <a href="{{ url('detail/' . $item->full_slug) }}">
+                                    <img class="w-full h-48 object-cover sm:h-56"
+                                        src="{{ $image['full_image_path'] ?? '' }}" alt="" loading="lazy" />
+                                </a>
                             </div>
                         @endforeach
-
                     </div>
 
+
                     <!-- Left Button -->
-                    <button class="absolute left-2 transform -translate-y-32 p-2 prev-btn">
+                    <button class="absolute left-2 transform -translate-y-32 p-2 prev-btn"
+                        id="prev-btn-{{ $item->id }}">
                         <img src="{{ asset('catalog/img/Left.png') }}" alt="Left" class="w-8 h-8" />
                     </button>
 
                     <!-- Right Button -->
-                    <button class="absolute right-2 transform -translate-y-32 p-2 next-btn">
+                    <button class="absolute right-2 transform -translate-y-32 p-2 next-btn"
+                        id="next-btn-{{ $item->id }}">
                         <img src="{{ asset('catalog/img/Right.png') }}" alt="Right" class="w-8 h-8" />
                     </button>
 
@@ -281,92 +281,57 @@
                                 </span>
                             @endif
                         </div>
-                        <div class="flex items-center space-x-4 mt-4">
+                        <div class="flex items-center gap-4 mt-4">
+                            <!-- Bedroom -->
                             @if (trim($item->bedroom) && trim($item->bedroom_bonus) && $item->bedroom_bonus !== '0')
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/surface 4.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">
+                                    <span class="ml-1 text-sm text-gray-700">
                                         {{ $item->bedroom }} - {{ $item->bedroom_bonus }}
                                     </span>
                                 </div>
                             @elseif(trim($item->bedroom))
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/surface 4.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">{{ $item->bedroom }}</span>
+                                    <span class="ml-1 text-sm text-gray-700">{{ $item->bedroom }}</span>
                                 </div>
                             @endif
-
+                            <!-- Bathroom -->
                             @if (trim($item->bathroom) && trim($item->bathroom_bonus) && $item->bathroom_bonus !== '0')
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">
+                                    <span class="ml-1 text-sm text-gray-700">
                                         {{ $item->bathroom }} - {{ $item->bathroom_bonus }}
                                     </span>
                                 </div>
                             @elseif(trim($item->bathroom))
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/bath_svgrepo.com.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">{{ $item->bathroom }}</span>
+                                    <span class="ml-1 text-sm text-gray-700">{{ $item->bathroom }}</span>
                                 </div>
                             @endif
-
+                            <!-- Living Room -->
                             @if (trim($item->living_room) && trim($item->living_room_bonus) && $item->living_room_bonus !== '0')
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">
+                                    <span class="ml-1 text-sm text-gray-700">
                                         {{ $item->living_room }} - {{ $item->living_room_bonus }}
                                     </span>
                                 </div>
                             @elseif(trim($item->living_room))
-                                <div class="flex items-center">
+                                <div class="flex items-center px-1/2 py-1/2 space-x-1 bg-gray-200 rounded-lg">
                                     <img src="{{ asset('catalog/img/sofa_svgrepo.com.png') }}"
                                         class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">{{ $item->living_room }}</span>
+                                    <span class="ml-1 text-sm text-gray-700">{{ $item->living_room }}</span>
                                 </div>
                             @endif
-
-
-                            @if (trim($item->floor) && trim($item->floor) && $item->floor !== '0')
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/stair 2.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">1 - 10</span>
-                                </div>
-                            @endif
-
-
-                            @if (trim($item->kitchen) && trim($item->kitchen_bonus) && $item->kitchen_bonus !== '0')
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">
-                                        {{ $item->kitchen }} - {{ $item->kitchen_bonus }}
-                                    </span>
-                                </div>
-                            @elseif(trim($item->kitchen))
-                                <div class="flex items-center">
-                                    <img src="{{ asset('catalog/img/refrigerator_svgrepo.com.png') }}"
-                                        class="w-6 h-6 sm:w-8 sm:h-8" />
-                                    <span class="ml-1 truncate text-sm">{{ $item->kitchen }}</span>
-                                </div>
-                            @endif
-
-                            <span style="visibility: hidden;">
-                                {{ $item->property_type }}
-                                {{ $item->price ?? 0 }}
-                                {{ $item->land_length ?? 0 }}
-                                {{ $item->land_width ?? 0 }}
-                                {{ $item->building_length ?? 0 }}
-                                {{ "lebar:".$item->building_width ?? 0 }}
-                            </span>
-
-
                         </div>
+
                     </div>
                     @if ($item->price_prefix && $item->price_formatted)
                         <div class="p-4 border-t border-slate-950 flex items-center justify-between">

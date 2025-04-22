@@ -22,7 +22,8 @@ function autoSlide() {
 
         // Reapply smooth transition after resetting
         setTimeout(() => {
-            slideshow.style.transition = "transform 1.5s cubic-bezier(0.25, 1, 0.5, 1)";
+            slideshow.style.transition =
+                "transform 1.5s cubic-bezier(0.25, 1, 0.5, 1)";
         }, 50);
     } else {
         showSlide(currentIndex);
@@ -146,8 +147,13 @@ const dropdownIconRelevansi = document.getElementById("dropdownIconRelevansi");
 const dropdownTextRelevansi = document.getElementById("dropdownTextRelevansi");
 const dropdownItemsRelevansi = dropdownMenuRelevansi.querySelectorAll("li");
 
+console.log("Element dropdownRelevansi:", dropdownRelevansi);
+console.log("Element dropdownMenuRelevansi:", dropdownMenuRelevansi);
+
 // Toggle untuk buka/tutup dropdown
-dropdownRelevansi.addEventListener("click", function () {
+dropdownRelevansi.addEventListener("click", function (event) {
+    console.log("Dropdown relevansi clicked!");
+    event.stopPropagation(); // Mencegah event propagasi ke dokumen
     dropdownMenuRelevansi.classList.toggle("opacity-100");
     dropdownMenuRelevansi.classList.toggle("invisible");
 
@@ -156,87 +162,107 @@ dropdownRelevansi.addEventListener("click", function () {
 });
 
 // Update teks saat item dropdown dipilih
-dropdownItemsRelevansi.forEach((item) => {
-    item.addEventListener("click", function () {
+dropdownItemsRelevansi.forEach((item, index) => {
+    console.log(`Item relevansi ${index}:`, item);
+    item.addEventListener("click", function (event) {
+        console.log("Item relevansi clicked:", this.getAttribute("data-value"));
+        event.stopPropagation();
+
         // Ganti teks di tombol sesuai dengan pilihan
         dropdownTextRelevansi.textContent = this.getAttribute("data-value");
+
+        // Perbarui filters.relevansi
+        filters.relevansi = this.getAttribute("data-value");
 
         // Tutup dropdown setelah memilih
         dropdownMenuRelevansi.classList.add("invisible");
         dropdownMenuRelevansi.classList.remove("opacity-100");
         dropdownIconRelevansi.classList.remove("rotate-180");
+
+        // Render ulang kartu-kartu
+        currentPage = 1;
+        renderCards();
     });
 });
 
 // Menutup dropdown saat klik di luar dropdown
 document.addEventListener("click", function (event) {
-    if (!dropdownRelevansi.contains(event.target)) {
+    if (dropdownRelevansi && !dropdownRelevansi.contains(event.target)) {
         dropdownMenuRelevansi.classList.add("invisible");
         dropdownMenuRelevansi.classList.remove("opacity-100");
         dropdownIconRelevansi.classList.remove("rotate-180");
     }
 });
 
-//JavaScript Slider Code
+// Inisialisasi slider untuk setiap card
+function initCardSliders() {
+    const sliderCards = document.querySelectorAll(".slider-card");
 
-// Ambil semua card slider
-// Ambil semua card slider
-const sliderCards = document.querySelectorAll(".slider-card");
+    // Loop untuk setiap card slider
+    sliderCards.forEach((card, index) => {
+        const cardId = card.closest(".card").getAttribute("data-id");
 
-sliderCards.forEach((card) => {
-    const prevBtn = card.querySelector(".prev-btn");
-    const nextBtn = card.querySelector(".next-btn");
-    const slideWrapper = card.querySelector(".flex.transition-transform");
-    const slides = slideWrapper?.querySelectorAll("div");
-    const totalSlides = slides?.length || 0;
-
-    if (!prevBtn || !nextBtn || !slideWrapper || totalSlides === 0) {
-        console.error("Slider elements missing or invalid.");
-        return;
-    }
-
-    let currentSlideIndex = 0;
-
-    function updateSlidePosition() {
-        const slideWidth = card.offsetWidth;
-        slideWrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth
-            }px)`;
-        slides.forEach((slide) => {
-            slide.style.width = `${slideWidth}px`; // Pastikan setiap slide memiliki lebar yang sesuai
-        });
-
-        // Tambahan: Pastikan gambar di dalam slide dimuat dengan benar
-        slides.forEach((slide) => {
-            const img = slide.querySelector("img");
-            if (img) {
-                img.style.display = "block"; // Pastikan gambar tidak tersembunyi
-            }
-        });
-    }
-
-    function moveSlide(direction) {
-        if (direction === "left") {
-            currentSlideIndex =
-                currentSlideIndex === 0
-                    ? totalSlides - 1
-                    : currentSlideIndex - 1;
-        } else {
-            currentSlideIndex =
-                currentSlideIndex === totalSlides - 1
-                    ? 0
-                    : currentSlideIndex + 1;
+        if (!cardId) {
+            console.error("Card tidak memiliki atribut data-id");
+            return;
         }
+
+        const prevBtn = card.querySelector(`#prev-btn-${cardId}`);
+        const nextBtn = card.querySelector(`#next-btn-${cardId}`);
+        const slideWrapper = card.querySelector(`#slide-wrapper-${cardId}`);
+        const slides = slideWrapper?.querySelectorAll("div");
+        const totalSlides = slides?.length || 0;
+
+        if (!prevBtn || !nextBtn || !slideWrapper || totalSlides === 0) {
+            console.error(
+                `Slider elements missing or invalid for card ${cardId}`
+            );
+            return;
+        }
+
+        let currentSlideIndex = 0;
+
+        // Fungsi untuk memperbarui posisi slide
+        function updateSlidePosition() {
+            const slideWidth = slideWrapper.offsetWidth;
+            slideWrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth
+                }px)`;
+            slides.forEach((slide) => {
+                slide.style.width = `${slideWidth}px`;
+            });
+        }
+
+        // Fungsi untuk menggerakkan slide
+        function moveSlide(direction) {
+            if (direction === "left") {
+                currentSlideIndex =
+                    currentSlideIndex === 0
+                        ? totalSlides - 1
+                        : currentSlideIndex - 1;
+            } else {
+                currentSlideIndex =
+                    currentSlideIndex === totalSlides - 1
+                        ? 0
+                        : currentSlideIndex + 1;
+            }
+            updateSlidePosition();
+        }
+
+        // Hapus event listener lama jika ada
+        const newPrevBtn = prevBtn.cloneNode(true);
+        const newNextBtn = nextBtn.cloneNode(true);
+
+        prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
+        nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+
+        // Tambahkan event listener baru
+        newPrevBtn.addEventListener("click", () => moveSlide("left"));
+        newNextBtn.addEventListener("click", () => moveSlide("right"));
+
+        // Inisialisasi posisi slide
         updateSlidePosition();
-    }
-
-    prevBtn.addEventListener("click", () => moveSlide("left"));
-    nextBtn.addEventListener("click", () => moveSlide("right"));
-
-    window.addEventListener("resize", updateSlidePosition);
-
-
-    updateSlidePosition();
-});
+    });
+}
 
 const cards = Array.from(document.querySelectorAll(".card")); // Semua kartu
 const cardContainer = document.querySelector(".card-container"); // Kontainer kartu
@@ -257,6 +283,16 @@ const updateTotalResults = (filteredCards) => {
     totalResultsElement.textContent = filteredCards.length; // Jumlah kartu yang lolos filter
 };
 
+const observer = new MutationObserver(() => {
+    initCardSliders(); // Inisialisasi slider setelah DOM berubah
+});
+
+// Pilih elemen yang perlu diawasi (cardContainer)
+const config = { childList: true };
+
+// Mulai mengawasi perubahan
+observer.observe(cardContainer, config);
+
 // Fungsi utama untuk menggabungkan search, filter, dan pagination
 function renderCards() {
     const query = document.getElementById("search").value.toLowerCase();
@@ -268,7 +304,8 @@ function renderCards() {
         const cardLuas = parseInt(card.getAttribute("data-luas"));
 
         // Filter proyek
-        const proyekFilter = filters.proyek === "Semua Proyek" || cardProyek === filters.proyek;
+        const proyekFilter =
+            filters.proyek === "Semua Proyek" || cardProyek === filters.proyek;
 
         // Filter harga
         let priceFilter = true;
@@ -298,30 +335,41 @@ function renderCards() {
     });
 
     // Urutkan kartu berdasarkan relevansi
+    // Urutkan kartu berdasarkan relevansi
     if (filters.relevansi === "Harga Tertinggi") {
-        filteredCards.sort((a, b) => parseInt(b.getAttribute("data-price")) - parseInt(a.getAttribute("data-price")));
+        filteredCards.sort(
+            (a, b) =>
+                parseInt(b.getAttribute("data-price")) -
+                parseInt(a.getAttribute("data-price"))
+        );
     } else if (filters.relevansi === "Harga Terendah") {
-        filteredCards.sort((a, b) => parseInt(a.getAttribute("data-price")) - parseInt(b.getAttribute("data-price")));
+        filteredCards.sort(
+            (a, b) =>
+                parseInt(a.getAttribute("data-price")) -
+                parseInt(b.getAttribute("data-price"))
+        );
+    } else if (filters.relevansi === "Relevansi") {
+        // Urutkan berdasarkan jenis proyek: Perumahan -> Apartemen -> Komersil
+        filteredCards.sort((a, b) => {
+            const categoryA = a.getAttribute("data-category");
+            const categoryB = b.getAttribute("data-category");
+
+            // Tetapkan nilai prioritas untuk setiap kategori
+            const priority = {
+                Perumahan: 1,
+                Apartemen: 2,
+                Komersil: 3,
+            };
+
+            // Bandingkan berdasarkan prioritas
+            return (priority[categoryA] || 99) - (priority[categoryB] || 99);
+        });
     }
 
     // Terapkan pencarian
-    filteredCards = filteredCards.filter((card) => {
-        const queryLower = query.toLowerCase().trim();
-        const textMatch = card.textContent.toLowerCase().includes(queryLower);
-
-        // Ambil nilai dari data-building-width
-        const buildingWidth = card.getAttribute("data-building-width");
-
-        // Cek apakah ada format "lebar:<angka>" di query
-        const lebarRegex = /lebar:(\d+)/;
-        const lebarMatch = queryLower.match(lebarRegex);
-
-        const lebarValid = lebarMatch
-            ? buildingWidth && parseInt(buildingWidth, 10) === parseInt(lebarMatch[1], 10)
-            : false;
-
-        return textMatch || lebarValid;
-    });
+    filteredCards = filteredCards.filter((card) =>
+        card.textContent.toLowerCase().includes(query)
+    );
 
     // Pagination
     const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
@@ -329,8 +377,17 @@ function renderCards() {
     const end = currentPage * cardsPerPage;
 
     // Render kartu sesuai halaman
-    cardContainer.innerHTML = "";
-    filteredCards.slice(start, end).forEach((card) => cardContainer.appendChild(card));
+    cardContainer.innerHTML = ""; // Menghapus konten sebelumnya
+
+    // Loop dan append tiap kartu ke dalam container
+    filteredCards.slice(start, end).forEach((card) => {
+        const clonedCard = card.cloneNode(true);
+        cardContainer.appendChild(clonedCard);
+    });
+
+    setTimeout(() => {
+        initCardSliders(); // Pastikan slider diinisialisasi setelah kartu dirender
+    }, 50);
 
     // Render pagination
     renderPagination(totalPages);
@@ -338,49 +395,60 @@ function renderCards() {
     // Perbarui jumlah total kartu
     updateTotalResults(filteredCards);
 }
-
-// Fungsi untuk membuat pagination
 // Fungsi untuk membuat pagination
 function renderPagination(totalPages) {
     const pageNumbersContainer = document.getElementById("page-numbers");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
 
-    pageNumbersContainer.innerHTML = "";
-    prevBtn.disabled = currentPage === 1;
-    nextBtn.disabled = currentPage === totalPages;
+    pageNumbersContainer.innerHTML = ""; // Kosongkan container halaman
+    pageNumbersContainer.className = "flex space-x-2";
+    prevBtn.disabled = currentPage === 1; // Disable tombol Prev jika di halaman pertama
+    nextBtn.disabled = currentPage === totalPages; // Disable tombol Next jika di halaman terakhir
 
-    // Logic to show only 3 card buttons
-    let startPage = Math.max(1, currentPage - 1); // Ensure startPage is at least 1
-    let endPage = Math.min(totalPages, currentPage + 1); // Ensure endPage doesn't exceed totalPages
+    // Menyembunyikan tombol nomor halaman jika hanya ada 1 halaman
+    if (totalPages <= 1) {
+        pageNumbersContainer.style.display = "none"; // Sembunyikan tombol nomor halaman
+    } else {
+        pageNumbersContainer.style.display = "block"; // Tampilkan tombol nomor halaman
+        let startPage = Math.max(1, currentPage - 1); // Pastikan startPage minimal 1
+        let endPage = Math.min(totalPages, currentPage + 1); // Pastikan endPage tidak melebihi totalPages
 
-    // Adjust start and end pages to always show 3 buttons if possible
-    if (endPage - startPage < 2) {
-        const diff = 2 - (endPage - startPage);
-        if (startPage - diff >= 1) {
-            startPage -= diff;
-        } else {
-            endPage += diff;
+        // Sesuaikan start dan end untuk menampilkan 3 tombol jika memungkinkan
+        if (endPage - startPage < 2) {
+            const diff = 2 - (endPage - startPage);
+            if (startPage - diff >= 1) {
+                startPage -= diff;
+            } else {
+                endPage += diff;
+            }
+        }
+
+        // Membuat tombol nomor halaman
+        for (let i = startPage; i <= endPage; i++) {
+            const button = document.createElement("button");
+            button.textContent = i;
+            button.className = `w-10 h-10 ${i === currentPage
+                    ? "bg-[#05864D] text-white"
+                    : "bg-white text-gray-800 border border-gray-300"
+                } rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
+            button.addEventListener("click", () => {
+                currentPage = i; // Perbarui halaman saat ini
+                renderCards(); // Render ulang kartu
+                renderPagination(totalPages); // Render ulang pagination
+            });
+            pageNumbersContainer.appendChild(button); // Tambahkan tombol ke container
         }
     }
-
-    for (let i = startPage; i <= endPage; i++) {
-        const button = document.createElement("button");
-        button.textContent = i;
-
-        // Tentukan class berdasarkan halaman saat ini
-        button.className = `w-10 h-10 ${i === currentPage ? "bg-[#05864D] text-white" : "bg-white text-gray-800 border border-gray-300"} rounded-lg font-semibold hover:bg-[#05864D] hover:text-black transition duration-200`;
-
-        // Tambahkan event listener untuk mengubah halaman
-        button.addEventListener("click", () => {
-            currentPage = i; // Perbarui halaman saat ini
-            renderCards(); // Render ulang kartu
-            renderPagination(totalPages); // Render ulang pagination
-        });
-
-        // Tambahkan tombol ke container
-        pageNumbersContainer.appendChild(button);
-    }
+    // Mengubah warna tombol Previous dan Next berdasarkan status disabled/enabled
+    prevBtn.className = `px-4 py-2 ${prevBtn.disabled
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-800 cursor-pointer font-semibold hover:bg-[#05864D] hover:text-white hover:shadow-lg transition duration-200 rounded-lg"
+        }`;
+    nextBtn.className = `px-4 py-2 ${nextBtn.disabled
+            ? "text-gray-400 cursor-not-allowed"
+            : "text-gray-800 cursor-pointer font-semibold hover:bg-[#05864D] hover:text-white hover:shadow-lg transition duration-200 rounded-lg"
+        }`;
 }
 
 // Event listener untuk pencarian
